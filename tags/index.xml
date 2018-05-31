@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on ehotinger</title>
+    <title>Tags on Eric Hotinger</title>
     <link>https://ehotinger.github.io/tags/</link>
-    <description>Recent content in Tags on ehotinger</description>
+    <description>Recent content in Tags on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Thu, 31 May 2018 12:02:45 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.github.io/tags/index.xml" rel="self" type="application/rss+xml" />

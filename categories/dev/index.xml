@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dev on ehotinger</title>
+    <title>Dev on Eric Hotinger</title>
     <link>https://ehotinger.github.io/categories/dev/</link>
-    <description>Recent content in Dev on ehotinger</description>
+    <description>Recent content in Dev on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Thu, 31 May 2018 12:02:45 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>Installing Hugo</title>
-      <link>https://ehotinger.github.io/posts/installing-hugo/</link>
+      <link>https://ehotinger.github.io/blog/installing-hugo/</link>
       <pubDate>Thu, 31 May 2018 12:02:45 -0700</pubDate>
       
-      <guid>https://ehotinger.github.io/posts/installing-hugo/</guid>
+      <guid>https://ehotinger.github.io/blog/installing-hugo/</guid>
       <description>This is a quick-start guide to setting up Hugo with GitHub pages, since it took too much effort to find the full instructions anywhere else. It should hopefully take you ~15 minutes to complete the entire thing.
  Make two GitHub repositories, i.e., https://github.com/ehotinger/blog and https://github.com/ehotinger/ehotinger.github.io - the first repository is for the unrendered Hugo content, and the second is for the rendered content. Note: you could just have one repository as your GitHub page, but this approach allows you to easily switch off GitHub pages if you want to.</description>
     </item>
