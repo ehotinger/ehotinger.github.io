@@ -51,19 +51,55 @@
     <div class="post">
   <h1>Installing Hugo</h1>
   <span class="post-date">Thu, May 31, 2018</span>
-  <p>This is a quick-start guide to setting up Hugo with <a href="https://pages.github.com">GitHub pages</a>, since it took too much effort to find the full instructions anywhere else.</p>
+  <p>This is a quick-start guide to setting up Hugo with <a href="https://pages.github.com">GitHub pages</a>, since it took too much effort to find the full instructions anywhere else. It should hopefully take you ~15 minutes to complete the entire thing.</p>
 
 <ol>
-<li>Install Hugo from the <a href="https://github.com/spf13/hugo/releases">releases page</a>.</li>
-<li>Run <code>hugo new site blog</code> to make the skeleton of your blog website.</li>
-<li>Install a theme you want. I just did <code>cd themes</code> and <code>git clone https://github.com/spf13/hyde</code>. More info about themes <a href="https://gohugo.io/themes/">here</a>.</li>
-<li>Update the <code>config.toml</code> generated from step 2 to use the theme. I.e, add <code>theme = &quot;hyde&quot;</code>.</li>
-<li>Make a new post using <code>hugo new posts/installing-hugo.md</code>. Edit its content to be whatever you want.</li>
-<li>Run <code>hugo server -D</code> and browse to <code>http://localhost:1313/</code> to make sure the theme and content are as you expected. You can peruse the other files to edit the description of the website or refer to this website&rsquo;s <a href="https://github.com/ehotinger/ehotinger.github.io">source code</a> to see additional options.</li>
+<li><p>Make two GitHub repositories, i.e., <a href="https://github.com/ehotinger/blog">https://github.com/ehotinger/blog</a> and <a href="https://github.com/ehotinger/ehotinger.github.io">https://github.com/ehotinger/ehotinger.github.io</a> - the first repository is for the unrendered Hugo content, and the second is for the rendered content. Note: you could just have one repository as your GitHub page, but this approach allows you to easily switch off GitHub pages if you want to.</p></li>
+
+<li><p>Install Hugo from the <a href="https://github.com/spf13/hugo/releases">releases page</a>.</p></li>
+
+<li><p>Run <code>hugo new site blog</code> to make the skeleton of your blog website.</p></li>
+
+<li><p>Install a theme you want. I chose <code>hyde</code> initially and just did <code>cd themes</code> and <code>git clone https://github.com/spf13/hyde</code>. More info about themes <a href="https://gohugo.io/themes/">here</a>.</p></li>
+
+<li><p>Update the <code>config.toml</code> generated from step 2 to use the theme. I.e, add <code>theme = &quot;hyde&quot;</code> to the toml.</p></li>
+
+<li><p>Make a new post using <code>hugo new posts/installing-hugo.md</code> or something simimlar. Edit its content to be whatever you want.</p></li>
+
+<li><p>Run <code>hugo server -D</code> and browse to <code>http://localhost:1313/</code> to make sure the theme and content are as you expected. You can peruse the other files to edit the description of the website or refer to this website&rsquo;s <a href="https://github.com/ehotinger/blog">source code</a> to see additional options. See also the &ldquo;front matter&rdquo; link at the bottom of this post.</p></li>
+
+<li><p>Now add a <code>git remote</code> for the <code>blog</code> repository that you made in step 1. <code>git remote add origin https://github.com/ehotinger/blog</code>. You can then do a <code>git fetch origin</code> and <code>git merge origin/master</code>. Make sure you have <code>public</code> folder with a <code>rm -rf public/</code> and then you&rsquo;re free to <code>git push -u origin master</code>.</p></li>
+
+<li><p>Link the two repos you made in step one together. I made a simple git submodule that links Hugo&rsquo;s <code>public</code> subfolder to the second repository you made in the first step. I.e., <code>git submodule add -b master https://github.com/ehotinger/ehotinger.github.io.git public</code>.</p></li>
+
+<li><p>Finally, it&rsquo;s time to deploy. A simple bash script like the following is all you need:</p></li>
 </ol>
 
-<p>Other useful things:
-1. <a href="https://gohugo.io/content-management/front-matter/">Front matter</a></p>
+<pre><code>hugo -t hyde
+cd public
+git add .
+
+msg=&quot;Automatically rebuilt - `date`&quot;
+if [ $# -eq 1 ]
+  then msg=&quot;$1&quot;
+fi
+
+git commit -m &quot;$msg&quot;
+git push origin master
+cd ..
+</code></pre>
+
+<p>Straightforward to read, but this will just make a commit automatically on your behalf for the 2nd repository you made.</p>
+
+<ol>
+<li>You can now commit freely to your unrendered blog website as well as your GitHub pages.</li>
+</ol>
+
+<p>Other useful things:</p>
+
+<ol>
+<li><a href="https://gohugo.io/content-management/front-matter/">Hugo front matter</a> - a list of all the metadata you can put on individual content. Description, tags, title, etc.</li>
+</ol>
 
 </div>
 
