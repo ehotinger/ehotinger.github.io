@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ehotinger</title>
+    <link>https://ehotinger.github.io/</link>
+    <description>Recent content on ehotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 May 2018 12:02:45 -0700</lastBuildDate>
+    
+	<atom:link href="https://ehotinger.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing Hugo</title>
+      <link>https://ehotinger.github.io/posts/installing-hugo/</link>
+      <pubDate>Thu, 31 May 2018 12:02:45 -0700</pubDate>
+      
+      <guid>https://ehotinger.github.io/posts/installing-hugo/</guid>
+      <description>This is a quick-start guide to setting up Hugo with GitHub pages, since it took too much effort to find the full instructions anywhere else.
+ Install Hugo from the releases page. Run hugo new site blog to make the skeleton of your blog website. Install a theme you want. I just did cd themes and git clone https://github.com/spf13/hyde. More info about themes here. Update the config.toml generated from step 2 to use the theme.</description>
+    </item>
+    
+  </channel>
+</rss>
