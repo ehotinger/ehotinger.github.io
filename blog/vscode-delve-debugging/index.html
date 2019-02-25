@@ -11,21 +11,21 @@
 <meta name="author" content="Eric Hotinger">
 <meta name="description" content="Setting up a Windows environment for Golang (including Make)">
 
-<meta property="og:title" content="Installing Go on Windows (including Make)" />
+<meta property="og:title" content="Bypassing the character limit displayed when debuggin with Delve and VSCode" />
 <meta property="og:description" content="Setting up a Windows environment for Golang (including Make)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ehotinger.github.io/blog/installing-go-windows/" />
-<meta property="article:published_time" content="2018-07-07T00:00:00-07:00"/>
-<meta property="article:modified_time" content="2018-07-07T00:00:00-07:00"/>
+<meta property="og:url" content="https://ehotinger.github.io/blog/vscode-delve-debugging/" />
+<meta property="article:published_time" content="2019-02-25T00:00:00-07:00"/>
+<meta property="article:modified_time" content="2019-02-25T00:00:00-07:00"/>
 
 
 <title>
 
 
-     Installing Go on Windows (including Make) 
+     Bypassing the character limit displayed when debuggin with Delve and VSCode 
 
 </title>
-<link rel="canonical" href="https://ehotinger.github.io/blog/installing-go-windows/">
+<link rel="canonical" href="https://ehotinger.github.io/blog/vscode-delve-debugging/">
 
 
 
@@ -43,9 +43,9 @@
 
 
     
-    <link rel="stylesheet" href="https://ehotinger.github.io/css/reset.css?t=2019-02-25%2011%3a52%3a28.171964389%20-0800%20PST%20m%3d%2b0.075005130">
-    <link rel="stylesheet" href="https://ehotinger.github.io/css/pygments.css?t=2019-02-25%2011%3a52%3a28.171964389%20-0800%20PST%20m%3d%2b0.075005130">
-    <link rel="stylesheet" href="https://ehotinger.github.io/css/main.css?t=2019-02-25%2011%3a52%3a28.171964389%20-0800%20PST%20m%3d%2b0.075005130">
+    <link rel="stylesheet" href="https://ehotinger.github.io/css/reset.css?t=2019-02-25%2011%3a52%3a28.168256661%20-0800%20PST%20m%3d%2b0.071297428">
+    <link rel="stylesheet" href="https://ehotinger.github.io/css/pygments.css?t=2019-02-25%2011%3a52%3a28.168256661%20-0800%20PST%20m%3d%2b0.071297428">
+    <link rel="stylesheet" href="https://ehotinger.github.io/css/main.css?t=2019-02-25%2011%3a52%3a28.168256661%20-0800%20PST%20m%3d%2b0.071297428">
     
 
 
@@ -140,7 +140,7 @@
                 <div class="title-container">
                     <div class="page-heading">
 
-    Installing Go on Windows (including Make)
+    Bypassing the character limit displayed when debuggin with Delve and VSCode
 
 </div>
 
@@ -148,7 +148,7 @@
                 </div>
                 <div class="meta">
                     
-                    <div class="date" title='Sat Jul 7 2018 00:00:00 PDT'>Jul 7, 2018</div>
+                    <div class="date" title='Mon Feb 25 2019 00:00:00 -0700'>Feb 25, 2019</div>
                     
                     
 		    <div class="reading-time"><div class="middot"></div>One minute read</div>
@@ -156,17 +156,29 @@
                 </div>
             </div>
             <div class="markdown">
-                <p>This is an extremely brief guide to setting up Go on Windows. There are plenty of guides out there for setting up Go, but none that also include how to get your <code>Makefile</code>s working cross-platform easily. The easiest way I&rsquo;ve found to do this is to change shells. This is especially true if you have Makefiles like I do, where <code>$(shell)</code> is everywhere. With the default shell you&rsquo;ll end up with <code>CREATE PROCESS(NULL, ...</code> errors everywhere because functionality is missing.</p>
+                <p>Debugging Go applications with Visual Studio Code and Delve is extremely powerful. However, there are some default settings which you may want to tweak to improve this experience and they&rsquo;re not straightforward to find out.</p>
 
-<ol>
-<li><p>The <a href="https://golang.org/doc/install">default installer</a> on Windows works great for Go now. It&rsquo;ll set up <code>$GOPATH</code> to be <code>%USERPROFILE\go</code> and <code>$GOROOT</code> to be <code>C:\go</code>. It&rsquo;ll also modify your <code>$PATH</code> to be <code>C:\go\bin</code>.</p></li>
+<p>Sometimes when you&rsquo;re debugging if a variable&rsquo;s value is really long, i.e. more than 64 characters, you&rsquo;ll see the value&rsquo;s content end as &ldquo;&hellip;+7 more&rdquo; or however many characters were truncated. To get around this, you need to customize your workspace or user settings in Visual Studio Code.</p>
 
-<li><p>Download <a href="http://gnuwin32.sourceforge.net/packages/make.htm">Make for Windows</a>. Add the installation path to your <code>$PATH</code>.</p></li>
+<p>Open your user settings or workspace settings (CTRL + SHIFT + P) =&gt; type settings and choose one from the dropdown list. Then, check out this JSON for various settings you can configure. The <code>maxStringLen</code> setting is the one you care about the most. Note that depending on these settings you can cause serious perf gain/loss, so tinker with them.</p>
 
-<li><p>Download <a href="https://cygwin.com/install.html">Cygwin</a>.</p></li>
+<pre><code class="language-json">{
+    &quot;go.delveConfig&quot;: {
+        &quot;useApiV1&quot;: false,
+            &quot;dlvLoadConfig&quot;: {
+                &quot;followPointers&quot;: true,
+                &quot;maxVariableRecurse&quot;: 1,
+                &quot;maxStringLen&quot;: 300,
+                &quot;maxArrayValues&quot;: 64,
+                &quot;maxStructFields&quot;: -1
+            }
+    }
+}
+</code></pre>
 
-<li><p>From Cygwin, <code>cd C:/users/blah/go/src/github.com/blah/somerepo</code>, and from there you should be able to run <code>make</code>.</p></li>
-</ol>
+<p><a href="https://github.com/Microsoft/vscode-go/blob/master/src/goDebugConfiguration.ts">Here is the source code</a>for the related configuration loading:</p>
+
+<p>And there&rsquo;s some <a href="https://github.com/Microsoft/vscode-go/issues/1555#issuecomment-393366905">useful discussion here</a> before the feature was added.</p>
 
                 <br>
                 
