@@ -3,28 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ehotinger.github.io/blog/vscode-delve-debugging/</loc>
-    <lastmod>2019-02-25T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.github.io/blog/installing-go-windows/</loc>
-    <lastmod>2018-07-07T00:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.github.io/blog/installing-hugo/</loc>
-    <lastmod>2018-05-31T12:02:45-07:00</lastmod>
+    <loc>https://ehotinger.github.io/blog/acr-tasks-daily-autopurge/</loc>
+    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://ehotinger.github.io/blog/</loc>
-    <lastmod>2019-02-25T00:00:00-07:00</lastmod>
+    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ehotinger.github.io/categories/</loc>
+    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/</loc>
+    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/tags/</loc>
+    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/tags/acr/</loc>
+    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/categories/dev/</loc>
+    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/blog/vscode-delve-debugging/</loc>
+    <lastmod>2019-02-25T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/tags/go/</loc>
+    <lastmod>2019-02-25T00:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -35,27 +61,13 @@
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/categories/dev/</loc>
-    <lastmod>2019-02-25T00:00:00-07:00</lastmod>
-    <priority>0</priority>
+    <loc>https://ehotinger.github.io/blog/installing-go-windows/</loc>
+    <lastmod>2018-07-07T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/</loc>
-    <lastmod>2019-02-25T00:00:00-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.github.io/tags/go/</loc>
-    <lastmod>2019-02-25T00:00:00-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.github.io/tags/</loc>
-    <lastmod>2019-02-25T00:00:00-07:00</lastmod>
-    <priority>0</priority>
+    <loc>https://ehotinger.github.io/blog/installing-hugo/</loc>
+    <lastmod>2018-05-31T12:02:45-07:00</lastmod>
   </url>
   
 </urlset>
