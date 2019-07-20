@@ -6,10 +6,20 @@
     <description>Recent content on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 16 Jul 2019 14:15:54 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 18:23:31 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ACR Tasks Image Vulnerability Scanning</title>
+      <link>https://ehotinger.github.io/blog/acr-tasks-image-scanning/</link>
+      <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
+      
+      <guid>https://ehotinger.github.io/blog/acr-tasks-image-scanning/</guid>
+      <description>In this blog you&amp;rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&amp;rsquo;s microscanner. By the end, you&amp;rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.
+This is generic, so you can bring whatever image scanner you prefer.</description>
+    </item>
     
     <item>
       <title>Azure Container Registry Tasks Daily Autopurge</title>

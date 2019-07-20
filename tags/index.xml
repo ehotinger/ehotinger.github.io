@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 16 Jul 2019 14:15:54 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 18:23:31 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>acr</title>
       <link>https://ehotinger.github.io/tags/acr/</link>
-      <pubDate>Tue, 16 Jul 2019 14:15:54 -0700</pubDate>
+      <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
       
       <guid>https://ehotinger.github.io/tags/acr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://ehotinger.github.io/tags/docker/</link>
+      <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
+      
+      <guid>https://ehotinger.github.io/tags/docker/</guid>
       <description></description>
     </item>
     

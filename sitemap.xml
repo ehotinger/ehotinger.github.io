@@ -3,44 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ehotinger.github.io/blog/acr-tasks-daily-autopurge/</loc>
-    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <loc>https://ehotinger.github.io/blog/acr-tasks-image-scanning/</loc>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://ehotinger.github.io/blog/</loc>
-    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ehotinger.github.io/categories/</loc>
-    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ehotinger.github.io/</loc>
-    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ehotinger.github.io/tags/</loc>
-    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/categories/acr/</loc>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ehotinger.github.io/tags/acr/</loc>
-    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ehotinger.github.io/categories/dev/</loc>
-    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/categories/docker/</loc>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/tags/docker/</loc>
+    <lastmod>2019-07-19T18:23:31-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.github.io/blog/acr-tasks-daily-autopurge/</loc>
+    <lastmod>2019-07-16T14:15:54-07:00</lastmod>
   </url>
   
   <url>
