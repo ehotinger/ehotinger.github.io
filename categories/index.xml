@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Eric Hotinger</title>
-    <link>https://ehotinger.github.io/categories/</link>
+    <link>https://ehotinger.com/categories/</link>
     <description>Recent content in Categories on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 19 Jul 2019 18:23:31 -0700</lastBuildDate>
     
-	<atom:link href="https://ehotinger.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ehotinger.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>acr</title>
-      <link>https://ehotinger.github.io/categories/acr/</link>
+      <link>https://ehotinger.com/categories/acr/</link>
       <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
       
-      <guid>https://ehotinger.github.io/categories/acr/</guid>
+      <guid>https://ehotinger.com/categories/acr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dev</title>
-      <link>https://ehotinger.github.io/categories/dev/</link>
+      <link>https://ehotinger.com/categories/dev/</link>
       <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
       
-      <guid>https://ehotinger.github.io/categories/dev/</guid>
+      <guid>https://ehotinger.com/categories/dev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>https://ehotinger.github.io/categories/docker/</link>
+      <link>https://ehotinger.com/categories/docker/</link>
       <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
       
-      <guid>https://ehotinger.github.io/categories/docker/</guid>
+      <guid>https://ehotinger.com/categories/docker/</guid>
       <description></description>
     </item>
     

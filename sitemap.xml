@@ -3,93 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ehotinger.github.io/blog/acr-tasks-image-scanning/</loc>
+    <loc>https://ehotinger.com/tags/acr/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/blog/</loc>
+    <loc>https://ehotinger.com/categories/acr/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/categories/</loc>
+    <loc>https://ehotinger.com/blog/acr-tasks-image-scanning/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/</loc>
+    <loc>https://ehotinger.com/blog/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/tags/</loc>
+    <loc>https://ehotinger.com/categories/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/categories/acr/</loc>
+    <loc>https://ehotinger.com/categories/dev/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/tags/acr/</loc>
+    <loc>https://ehotinger.com/categories/docker/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/categories/dev/</loc>
+    <loc>https://ehotinger.com/tags/docker/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/categories/docker/</loc>
+    <loc>https://ehotinger.com/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/tags/docker/</loc>
+    <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/blog/acr-tasks-daily-autopurge/</loc>
+    <loc>https://ehotinger.com/blog/acr-tasks-daily-autopurge/</loc>
     <lastmod>2019-07-16T14:15:54-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/blog/vscode-delve-debugging/</loc>
+    <loc>https://ehotinger.com/blog/vscode-delve-debugging/</loc>
     <lastmod>2019-02-25T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/tags/go/</loc>
+    <loc>https://ehotinger.com/tags/dev/</loc>
     <lastmod>2019-02-25T00:00:00-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/tags/dev/</loc>
+    <loc>https://ehotinger.com/tags/go/</loc>
     <lastmod>2019-02-25T00:00:00-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/blog/installing-go-windows/</loc>
+    <loc>https://ehotinger.com/blog/installing-go-windows/</loc>
     <lastmod>2018-07-07T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ehotinger.github.io/blog/installing-hugo/</loc>
+    <loc>https://ehotinger.com/blog/installing-hugo/</loc>
     <lastmod>2018-05-31T12:02:45-07:00</lastmod>
   </url>
   

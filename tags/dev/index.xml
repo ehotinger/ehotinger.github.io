@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dev on Eric Hotinger</title>
-    <link>https://ehotinger.github.io/tags/dev/</link>
+    <link>https://ehotinger.com/tags/dev/</link>
     <description>Recent content in dev on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 25 Feb 2019 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https://ehotinger.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ehotinger.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bypassing the character limit displayed when debugging with Delve and VSCode</title>
-      <link>https://ehotinger.github.io/blog/vscode-delve-debugging/</link>
+      <link>https://ehotinger.com/blog/vscode-delve-debugging/</link>
       <pubDate>Mon, 25 Feb 2019 00:00:00 -0700</pubDate>
       
-      <guid>https://ehotinger.github.io/blog/vscode-delve-debugging/</guid>
+      <guid>https://ehotinger.com/blog/vscode-delve-debugging/</guid>
       <description>Debugging Go applications with Visual Studio Code and Delve is extremely powerful. However, there are some default settings which you may want to tweak to improve this experience and they&amp;rsquo;re not straightforward to find out.
 Sometimes when you&amp;rsquo;re debugging if a variable&amp;rsquo;s value is really long, i.e. more than 64 characters, you&amp;rsquo;ll see the value&amp;rsquo;s content end as &amp;ldquo;&amp;hellip;+7 more&amp;rdquo; or however many characters were truncated. To get around this, you need to customize your workspace or user settings in Visual Studio Code.</description>
     </item>
     
     <item>
       <title>Installing Go on Windows (including Make)</title>
-      <link>https://ehotinger.github.io/blog/installing-go-windows/</link>
+      <link>https://ehotinger.com/blog/installing-go-windows/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 -0700</pubDate>
       
-      <guid>https://ehotinger.github.io/blog/installing-go-windows/</guid>
+      <guid>https://ehotinger.com/blog/installing-go-windows/</guid>
       <description>This is an extremely brief guide to setting up Go on Windows. There are plenty of guides out there for setting up Go, but none that also include how to get your Makefiles working cross-platform easily. The easiest way I&amp;rsquo;ve found to do this is to change shells. This is especially true if you have Makefiles like I do, where $(shell) is everywhere. With the default shell you&amp;rsquo;ll end up with CREATE PROCESS(NULL, .</description>
     </item>
     
     <item>
       <title>Installing Hugo</title>
-      <link>https://ehotinger.github.io/blog/installing-hugo/</link>
+      <link>https://ehotinger.com/blog/installing-hugo/</link>
       <pubDate>Thu, 31 May 2018 12:02:45 -0700</pubDate>
       
-      <guid>https://ehotinger.github.io/blog/installing-hugo/</guid>
+      <guid>https://ehotinger.com/blog/installing-hugo/</guid>
       <description>This is a quick-start guide to setting up Hugo with GitHub pages, since it took too much effort to find the full instructions anywhere else. It should hopefully take you ~15 minutes to complete the entire thing.
  Make two GitHub repositories, i.e., https://github.com/ehotinger/blog and https://github.com/ehotinger/ehotinger.github.io - the first repository is for the unrendered Hugo content, and the second is for the rendered content. Note: you could just have one repository as your GitHub page, but this approach allows you to easily switch off GitHub pages if you want to.</description>
     </item>
