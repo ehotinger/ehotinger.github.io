@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Eric Hotinger">
+<meta name="description" content="This is how I set up my blog which uses GitHub pages to have a custom domain and SSL all on AWS for $12/year &ndash; just the cost of the .com. The other services are all in the free-tier.
+Register your domain Use Route 53: https://aws.amazon.com/route53/
+ All you have to do here is go through the Register Domain workflow that Amazon has created. It&rsquo;ll allow you to buy a domain name of your choice for about $12 (for a .">
+
+<meta property="og:title" content="GitHub Pages, Route 53, Cloud Front, and SSL" />
+<meta property="og:description" content="This is how I set up my blog which uses GitHub pages to have a custom domain and SSL all on AWS for $12/year &ndash; just the cost of the .com. The other services are all in the free-tier.
+Register your domain Use Route 53: https://aws.amazon.com/route53/
+ All you have to do here is go through the Register Domain workflow that Amazon has created. It&rsquo;ll allow you to buy a domain name of your choice for about $12 (for a ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ehotinger.com/blog/github-pages-aws-ssl/" />
+<meta property="article:published_time" content="2019-08-31T00:05:35-07:00" />
+<meta property="article:modified_time" content="2019-08-31T00:05:35-07:00" />
+
+
+<title>
+
+
+     GitHub Pages, Route 53, Cloud Front, and SSL 
+
+</title>
+<link rel="canonical" href="https://ehotinger.com/blog/github-pages-aws-ssl/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2019-08-31%2000%3a48%3a34.690467%20-0700%20PDT%20m%3d%2b0.051922372">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2019-08-31%2000%3a48%3a34.690467%20-0700%20PDT%20m%3d%2b0.051922372">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2019-08-31%2000%3a48%3a34.690467%20-0700%20PDT%20m%3d%2b0.051922372">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://ehotinger.com/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://ehotinger.com/"><img class="avatar" src="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=50" rcset="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=100 2x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=150 3x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=200 4x"></a>
+            
+            <a href="https://ehotinger.com/"><div class="name">Eric Hotinger</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/eric-hotinger-9b7b2b52" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    GitHub Pages, Route 53, Cloud Front, and SSL
+
+</div>
+
+                    <div class="initials"><a href="https://ehotinger.com"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Sat Aug 31 2019 00:05:35 PDT'>Aug 31, 2019</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                
+
+<p>This is how I set up my blog which uses GitHub pages to have a custom domain and SSL all on AWS for $12/year &ndash; just the cost of the <code>.com</code>. The other services are all in the free-tier.</p>
+
+<h2 id="register-your-domain">Register your domain</h2>
+
+<p>Use Route 53: <a href="https://aws.amazon.com/route53/">https://aws.amazon.com/route53/</a></p>
+
+<ul>
+<li>All you have to do here is go through the Register Domain workflow that Amazon has created. It&rsquo;ll allow you to buy a domain name of your choice for about $12 (for a <code>.com</code>) and automatically create the Hosted Zone for you</li>
+<li>The Hosted Zone will come with a NS and SOA record to start with, we&rsquo;ll add more to this later</li>
+</ul>
+
+<h2 id="create-the-certificate">Create the certificate</h2>
+
+<p>Use ACM: <a href="https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html">https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html</a></p>
+
+<ul>
+<li>Request a public certificate</li>
+<li>Add on any domain names you want, i.e. <code>*.username.com</code> and <code>username.com</code> - this enables you to handle requests with/without <code>www</code></li>
+<li>Fill in the CNAME records in the Route 53 test you created earlier to do the validation tests (there&rsquo;s a button to create the CNAMEs after the certificate is created to verify them, just click it)</li>
+</ul>
+
+<h2 id="set-up-cloud-front">Set up Cloud Front</h2>
+
+<p>Use Cloud Front: <a href="https://aws.amazon.com/cloudfront/">https://aws.amazon.com/cloudfront/</a></p>
+
+<ul>
+<li>Create a new Web Distribution</li>
+<li>Set the origin domain name to <code>username.github.io</code></li>
+<li>Set <code>Viewer Protocol Policy</code> to <code>Redirect HTTP to HTTPS</code></li>
+<li>For <code>Allowed HTTP Methods</code>, you might want <code>GET, HEAD, OPTIONS</code></li>
+<li>Modify any of the defaults if you desire, nothing else is required (you may want to customize the caching to be lower to see/test changes faster)</li>
+<li>Add in CNAME records for <code>www.username.com</code> and <code>username.com</code></li>
+<li>Use the SSL certificate you generated in the previous step</li>
+<li>Wait about 15 mins for the distribution to deploy</li>
+</ul>
+
+<h2 id="back-to-route-53">Back to Route 53</h2>
+
+<ul>
+<li>Create an <code>A</code> record with an alias to your Cloud Front distribution (<code>username.com.</code> -&gt; <code>cloud front</code>)</li>
+<li>Create a <code>CNAME</code> record for <code>www.username.com.</code> to <code>username.com</code></li>
+</ul>
+
+<h2 id="on-github">On GitHub</h2>
+
+<ul>
+<li>Go to your GitHub pages repository and click on Settings</li>
+<li>Add in your custom domain name (<code>username.com</code>)</li>
+<li>Enforce HTTPS</li>
+</ul>
+
+<h2 id="aftermath">Aftermath</h2>
+
+<p>Hopefully you&rsquo;re all done! You should be able to visit <code>www.username.com</code>, <code>username.com</code>, as well as any other variants and automatically have requests routed with SSL.</p>
+
+                <br>
+                
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  
+                    <a href="https://ehotinger.com/tags/aws">AWS</a>
+                  
+                  </div>
+                  <br />
+                
+                <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

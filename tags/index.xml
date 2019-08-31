@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 19 Jul 2019 18:23:31 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2019 00:05:35 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS</title>
+      <link>https://ehotinger.com/tags/aws/</link>
+      <pubDate>Sat, 31 Aug 2019 00:05:35 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/aws/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>acr</title>
@@ -17,6 +26,15 @@
       <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/acr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>https://ehotinger.com/tags/azure/</link>
+      <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/azure/</guid>
       <description></description>
     </item>
     

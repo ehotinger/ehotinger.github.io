@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on Eric Hotinger</title>
+    <link>https://ehotinger.com/categories/aws/</link>
+    <description>Recent content in AWS on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 31 Aug 2019 00:05:35 -0700</lastBuildDate>
+    
+	<atom:link href="https://ehotinger.com/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GitHub Pages, Route 53, Cloud Front, and SSL</title>
+      <link>https://ehotinger.com/blog/github-pages-aws-ssl/</link>
+      <pubDate>Sat, 31 Aug 2019 00:05:35 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/github-pages-aws-ssl/</guid>
+      <description>This is how I set up my blog which uses GitHub pages to have a custom domain and SSL all on AWS for $12/year &amp;ndash; just the cost of the .com. The other services are all in the free-tier.
+Register your domain Use Route 53: https://aws.amazon.com/route53/
+ All you have to do here is go through the Register Domain workflow that Amazon has created. It&amp;rsquo;ll allow you to buy a domain name of your choice for about $12 (for a .</description>
+    </item>
+    
+  </channel>
+</rss>

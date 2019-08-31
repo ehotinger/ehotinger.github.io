@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 19 Jul 2019 18:23:31 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2019 00:05:35 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS</title>
+      <link>https://ehotinger.com/categories/aws/</link>
+      <pubDate>Sat, 31 Aug 2019 00:05:35 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/categories/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dev</title>
+      <link>https://ehotinger.com/categories/dev/</link>
+      <pubDate>Sat, 31 Aug 2019 00:05:35 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/categories/dev/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>acr</title>
@@ -21,11 +39,11 @@
     </item>
     
     <item>
-      <title>dev</title>
-      <link>https://ehotinger.com/categories/dev/</link>
+      <title>Azure</title>
+      <link>https://ehotinger.com/categories/azure/</link>
       <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
       
-      <guid>https://ehotinger.com/categories/dev/</guid>
+      <guid>https://ehotinger.com/categories/azure/</guid>
       <description></description>
     </item>
     
