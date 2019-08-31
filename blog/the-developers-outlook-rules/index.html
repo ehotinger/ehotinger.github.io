@@ -9,23 +9,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="author" content="Eric Hotinger">
-<meta name="description" content="Setting up a Windows environment for Golang (including Make)">
+<meta name="description" content="Every developer should have a To, CC, and Other folder in Outlook.
+You should have 3 main rules in order from most to least important:
+ Anything sent to me as a To goes to the To folder Anything sent to me as a CC goes to the CC folder Anything else gets sent to the Other folder.  You should never look at your original Inbox folder from this point on.">
 
-<meta property="og:title" content="Installing Go on Windows (including Make)" />
-<meta property="og:description" content="Setting up a Windows environment for Golang (including Make)" />
+<meta property="og:title" content="The Developer&#39;s Outlook Rules" />
+<meta property="og:description" content="Every developer should have a To, CC, and Other folder in Outlook.
+You should have 3 main rules in order from most to least important:
+ Anything sent to me as a To goes to the To folder Anything sent to me as a CC goes to the CC folder Anything else gets sent to the Other folder.  You should never look at your original Inbox folder from this point on." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ehotinger.com/blog/installing-go-windows/" />
-<meta property="article:published_time" content="2018-07-07T00:00:00-07:00" />
-<meta property="article:modified_time" content="2018-07-07T00:00:00-07:00" />
+<meta property="og:url" content="https://ehotinger.com/blog/the-developers-outlook-rules/" />
+<meta property="article:published_time" content="2019-08-31T14:30:43-07:00" />
+<meta property="article:modified_time" content="2019-08-31T14:30:43-07:00" />
 
 
 <title>
 
 
-     Installing Go on Windows (including Make) 
+     The Developer&#39;s Outlook Rules 
 
 </title>
-<link rel="canonical" href="https://ehotinger.com/blog/installing-go-windows/">
+<link rel="canonical" href="https://ehotinger.com/blog/the-developers-outlook-rules/">
 
 
 
@@ -43,9 +47,9 @@
 
 
     
-    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2019-08-31%2014%3a46%3a58.200231%20-0700%20PDT%20m%3d%2b0.071517602">
-    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2019-08-31%2014%3a46%3a58.200231%20-0700%20PDT%20m%3d%2b0.071517602">
-    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2019-08-31%2014%3a46%3a58.200231%20-0700%20PDT%20m%3d%2b0.071517602">
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2019-08-31%2014%3a46%3a58.186007%20-0700%20PDT%20m%3d%2b0.057293091">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2019-08-31%2014%3a46%3a58.186007%20-0700%20PDT%20m%3d%2b0.057293091">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2019-08-31%2014%3a46%3a58.186007%20-0700%20PDT%20m%3d%2b0.057293091">
     
 
 
@@ -140,7 +144,7 @@
                 <div class="title-container">
                     <div class="page-heading">
 
-    Installing Go on Windows (including Make)
+    The Developer&#39;s Outlook Rules
 
 </div>
 
@@ -148,37 +152,47 @@
                 </div>
                 <div class="meta">
                     
-                    <div class="date" title='Sat Jul 7 2018 00:00:00 PDT'>Jul 7, 2018</div>
+                    <div class="date" title='Sat Aug 31 2019 14:30:43 PDT'>Aug 31, 2019</div>
                     
                     
-		    <div class="reading-time"><div class="middot"></div>One minute read</div>
+		    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
                     
                 </div>
             </div>
             <div class="markdown">
-                <p>This is an extremely brief guide to setting up Go on Windows. There are plenty of guides out there for setting up Go, but none that also include how to get your <code>Makefile</code>s working cross-platform easily. The easiest way I&rsquo;ve found to do this is to change shells. This is especially true if you have Makefiles like I do, where <code>$(shell)</code> is everywhere. With the default shell you&rsquo;ll end up with <code>CREATE PROCESS(NULL, ...</code> errors everywhere because functionality is missing.</p>
+                <p>Every developer should have a <code>To</code>, <code>CC</code>, and <code>Other</code> folder in Outlook.</p>
+
+<p>You should have 3 main rules in order from most to least important:</p>
 
 <ol>
-<li><p>The <a href="https://golang.org/doc/install">default installer</a> on Windows works great for Go now. It&rsquo;ll set up <code>$GOPATH</code> to be <code>%USERPROFILE\go</code> and <code>$GOROOT</code> to be <code>C:\go</code>. It&rsquo;ll also modify your <code>$PATH</code> to be <code>C:\go\bin</code>.</p></li>
-
-<li><p>Download <a href="http://gnuwin32.sourceforge.net/packages/make.htm">Make for Windows</a>. Add the installation path to your <code>$PATH</code>.</p></li>
-
-<li><p>Download <a href="https://cygwin.com/install.html">Cygwin</a>.</p></li>
-
-<li><p>From Cygwin, <code>cd C:/users/blah/go/src/github.com/blah/somerepo</code>, and from there you should be able to run <code>make</code>.</p></li>
+<li>Anything sent to me as a <code>To</code> goes to the <code>To</code> folder</li>
+<li>Anything sent to me as a <code>CC</code> goes to the <code>CC</code> folder</li>
+<li>Anything else gets sent to the <code>Other</code> folder.</li>
 </ol>
 
+<p>You should never look at your original <code>Inbox</code> folder from this point on.</p>
+
+<p>The <code>To</code> folder is where all of your import emails will be.
+The <code>CC</code> folder will be where informational things end up, but it should not contain emails that require your immediate attention. Check them once a day or every other day.</p>
+
+<p>If your manager expects you to take immediate action on the item, tell him/her that it needs to be sent as a <code>To</code>. Anything in <code>CC</code> is just an FYI.</p>
+
+<p>When you register to specific email lists, just add the rules above <code>Other</code>. For example, you might have a list that looks like this:</p>
+
+<pre><code>To me -&gt; To
+CC me -&gt; CC
+CookingDevs -&gt; hobbies
+SomeProductDevs -&gt; someproduct
+Sent to me -&gt; Other
+</code></pre>
+
+<p>The <code>Other</code> folder ends up being a partial dumping ground and a catch-all guard against BCC which breaks your other email filters and against groups you may not even want to be in but you were added to anyways. I.e., if you&rsquo;re subscribed to <code>SomeProduct</code> and someone BCCs that group, it&rsquo;ll end up in <code>Other</code> here because it broke your rule above. Or some product team adds you to some random interest group you never wanted to be subscribed to.</p>
+
+<p>Every few days I&rsquo;ll prune my <code>Other</code> folder and make more rules on top of it, filtering out the things I&rsquo;m interested in to their respective folders, junking them, or putting them in <code>To</code> if I really care.</p>
+
+<p>That&rsquo;s it. Enjoy your email productivity boost.</p>
+
                 <br>
-                
-                  <div class="tags">
-                    <strong>Tags:</strong>
-                  
-                    <a href="https://ehotinger.com/tags/dev">dev</a>
-                  
-                    <a href="https://ehotinger.com/tags/go">Go</a>
-                  
-                  </div>
-                  <br />
                 
                 <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
             </div>

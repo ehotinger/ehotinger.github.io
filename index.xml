@@ -6,10 +6,21 @@
     <description>Recent content on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 31 Aug 2019 00:05:35 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2019 14:30:43 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Developer&#39;s Outlook Rules</title>
+      <link>https://ehotinger.com/blog/the-developers-outlook-rules/</link>
+      <pubDate>Sat, 31 Aug 2019 14:30:43 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/the-developers-outlook-rules/</guid>
+      <description>Every developer should have a To, CC, and Other folder in Outlook.
+You should have 3 main rules in order from most to least important:
+ Anything sent to me as a To goes to the To folder Anything sent to me as a CC goes to the CC folder Anything else gets sent to the Other folder.  You should never look at your original Inbox folder from this point on.</description>
+    </item>
     
     <item>
       <title>GitHub Pages, Route 53, Cloud Front, and SSL</title>

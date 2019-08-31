@@ -3,32 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ehotinger.com/blog/</loc>
+    <lastmod>2019-08-31T14:30:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.com/categories/</loc>
+    <lastmod>2019-08-31T14:30:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.com/categories/dev/</loc>
+    <lastmod>2019-08-31T14:30:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.com/</loc>
+    <lastmod>2019-08-31T14:30:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.com/blog/the-developers-outlook-rules/</loc>
+    <lastmod>2019-08-31T14:30:43-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ehotinger.com/categories/aws/</loc>
     <lastmod>2019-08-31T00:05:35-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://ehotinger.com/tags/aws/</loc>
-    <lastmod>2019-08-31T00:05:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2019-08-31T00:05:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2019-08-31T00:05:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.com/categories/dev/</loc>
-    <lastmod>2019-08-31T00:05:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.com/</loc>
     <lastmod>2019-08-31T00:05:35-07:00</lastmod>
   </url>
   
@@ -68,12 +73,12 @@
   </url>
   
   <url>
-    <loc>https://ehotinger.com/tags/docker/</loc>
+    <loc>https://ehotinger.com/categories/docker/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ehotinger.com/categories/docker/</loc>
+    <loc>https://ehotinger.com/tags/docker/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
   </url>
   
