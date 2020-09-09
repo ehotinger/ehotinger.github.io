@@ -4,21 +4,41 @@
   
   <url>
     <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2020-08-25T21:33:08-07:00</lastmod>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2020-08-25T21:33:08-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.com/categories/dev/</loc>
-    <lastmod>2020-08-25T21:33:08-07:00</lastmod>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://ehotinger.com/</loc>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.com/blog/give-up-on-ci/cd/</loc>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.com/tags/meta/</loc>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.com/categories/meta/</loc>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ehotinger.com/categories/dev/</loc>
     <lastmod>2020-08-25T21:33:08-07:00</lastmod>
   </url>
   
@@ -33,12 +53,12 @@
   </url>
   
   <url>
-    <loc>https://ehotinger.com/tags/aws/</loc>
+    <loc>https://ehotinger.com/categories/aws/</loc>
     <lastmod>2019-08-31T00:05:35-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ehotinger.com/categories/aws/</loc>
+    <loc>https://ehotinger.com/tags/aws/</loc>
     <lastmod>2019-08-31T00:05:35-07:00</lastmod>
   </url>
   
@@ -48,17 +68,12 @@
   </url>
   
   <url>
-    <loc>https://ehotinger.com/tags/</loc>
-    <lastmod>2019-08-31T00:05:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ehotinger.com/categories/acr/</loc>
+    <loc>https://ehotinger.com/tags/acr/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ehotinger.com/tags/acr/</loc>
+    <loc>https://ehotinger.com/categories/acr/</loc>
     <lastmod>2019-07-19T18:23:31-07:00</lastmod>
   </url>
   
