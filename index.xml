@@ -6,10 +6,21 @@
     <description>Recent content on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 08 Sep 2020 22:20:29 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 21:43:07 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Fearless Leader</title>
+      <link>https://ehotinger.com/blog/the-fearless-leader/</link>
+      <pubDate>Mon, 21 Sep 2020 21:43:07 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/the-fearless-leader/</guid>
+      <description>When you are in a living hell, the moment you start thinking of yourself instead of others, you have failed.
+When you think of others, you stop focusing on yourself and your own desires. You ignore the fiery hell you are in. It becomes tolerable; a mild nuisance.
+Take all of the negativity and use it to shield others. Pick up the torch and run as far and fast as you can.</description>
+    </item>
     
     <item>
       <title>Give up on CI/CD</title>
