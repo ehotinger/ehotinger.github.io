@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 21 Sep 2020 21:43:07 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jul 2021 23:58:35 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>dev</title>
+      <link>https://ehotinger.com/tags/dev/</link>
+      <pubDate>Tue, 06 Jul 2021 23:58:35 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>meta</title>
       <link>https://ehotinger.com/tags/meta/</link>
-      <pubDate>Mon, 21 Sep 2020 21:43:07 -0700</pubDate>
+      <pubDate>Tue, 06 Jul 2021 23:58:35 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/meta/</guid>
       <description></description>
@@ -53,15 +62,6 @@
       <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dev</title>
-      <link>https://ehotinger.com/tags/dev/</link>
-      <pubDate>Mon, 25 Feb 2019 00:00:00 -0700</pubDate>
-      
-      <guid>https://ehotinger.com/tags/dev/</guid>
       <description></description>
     </item>
     
