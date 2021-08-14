@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Eric Hotinger">
+<meta name="description" content="Setting up a Windows environment for Golang (including Make)">
+
+<meta property="og:title" content="Installing Go on Windows (including Make)" />
+<meta property="og:description" content="Setting up a Windows environment for Golang (including Make)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ehotinger.com/blog/installing-go-windows/" />
+<meta property="article:published_time" content="2018-07-07T00:00:00-07:00" />
+<meta property="article:modified_time" content="2018-07-07T00:00:00-07:00" />
+
+
+<title>
+
+
+     Installing Go on Windows (including Make) 
+
+</title>
+<link rel="canonical" href="https://ehotinger.com/blog/installing-go-windows/">
+
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2021-08-14%2012%3a52%3a57.4727039%20-0700%20PDT%20m%3d%2b0.110224601">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2021-08-14%2012%3a52%3a57.4727039%20-0700%20PDT%20m%3d%2b0.110224601">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2021-08-14%2012%3a52%3a57.4727039%20-0700%20PDT%20m%3d%2b0.110224601">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://ehotinger.com/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://ehotinger.com/"><img class="avatar" src="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=50" rcset="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=100 2x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=150 3x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=200 4x"></a>
+            
+            <a href="https://ehotinger.com/"><div class="name">Eric Hotinger</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/eric-hotinger-9b7b2b52" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Installing Go on Windows (including Make)
+
+</div>
+
+                    <div class="initials"><a href="https://ehotinger.com"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Sat Jul 7 2018 00:00:00 PDT'>Jul 7, 2018</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>One minute read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <p>This is an extremely brief guide to setting up Go on Windows. There are plenty of guides out there for setting up Go, but none that also include how to get your <code>Makefile</code>s working cross-platform easily. The easiest way I&rsquo;ve found to do this is to change shells. This is especially true if you have Makefiles like I do, where <code>$(shell)</code> is everywhere. With the default shell you&rsquo;ll end up with <code>CREATE PROCESS(NULL, ...</code> errors everywhere because functionality is missing.</p>
+<ol>
+<li>
+<p>The <a href="https://golang.org/doc/install">default installer</a> on Windows works great for Go now. It&rsquo;ll set up <code>$GOPATH</code> to be <code>%USERPROFILE\go</code> and <code>$GOROOT</code> to be <code>C:\go</code>. It&rsquo;ll also modify your <code>$PATH</code> to be <code>C:\go\bin</code>.</p>
+</li>
+<li>
+<p>Download <a href="http://gnuwin32.sourceforge.net/packages/make.htm">Make for Windows</a>. Add the installation path to your <code>$PATH</code>.</p>
+</li>
+<li>
+<p>Download <a href="https://cygwin.com/install.html">Cygwin</a>.</p>
+</li>
+<li>
+<p>From Cygwin, <code>cd C:/users/blah/go/src/github.com/blah/somerepo</code>, and from there you should be able to run <code>make</code>.</p>
+</li>
+</ol>
+
+                <br>
+                
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  
+                    <a href="https://ehotinger.com/tags/dev">dev</a>
+                  
+                    <a href="https://ehotinger.com/tags/go">Go</a>
+                  
+                  </div>
+                  <br />
+                
+                <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146787275-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

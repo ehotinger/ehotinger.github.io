@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Eric Hotinger">
+<meta name="description" content="Setting up a Windows environment for Golang (including Make)">
+
+<meta property="og:title" content="Bypassing the character limit displayed when debugging with Delve and VSCode" />
+<meta property="og:description" content="Setting up a Windows environment for Golang (including Make)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ehotinger.com/blog/vscode-delve-debugging/" />
+<meta property="article:published_time" content="2019-02-25T00:00:00-07:00" />
+<meta property="article:modified_time" content="2019-02-25T00:00:00-07:00" />
+
+
+<title>
+
+
+     Bypassing the character limit displayed when debugging with Delve and VSCode 
+
+</title>
+<link rel="canonical" href="https://ehotinger.com/blog/vscode-delve-debugging/">
+
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2021-08-14%2012%3a52%3a57.4723639%20-0700%20PDT%20m%3d%2b0.109884601">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2021-08-14%2012%3a52%3a57.4723639%20-0700%20PDT%20m%3d%2b0.109884601">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2021-08-14%2012%3a52%3a57.4723639%20-0700%20PDT%20m%3d%2b0.109884601">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://ehotinger.com/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://ehotinger.com/"><img class="avatar" src="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=50" rcset="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=100 2x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=150 3x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=200 4x"></a>
+            
+            <a href="https://ehotinger.com/"><div class="name">Eric Hotinger</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/eric-hotinger-9b7b2b52" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Bypassing the character limit displayed when debugging with Delve and VSCode
+
+</div>
+
+                    <div class="initials"><a href="https://ehotinger.com"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Mon Feb 25 2019 00:00:00 -0700'>Feb 25, 2019</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>One minute read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <p>Debugging Go applications with Visual Studio Code and Delve is extremely powerful. However, there are some default settings which you may want to tweak to improve this experience and they&rsquo;re not straightforward to find out.</p>
+<p>Sometimes when you&rsquo;re debugging if a variable&rsquo;s value is really long, i.e. more than 64 characters, you&rsquo;ll see the value&rsquo;s content end as &ldquo;&hellip;+7 more&rdquo; or however many characters were truncated. To get around this, you need to customize your workspace or user settings in Visual Studio Code.</p>
+<p>Open your user settings or workspace settings (CTRL + SHIFT + P) =&gt; type settings and choose one from the dropdown list. Then, check out this JSON for various settings you can configure. The <code>maxStringLen</code> setting is the one you care about the most. Note that depending on these settings you can cause serious perf gain/loss, so tinker with them.</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;go.delveConfig&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;useApiV1&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&#34;dlvLoadConfig&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;followPointers&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;maxVariableRecurse&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="nt">&#34;maxStringLen&#34;</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>
+            <span class="nt">&#34;maxArrayValues&#34;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span>
+            <span class="nt">&#34;maxStructFields&#34;</span><span class="p">:</span> <span class="mi">-1</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p><a href="https://github.com/Microsoft/vscode-go/blob/master/src/goDebugConfiguration.ts">Here is the source code</a> for the related configuration loading.</p>
+<p>And there&rsquo;s some <a href="https://github.com/Microsoft/vscode-go/issues/1555#issuecomment-393366905">useful discussion here</a> before the feature was added.</p>
+
+                <br>
+                
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  
+                    <a href="https://ehotinger.com/tags/dev">dev</a>
+                  
+                    <a href="https://ehotinger.com/tags/go">Go</a>
+                  
+                  </div>
+                  <br />
+                
+                <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146787275-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Eric Hotinger">
+<meta name="description" content="In this blog you&rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&rsquo;s microscanner. By the end, you&rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.
+This is generic, so you can bring whatever image scanner you prefer.">
+
+<meta property="og:title" content="ACR Tasks Image Vulnerability Scanning" />
+<meta property="og:description" content="In this blog you&rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&rsquo;s microscanner. By the end, you&rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.
+This is generic, so you can bring whatever image scanner you prefer." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ehotinger.com/blog/acr-tasks-image-scanning/" />
+<meta property="article:published_time" content="2019-07-19T18:23:31-07:00" />
+<meta property="article:modified_time" content="2019-07-19T18:23:31-07:00" />
+
+
+<title>
+
+
+     ACR Tasks Image Vulnerability Scanning 
+
+</title>
+<link rel="canonical" href="https://ehotinger.com/blog/acr-tasks-image-scanning/">
+
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2021-08-14%2012%3a52%3a57.4825005%20-0700%20PDT%20m%3d%2b0.120021301">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2021-08-14%2012%3a52%3a57.4825005%20-0700%20PDT%20m%3d%2b0.120021301">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2021-08-14%2012%3a52%3a57.4825005%20-0700%20PDT%20m%3d%2b0.120021301">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://ehotinger.com/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://ehotinger.com/"><img class="avatar" src="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=50" rcset="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=100 2x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=150 3x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=200 4x"></a>
+            
+            <a href="https://ehotinger.com/"><div class="name">Eric Hotinger</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/eric-hotinger-9b7b2b52" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    ACR Tasks Image Vulnerability Scanning
+
+</div>
+
+                    <div class="initials"><a href="https://ehotinger.com"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Fri Jul 19 2019 18:23:31 PDT'>Jul 19, 2019</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>4 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <p>In this blog you&rsquo;ll learn how to set up vulnerability scanning for all of your container images using <a href="https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview">Azure Container Registry Tasks</a> and <a href="https://github.com/aquasecurity/microscanner">Aqua&rsquo;s microscanner</a>. By the end, you&rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.</p>
+<p>This is generic, so you can bring whatever image scanner you prefer. I thought this project was pretty dope and there are some great folks over at Aqua, so I wanted to give it a shot.</p>
+<h2 id="create-the-acr-task">Create the ACR Task</h2>
+<p>Alright, <a href="https://github.com/ehotinger/scratch/blob/master/aqua-scan.yaml">go here to see the code</a> - this is ACR Task code you want to play with. Let&rsquo;s dissect it and then walk through the full set up:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">version</span><span class="p">:</span><span class="w"> </span>v1<span class="m">.0.0</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">secrets</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="k">id</span><span class="p">:</span><span class="w"> </span>key<span class="w">
+</span><span class="w">    </span><span class="k">keyvault</span><span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//ehotingerwuskv.vault.azure.net/secrets/aquakey<span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="k">steps</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="k">build</span><span class="p">:</span><span class="w"> </span>.<span class="w"> </span>-t<span class="w"> </span>{{.Run.Registry}}/image<span class="p">:</span>{{.Run.ID}}<span class="w">
+</span><span class="w">
+</span><span class="w">  </span><span class="c"># Create a new Dockerfile with the scanner added to the previous image.</span><span class="w">
+</span><span class="w">  </span>- <span class="k">cmd</span><span class="p">:</span><span class="w"> </span><span class="sd">|
+</span><span class="sd">      bash -c &#39;echo &#34;FROM {{.Run.Registry}}/image:{{.Run.ID}}</span><span class="w">
+</span><span class="w">      </span>ADD<span class="w"> </span>https<span class="p">:</span>//get.aquasec.com/microscanner<span class="w"> </span>/<span class="w">
+</span><span class="w">      </span>RUN<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>/microscanner<span class="w">
+</span><span class="w">      </span>RUN<span class="w"> </span>/microscanner<span class="w"> </span>{{.Secrets.key}}<span class="s2">&#34; &gt; scan.Dockerfile&#39;
+</span><span class="s2">
+</span><span class="s2">  # Scan the image using the Dockerfile I created.
+</span><span class="s2">  - build: . -f scan.Dockerfile -t scanned
+</span><span class="s2">
+</span><span class="s2">  # Only push the image if the scan was successful.
+</span><span class="s2">  - push: [&#34;</span>{{.Run.Registry}}/image<span class="p">:</span>{{.Run.ID}}&#34;<span class="p">]</span><span class="w">
+</span></code></pre></div><p>We do an initial build of our image, in my case it&rsquo;s a boring hello world Go application. Next, we create a brand new Dockerfile on the fly and add in the Aqua microscanner. The Aqua microscanner requires a key to use it, so we use <code>{{.Secrets.key}}</code> to reference our key from Azure Key Vault.</p>
+<p>Lastly, we do a build based on that dynamically generated Dockerfile - this runs the Aqua scanner. Note: be sure to read the manual on <a href="https://github.com/aquasecurity/microscanner">their GitHub</a> about the scanner - you need to make sure you have the right certs and access to a shell &ndash; so you&rsquo;ll have to make sure your base image is sufficient or craft it slightly differently than mine.</p>
+<p>If the build fails, our Task ends - so our image won&rsquo;t get pushed in the final step. This blocks the distribution of our bad image entirely so nobody gets bad images. Hooray!</p>
+<h2 id="registering-aquas-microscanner">Registering Aqua&rsquo;s microscanner</h2>
+<p>You can run Aqua&rsquo;s microscanner locally and do registration from there:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">docker run --rm -it aquasec/microscanner --register &lt;email address&gt;
+</code></pre></div><p>Check your email - you now have a key. We&rsquo;re going to store it in Azure Key Vault.</p>
+<h2 id="set-up-azure-key-vault">Set up Azure Key Vault</h2>
+<p>First, set up the key vault:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">az keyvault create --name ehotingerwuskv --resource-group ehotingerwusrg --location westus
+</code></pre></div><p>Then create a secret in the key vault based off your previous email:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">
+az keyvault secret <span class="nb">set</span> <span class="se">\
+</span><span class="se"></span>  --name aquakey <span class="se">\
+</span><span class="se"></span>  --value <span class="s2">&#34;&lt;your email token&gt;&#34;</span> <span class="se">\
+</span><span class="se"></span>  --vault-name ehotingerwuskv
+</code></pre></div><h2 id="set-up-identities-for-azure-container-registry">Set up identities for Azure Container Registry</h2>
+<p>You can read <a href="https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tasks-authentication-managed-identity">this post</a> for more info about identities and how to use them with Azure Container Registry, but these are the simple steps for setting up a user-assigned identity.</p>
+<p>Create the identity:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">az identity create --resource-group ehotingerwusrg --name aquaidentity
+</code></pre></div><p>Get the resourceID and principalID of the identity for later:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">resourceID</span><span class="o">=</span><span class="k">$(</span>az identity show --resource-group ehotingerwusrg --name aquaidentity --query id --output tsv<span class="k">)</span>
+
+<span class="nv">principalID</span><span class="o">=</span><span class="k">$(</span>az identity show --resource-group ehotingerwusrg --name aquaidentity --query principalId --output tsv<span class="k">)</span>
+</code></pre></div><p>Give the identity access to the Azure Key Vault:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">az keyvault set-policy --name ehotingerwuskv --resource-group ehotingerwusrg --object-id <span class="nv">$principalID</span> --secret-permissions get
+</code></pre></div><p>Give the identity push access to the Azure Container Registry:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">az role assignment create --role acrpush --resource-group ehotingerwusrg --assignee <span class="nv">$principalID</span>
+</code></pre></div><h2 id="create-a-task-using-the-user-assigned-identity">Create a Task using the user-assigned identity</h2>
+<p>Now all you have to do is create a Task based on the above yaml using the identity you set up.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">
+az acr task create <span class="se">\
+</span><span class="se"></span>  --registry ehotingerwus <span class="se">\
+</span><span class="se"></span>  --name aqua-scan <span class="se">\
+</span><span class="se"></span>  --context https://github.com/ehotinger/scratch.git <span class="se">\
+</span><span class="se"></span>  --file aqua-scan.yaml <span class="se">\
+</span><span class="se"></span>  --commit-trigger-enabled <span class="nb">false</span> <span class="se">\
+</span><span class="se"></span>  --pull-request-trigger-enabled <span class="nb">false</span> <span class="se">\
+</span><span class="se"></span>  --assign-identity <span class="nv">$resourceID</span>
+</code></pre></div><p>And then you can trigger a run of it manually to test it out:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">az acr task run --name aqua-scan --registry ehotingerwus
+</code></pre></div><p>My output is something like this, no issues at all so my image gets successfully published to my Azure Container Registry!</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">{</span>
+  <span class="s2">&#34;scan_started&#34;</span>: <span class="o">{</span>
+    <span class="s2">&#34;seconds&#34;</span>: 1563585594,
+    <span class="s2">&#34;nanos&#34;</span>: <span class="m">250683665</span>
+  <span class="o">}</span>,
+  <span class="s2">&#34;scan_duration&#34;</span>: 1,
+  <span class="s2">&#34;digest&#34;</span>: <span class="s2">&#34;&lt;blah&gt;&#34;</span>,
+  <span class="s2">&#34;os&#34;</span>: <span class="s2">&#34;alpine&#34;</span>,
+  <span class="s2">&#34;version&#34;</span>: <span class="s2">&#34;3.10.1&#34;</span>,
+  <span class="s2">&#34;image_assurance_results&#34;</span>: <span class="o">{</span>
+    <span class="s2">&#34;checks_performed&#34;</span>: <span class="o">[</span>
+      <span class="o">{</span>
+        <span class="s2">&#34;policy_id&#34;</span>: 1,
+        <span class="s2">&#34;policy_name&#34;</span>: <span class="s2">&#34;Default&#34;</span>,
+        <span class="s2">&#34;control&#34;</span>: <span class="s2">&#34;max_severity&#34;</span>,
+        <span class="s2">&#34;maximum_severity_allowed&#34;</span>: <span class="s2">&#34;high&#34;</span>
+      <span class="o">}</span>
+    <span class="o">]</span>
+  <span class="o">}</span>,
+  <span class="s2">&#34;vulnerability_summary&#34;</span>: <span class="o">{</span>
+    <span class="s2">&#34;total&#34;</span>: 0,
+    <span class="s2">&#34;high&#34;</span>: 0,
+    <span class="s2">&#34;medium&#34;</span>: 0,
+    <span class="s2">&#34;low&#34;</span>: 0,
+    <span class="s2">&#34;negligible&#34;</span>: 0,
+    <span class="s2">&#34;sensitive&#34;</span>: 0,
+    <span class="s2">&#34;malware&#34;</span>: <span class="m">0</span>
+  <span class="o">}</span>,
+  <span class="s2">&#34;scan_options&#34;</span>: <span class="o">{}</span>,
+  <span class="s2">&#34;initiating_user&#34;</span>: <span class="s2">&#34;token&#34;</span>,
+  <span class="s2">&#34;data_date&#34;</span>: 1563493655,
+  <span class="s2">&#34;changed_result&#34;</span>: false,
+  <span class="s2">&#34;function_metadata&#34;</span>: <span class="o">{}</span>
+<span class="o">}</span>
+Removing intermediate container b4b7a1a6738a
+ ---&gt; b8b25a165090
+Successfully built b8b25a165090
+Successfully tagged scanned:latest
+2019/07/20 01:19:57 Successfully executed container: acb_step_2
+2019/07/20 01:19:57 Executing step ID: acb_step_3. Timeout<span class="o">(</span>sec<span class="o">)</span>: 600, Working directory: <span class="s1">&#39;&#39;</span>, Network: <span class="s1">&#39;acb_default_network&#39;</span>
+2019/07/20 01:19:57 Pushing image: ehotingerwus.azurecr.io/image:cf16, attempt <span class="m">1</span>
+The push refers to repository <span class="o">[</span>ehotingerwus.azurecr.io/image<span class="o">]</span>
+...
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>Hope this gives you some more ideas for crazy experiments. Be sure to check out all the linked GitHub repositories and make issues/feature requests.</p>
+<p>For automatic security patching, be sure to check out <a href="https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-base-image-update">ACR Tasks Base Image Updates</a> as well.</p>
+<p>Lastly, if you haven&rsquo;t seen my <a href="https://ehotinger.github.io/blog/acr-tasks-daily-autopurge/">first post</a> about ACR tasks and autopurge, be sure to check that one out too.</p>
+
+                <br>
+                
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  
+                    <a href="https://ehotinger.com/tags/acr">acr</a>
+                  
+                    <a href="https://ehotinger.com/tags/docker">docker</a>
+                  
+                    <a href="https://ehotinger.com/tags/azure">Azure</a>
+                  
+                  </div>
+                  <br />
+                
+                <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146787275-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
