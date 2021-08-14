@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Eric Hotinger</title>
@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 06 Jul 2021 23:58:35 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 14 Aug 2021 12:14:50 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>dev</title>
       <link>https://ehotinger.com/tags/dev/</link>
-      <pubDate>Tue, 06 Jul 2021 23:58:35 -0700</pubDate>
+      <pubDate>Sat, 14 Aug 2021 12:14:50 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://ehotinger.com/tags/windows/</link>
+      <pubDate>Sat, 14 Aug 2021 12:14:50 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/windows/</guid>
       <description></description>
     </item>
     
