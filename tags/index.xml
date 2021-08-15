@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 14 Aug 2021 12:14:50 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 14 Aug 2021 18:12:03 -0700</lastBuildDate>
     
 	<atom:link href="https://ehotinger.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>dev</title>
       <link>https://ehotinger.com/tags/dev/</link>
-      <pubDate>Sat, 14 Aug 2021 12:14:50 -0700</pubDate>
+      <pubDate>Sat, 14 Aug 2021 18:12:03 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meta</title>
+      <link>https://ehotinger.com/tags/meta/</link>
+      <pubDate>Sat, 14 Aug 2021 18:12:03 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/meta/</guid>
       <description></description>
     </item>
     
@@ -26,15 +35,6 @@
       <pubDate>Sat, 14 Aug 2021 12:14:50 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>meta</title>
-      <link>https://ehotinger.com/tags/meta/</link>
-      <pubDate>Tue, 06 Jul 2021 23:58:35 -0700</pubDate>
-      
-      <guid>https://ehotinger.com/tags/meta/</guid>
       <description></description>
     </item>
     
