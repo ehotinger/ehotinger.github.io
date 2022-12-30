@@ -2,32 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ehotinger.com/blog/2022-books/</loc>
+    <lastmod>2022-12-30T10:00:34-08:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2021-08-14T18:12:03-07:00</lastmod>
+    <lastmod>2022-12-30T10:00:34-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/books/</loc>
+    <lastmod>2022-12-30T10:00:34-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/books/</loc>
+    <lastmod>2022-12-30T10:00:34-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/</loc>
+    <lastmod>2022-12-30T10:00:34-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/</loc>
+    <lastmod>2022-12-30T10:00:34-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2022-12-30T10:00:34-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/books-for-the-soul/</loc>
     <lastmod>2021-08-14T18:12:03-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2021-08-14T18:12:03-07:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/tags/dev/</loc>
-    <lastmod>2021-08-14T18:12:03-07:00</lastmod>
+    <lastmod>2021-08-14T12:14:50-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/dev/</loc>
-    <lastmod>2021-08-14T18:12:03-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/</loc>
-    <lastmod>2021-08-14T18:12:03-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/meta/</loc>
-    <lastmod>2021-08-14T18:12:03-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/meta/</loc>
-    <lastmod>2021-08-14T18:12:03-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/</loc>
-    <lastmod>2021-08-14T18:12:03-07:00</lastmod>
+    <lastmod>2021-08-14T12:14:50-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/windows/</loc>
     <lastmod>2021-08-14T12:14:50-07:00</lastmod>
@@ -39,6 +42,12 @@
     <lastmod>2021-08-14T12:14:50-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/invisible/</loc>
+    <lastmod>2021-07-06T23:58:35-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/meta/</loc>
+    <lastmod>2021-07-06T23:58:35-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/meta/</loc>
     <lastmod>2021-07-06T23:58:35-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/the-fearless-leader/</loc>

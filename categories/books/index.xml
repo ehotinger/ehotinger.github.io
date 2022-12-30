@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>books on Eric Hotinger</title>
+    <link>https://ehotinger.com/categories/books/</link>
+    <description>Recent content in books on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 30 Dec 2022 10:00:34 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 Books</title>
+      <link>https://ehotinger.com/blog/2022-books/</link>
+      <pubDate>Fri, 30 Dec 2022 10:00:34 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/2022-books/</guid>
+      <description>As 2022 comes to a close, I wanted to reflect on some of the books I&amp;rsquo;ve had the opportunity to read this year. While I&amp;rsquo;ve enjoyed all of the books I&amp;rsquo;ve read, there are a few that stand out as particularly noteworthy.
+The Expectation Effect: How Your Mindset Can Change Your World was, hands down, the best book I read this year. This book delves into the power of our mindset and how it can shape our reality.</description>
+    </item>
+    
+    <item>
+      <title>Books for the soul</title>
+      <link>https://ehotinger.com/blog/books-for-the-soul/</link>
+      <pubDate>Sat, 14 Aug 2021 18:12:03 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/books-for-the-soul/</guid>
+      <description>I frequently get asked what books helped me grow the most. What would you recommend that I read to get superpowers? How did you learn about that one algorithm or data structure? How did you learn so much about something for work?
+The truth is, the books and experiences that I feel like helped me the most, have nothing to do with my job. I&amp;rsquo;ll recommend those below, in a stack-ranked list and I&amp;rsquo;ll also recommend the books I think helped me learn to be technical.</description>
+    </item>
+    
+  </channel>
+</rss>
