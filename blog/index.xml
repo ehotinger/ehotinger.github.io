@@ -6,11 +6,7 @@
     <description>Recent content in Blog on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 14 Aug 2021 18:12:03 -0700</lastBuildDate>
-    
-	<atom:link href="https://ehotinger.com/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 14 Aug 2021 18:12:03 -0700</lastBuildDate><atom:link href="https://ehotinger.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Books for the soul</title>
       <link>https://ehotinger.com/blog/books-for-the-soul/</link>
@@ -30,7 +26,7 @@ The truth is, the books and experiences that I feel like helped me the most, hav
       <description>A few common problems that I hit when installing WSL. This is my personal mini guide to get it up and running in a few minutes.
 First, you can visit https://docs.microsoft.com/en-us/windows/wsl/install-win10#simplified-installation-for-windows-insiders to get a beta build and run the commands to install WSL.
 WSL can fail on a new machine even after this because it relies on virtualization:
- Enable Hyper-V (Turn Windows features on or off -&amp;gt; Hyper-V) Enable virtualization in the BIOS (go to your CPU Config and you&amp;rsquo;ll find it)  Bonus oddities:</description>
+Enable Hyper-V (Turn Windows features on or off -&amp;gt; Hyper-V) Enable virtualization in the BIOS (go to your CPU Config and you&amp;rsquo;ll find it) Bonus oddities:</description>
     </item>
     
     <item>
@@ -81,7 +77,7 @@ I&amp;rsquo;ve written software whose sole purpose was to make CI/CD better.</de
       <guid>https://ehotinger.com/blog/the-developers-outlook-rules/</guid>
       <description>Every developer should have a To, CC, and Other folder in Outlook.
 You should have 3 main rules in order from most to least important:
- Anything sent to me as a To goes to the To folder Anything sent to me as a CC goes to the CC folder Anything else gets sent to the Other folder.  You should never look at your original Inbox folder from this point on.</description>
+Anything sent to me as a To goes to the To folder Anything sent to me as a CC goes to the CC folder Anything else gets sent to the Other folder. You should never look at your original Inbox folder from this point on.</description>
     </item>
     
     <item>
@@ -92,7 +88,7 @@ You should have 3 main rules in order from most to least important:
       <guid>https://ehotinger.com/blog/github-pages-aws-ssl/</guid>
       <description>This is how I set up my blog which uses GitHub pages to have a custom domain and SSL all on AWS for $12/year &amp;ndash; just the cost of the .com. The other services are all in the free-tier.
 Register your domain Use Route 53: https://aws.amazon.com/route53/
- All you have to do here is go through the Register Domain workflow that Amazon has created. It&amp;rsquo;ll allow you to buy a domain name of your choice for about $12 (for a .</description>
+All you have to do here is go through the Register Domain workflow that Amazon has created. It&amp;rsquo;ll allow you to buy a domain name of your choice for about $12 (for a .</description>
     </item>
     
     <item>
@@ -141,7 +137,7 @@ Sometimes when you&amp;rsquo;re debugging if a variable&amp;rsquo;s value is rea
       
       <guid>https://ehotinger.com/blog/installing-hugo/</guid>
       <description>This is a quick-start guide to setting up Hugo with GitHub pages, since it took too much effort to find the full instructions anywhere else. It should hopefully take you ~15 minutes to complete the entire thing.
-  Make two GitHub repositories, i.e., https://github.com/ehotinger/blog and https://github.com/ehotinger/ehotinger.github.io - the first repository is for the unrendered Hugo content, and the second is for the rendered content. Note: you could just have one repository as your GitHub page, but this approach allows you to easily switch off GitHub pages if you want to.</description>
+Make two GitHub repositories, i.e., https://github.com/ehotinger/blog and https://github.com/ehotinger/ehotinger.github.io - the first repository is for the unrendered Hugo content, and the second is for the rendered content. Note: you could just have one repository as your GitHub page, but this approach allows you to easily switch off GitHub pages if you want to.</description>
     </item>
     
   </channel>

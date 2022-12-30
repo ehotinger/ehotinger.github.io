@@ -16,9 +16,10 @@ In particular, I wanted to use one of the most common feature requests of the Az
 <meta property="og:description" content="Azure Container Registry Tasks came out with a lot of new features in the last year. Many people don&rsquo;t realize the insane potential of this service, so I wanted to share a few things that you probably didn&rsquo;t know and some of the things the team has been working on.
 In particular, I wanted to use one of the most common feature requests of the Azure Container Registry - automatic garbage collection of old or unused tags/manifests/images - as an example of how you can make the world your oyster using ACR Tasks." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ehotinger.com/blog/acr-tasks-daily-autopurge/" />
+<meta property="og:url" content="https://ehotinger.com/blog/acr-tasks-daily-autopurge/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2019-07-16T14:15:54-07:00" />
 <meta property="article:modified_time" content="2019-07-16T14:15:54-07:00" />
+
 
 
 <title>
@@ -27,7 +28,6 @@ In particular, I wanted to use one of the most common feature requests of the Az
      Azure Container Registry Tasks Daily Autopurge 
 
 </title>
-<script data-ad-client="ca-pub-3511724161548652" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <link rel="canonical" href="https://ehotinger.com/blog/acr-tasks-daily-autopurge/">
 
 
@@ -36,7 +36,9 @@ In particular, I wanted to use one of the most common feature requests of the Az
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
 
 
 
@@ -46,9 +48,9 @@ In particular, I wanted to use one of the most common feature requests of the Az
 
 
     
-    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2021-10-24%2013%3a50%3a21.9878271%20-0700%20PDT%20m%3d%2b0.104936901">
-    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2021-10-24%2013%3a50%3a21.9878271%20-0700%20PDT%20m%3d%2b0.104936901">
-    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2021-10-24%2013%3a50%3a21.9878271%20-0700%20PDT%20m%3d%2b0.104936901">
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2022-12-30%2009%3a14%3a21.183297%20-0800%20PST%20m%3d%2b0.047193179">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2022-12-30%2009%3a14%3a21.183297%20-0800%20PST%20m%3d%2b0.047193179">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2022-12-30%2009%3a14%3a21.183297%20-0800%20PST%20m%3d%2b0.047193179">
     
 
 
@@ -59,6 +61,8 @@ In particular, I wanted to use one of the most common feature requests of the Az
     href="https://ehotinger.com/img/favicon.ico"
 
 >
+
+
 
 
 
@@ -83,6 +87,7 @@ In particular, I wanted to use one of the most common feature requests of the Az
             <nav>
                 <ul>
                     
+                        
                         <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
                     
                 </ul>
@@ -104,7 +109,7 @@ In particular, I wanted to use one of the most common feature requests of the Az
             <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
         
 
-	
+        
 
         
 
@@ -128,6 +133,8 @@ In particular, I wanted to use one of the most common feature requests of the Az
             <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
         
 
+        
+        
         
 
         
@@ -154,7 +161,7 @@ In particular, I wanted to use one of the most common feature requests of the Az
                     <div class="date" title='Tue Jul 16 2019 14:15:54 PDT'>Jul 16, 2019</div>
                     
                     
-		    <div class="reading-time"><div class="middot"></div>4 minutes read</div>
+		    <div class="reading-time"><div class="middot"></div>5 minutes read</div>
                     
                 </div>
             </div>
@@ -165,38 +172,38 @@ In particular, I wanted to use one of the most common feature requests of the Az
 <p>ACR Tasks can be used to build and run containers to create complex workflows. Tasks are broken up by <a href="https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tasks-multi-step">multiple steps</a> and a build is just a single-step Task (if pushing to the registry is enabled, it becomes a two-step Task). The runtime is able to share context between containers, run them sequentially, in parallel, as background jobs, and much more. This means that you can use ACR Tasks as a way to run arbitrary containers and therefore run <em>any arbitrary code as workflows expressed as a directed acyclic graph</em>.</p>
 <p>I have some examples of yaml files that do different things in a <a href="https://github.com/ehotinger/scratch">scratch repository</a> on GitHub.</p>
 <p>For example, this one builds a container image, starts an nginx web server, pings it, and if the ping succeeds, pushes the image to a registry. You could imagine running unit tests, integration tests, etc. and taking actions if they fail or succeed.</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">steps</span><span class="p">:</span><span class="w">
-</span><span class="w"></span>- <span class="k">build</span><span class="p">:</span><span class="w"> </span>-t<span class="w"> </span>{{.Run.Registry}}/scratchy<span class="w"> </span>.<span class="w">
-</span><span class="w"></span>- <span class="k">id</span><span class="p">:</span><span class="w"> </span>app<span class="w">
-</span><span class="w">  </span><span class="k">cmd</span><span class="p">:</span><span class="w"> </span>nginx<span class="p">:</span>alpine<span class="w">
-</span><span class="w">  </span><span class="k">ports</span><span class="p">:</span><span class="w"> 
-</span><span class="w">    </span>- <span class="m">80</span><span class="p">:</span><span class="m">80</span><span class="w">
-</span><span class="w">  </span><span class="k">detach</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w"></span>- <span class="k">cmd</span><span class="p">:</span><span class="w"> </span>byrnedo/alpine-curl<span class="w"> </span>--url<span class="w"> </span>http<span class="p">:</span>//app<span class="p">:</span><span class="m">80</span><span class="w">
-</span><span class="w"></span>- <span class="k">push</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>{{.Run.Registry}}/scratchy<span class="p">]</span><span class="w">
-</span></code></pre></div><p>As another example, here&rsquo;s a simpler Task that allows you to run bash before you build a container and another once it&rsquo;s finished:</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">steps</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- <span class="k">cmd</span><span class="p">:</span><span class="w"> </span>bash<span class="w"> </span>./pre.sh<span class="w">
-</span><span class="w">  </span>- <span class="k">build</span><span class="p">:</span><span class="w"> </span>-f<span class="w"> </span>Dockerfile<span class="w"> </span>.<span class="w">
-</span><span class="w">  </span>- <span class="k">cmd</span><span class="p">:</span><span class="w"> </span>bash<span class="w"> </span>./post.sh<span class="w">
-</span></code></pre></div><h2 id="context">Context</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">build</span><span class="p">:</span><span class="w"> </span>-<span class="l">t {{.Run.Registry}}/scratchy .</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">app</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l">nginx:alpine</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="m">80</span><span class="p">:</span><span class="m">80</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">detach</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l">byrnedo/alpine-curl --url http://app:80</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">push</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>{{<span class="l">.Run.Registry}}/scratchy]</span><span class="w">
+</span></span></span></code></pre></div><p>As another example, here&rsquo;s a simpler Task that allows you to run bash before you build a container and another once it&rsquo;s finished:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l">bash ./pre.sh</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">build</span><span class="p">:</span><span class="w"> </span>-<span class="l">f Dockerfile .</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">cmd</span><span class="p">:</span><span class="w"> </span><span class="l">bash ./post.sh</span><span class="w">
+</span></span></span></code></pre></div><h2 id="context">Context</h2>
 <p>Docker and ACR use the concept of &ldquo;context&rdquo; to describe where the files you use in a build or run (in the case of ACR) come from. For example, they could be a tarball over HTTP, a git server, or local files. In the case of ACR, we only deal with tar and git since you can&rsquo;t have local files on the cloud. This means when you run something like <a href="https://docs.microsoft.com/en-us/cli/azure/acr?view=azure-cli-latest#az-acr-build">az acr build .</a> or <a href="https://docs.microsoft.com/en-us/cli/azure/acr?view=azure-cli-latest#az-acr-run">az acr run .</a> in the Azure command line, the command line packages all of your local files into a tar, uploads it to Azure Blob, and sends that as the context to the registry to use for a Task.</p>
 <p>We also implemented a new way to provide context: encoded files. This means that you can run steps without having any files at all.</p>
 <p>You specify the &ldquo;null&rdquo; or non-existent context in the Azure CLI by using <code>/dev/null</code> as the context.</p>
 <p>For example, you can run the following command to run the <code>hello-world</code> Docker image without uploading any context to the registry:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">az acr run /dev/null --cmd <span class="s2">&#34;hello-world&#34;</span> -r &lt;registry&gt;
-</code></pre></div><h2 id="autopurge">Autopurge</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">az acr run /dev/null --cmd <span class="s2">&#34;hello-world&#34;</span> -r &lt;registry&gt;
+</span></span></code></pre></div><h2 id="autopurge">Autopurge</h2>
 <p>The concept of autopurge is pretty simple: people regularly push &ldquo;stuff&rdquo; to the registry and eventually it&rsquo;s unused. Nobody wants to spend money on unused data and it takes away from the registry&rsquo;s capacity. <a href="https://github.com/ggonzalere">Gildardo</a> has been working on a CLI (you can find it <a href="https://github.com/Azure/acr-cli">here</a> on GitHub) which allows you to purge artifacts from your registry. It&rsquo;s still a WIP, so feel free to create feature requests and/or create bugs!</p>
 <p>As an example, you can use this command to delete manifests which don&rsquo;t have any tags referencing it (&ldquo;dangling manifests&rdquo;):</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">acr purge --registry &lt;Registry Name&gt; --repository &lt;Repository Name&gt; --dangling
-</code></pre></div><h2 id="nightly-tasks">Nightly Tasks</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">acr purge --registry &lt;Registry Name&gt; --repository &lt;Repository Name&gt; --dangling
+</span></span></code></pre></div><h2 id="nightly-tasks">Nightly Tasks</h2>
 <p><a href="https://github.com/jaysterp">Jeanine</a> has been diligently working on <a href="https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tasks-scheduled">scheduled tasks</a> and it was released just a few days ago. It allows you to create cron jobs out of your containers. I.e., now you can create a nightly build, run some data processing once a week, etc. as a first-class experience.</p>
 <h2 id="putting-it-all-together">Putting it all together</h2>
 <p>Now that I have all of these components, I can put together an autopurge job that runs every day to clean up my Azure Container Registry.</p>
 <p>Since the <code>purge</code> CLI hasn&rsquo;t been first-classed yet in Tasks, I built the image and pushed it to my own registry. All you have to do is go to <a href="https://github.com/Azure/acr-cli">acr-cli repo</a> and follow the README to build the image (<code>docker build -t foo.azurecr.io/acr:latest .</code>).</p>
 <p>Now I can create a Task that references the image that I pushed and run it on a schedule:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">az acr task create --name purgetask --registry ehotinger --context /dev/null --cmd <span class="s2">&#34;{{.Run.Registry}}/acr purge --repository &#34;</span>scratch<span class="s2">&#34; --ago 10d -r {{.Run.Registry}}&#34;</span> --schedule <span class="s2">&#34;0 10 * * *&#34;</span>
-</code></pre></div><p>This creates a Task called <code>purgetask</code> against the <code>ehotinger</code> Azure Container Registry, without any files required (<code>/dev/null</code> context). It runs the <code>ehotinger/acr</code> image and the <code>purge</code> subcommand against the <code>scratch</code> repository, which will delete any tags older than 10 days. The schedule is set to run every day at 10 UTC.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">az acr task create --name purgetask --registry ehotinger --context /dev/null --cmd <span class="s2">&#34;{{.Run.Registry}}/acr purge --repository &#34;</span>scratch<span class="s2">&#34; --ago 10d -r {{.Run.Registry}}&#34;</span> --schedule <span class="s2">&#34;0 10 * * *&#34;</span>
+</span></span></code></pre></div><p>This creates a Task called <code>purgetask</code> against the <code>ehotinger</code> Azure Container Registry, without any files required (<code>/dev/null</code> context). It runs the <code>ehotinger/acr</code> image and the <code>purge</code> subcommand against the <code>scratch</code> repository, which will delete any tags older than 10 days. The schedule is set to run every day at 10 UTC.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>I hope this gives you a few more ideas about ways you can interact with the Azure Container Registry and ACR Tasks. Post any issues, feature requests, bugs, etc. on the relevant GitHub repositories. They&rsquo;re carefully monitored and the team loves feedback.</p>
 
@@ -240,11 +247,12 @@ if (!doNotTrack) {
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    
   
-
   <script type="text/javascript">
     hljs.initHighlightingOnLoad();
   </script>

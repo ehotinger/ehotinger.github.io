@@ -6,11 +6,7 @@
     <description>Recent content in acr on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 19 Jul 2019 18:23:31 -0700</lastBuildDate>
-    
-	<atom:link href="https://ehotinger.com/tags/acr/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Jul 2019 18:23:31 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/acr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ACR Tasks Image Vulnerability Scanning</title>
       <link>https://ehotinger.com/blog/acr-tasks-image-scanning/</link>
