@@ -6,7 +6,17 @@
     <description>Recent content in books on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 30 Dec 2022 10:00:34 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 10:24:56 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 Papers</title>
+      <link>https://ehotinger.com/blog/2023-papers/</link>
+      <pubDate>Mon, 02 Jan 2023 10:24:56 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/2023-papers/</guid>
+      <description>Below is a list of papers I&amp;rsquo;ve read in 2023 with some minor notes around each. Each section represents a general theme/category for software development.
+Patterns No Silver Bullet — Essence and Accident in Software Engineering Written in 1986! Main thought is that it&amp;rsquo;s difficult to find a magnitude improvement in the software development lifecycle. Reasons include the formal complexity around the specification of a program and state transitions. It&amp;rsquo;s interesting to look back at the author&amp;rsquo;s viewpoints of high level language design such as object-oriented programming and other technologies like Artificial Intelligence from nearly 40 years ago.</description>
+    </item>
+    
     <item>
       <title>2022 Books</title>
       <link>https://ehotinger.com/blog/2022-books/</link>
