@@ -6,14 +6,24 @@
     <description>Recent content in Blog on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 08 Jan 2023 09:22:14 -0800</lastBuildDate><atom:link href="https://ehotinger.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Jan 2023 12:22:00 -0800</lastBuildDate><atom:link href="https://ehotinger.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>System Design Interviews - Framework and Strategy</title>
+      <title>Coding Interviews: Framework and Strategy</title>
+      <link>https://ehotinger.com/blog/coding-interviews-framework-and-strategy/</link>
+      <pubDate>Sun, 08 Jan 2023 12:22:00 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/coding-interviews-framework-and-strategy/</guid>
+      <description>Coding Interviews: Framework and Strategy The goal of this post is to provide you with a reliable strategy and framework for general coding and technical interviews. At the end, I provide a rough calibration guide to be used in any coding interview so that you can evaluate your performance and others&amp;rsquo; performance with mock practice once you understand the framework and strategies.
+The Framework Every coding interview can be broken into four high-level steps:</description>
+    </item>
+    
+    <item>
+      <title>System Design Interviews: Framework and Strategy</title>
       <link>https://ehotinger.com/blog/system-design-interviews-framework-and-strategy/</link>
       <pubDate>Sun, 08 Jan 2023 09:22:14 -0800</pubDate>
       
       <guid>https://ehotinger.com/blog/system-design-interviews-framework-and-strategy/</guid>
-      <description>System Design Interviews: A Framework and Strategy System design interviews are often the most difficult technical interviews and can be daunting to tackle. They require a candidate to gather requirements, deal with ambiguity, communicate, and optimize their solution using all of their computer science knowledge. To make matters worse, these interviews are open-ended with hundreds of potential variations to achieve the desired end state of a system. How could anyone expect someone to design such a complex system in only an hour of time?</description>
+      <description>System Design Interviews: Framework and Strategy System design interviews are often the most difficult technical interviews and can be daunting to tackle. They require a candidate to gather requirements, deal with ambiguity, communicate, and optimize their solution using all of their computer science knowledge. To make matters worse, these interviews are open-ended with hundreds of potential variations to achieve the desired end state of a system. How could anyone expect someone to design such a complex system in only an hour of time?</description>
     </item>
     
     <item>

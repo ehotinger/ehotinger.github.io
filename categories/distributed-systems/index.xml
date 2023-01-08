@@ -8,12 +8,12 @@
     <language>en-US</language>
     <lastBuildDate>Sun, 08 Jan 2023 09:22:14 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/distributed-systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>System Design Interviews - Framework and Strategy</title>
+      <title>System Design Interviews: Framework and Strategy</title>
       <link>https://ehotinger.com/blog/system-design-interviews-framework-and-strategy/</link>
       <pubDate>Sun, 08 Jan 2023 09:22:14 -0800</pubDate>
       
       <guid>https://ehotinger.com/blog/system-design-interviews-framework-and-strategy/</guid>
-      <description>System Design Interviews: A Framework and Strategy System design interviews are often the most difficult technical interviews and can be daunting to tackle. They require a candidate to gather requirements, deal with ambiguity, communicate, and optimize their solution using all of their computer science knowledge. To make matters worse, these interviews are open-ended with hundreds of potential variations to achieve the desired end state of a system. How could anyone expect someone to design such a complex system in only an hour of time?</description>
+      <description>System Design Interviews: Framework and Strategy System design interviews are often the most difficult technical interviews and can be daunting to tackle. They require a candidate to gather requirements, deal with ambiguity, communicate, and optimize their solution using all of their computer science knowledge. To make matters worse, these interviews are open-ended with hundreds of potential variations to achieve the desired end state of a system. How could anyone expect someone to design such a complex system in only an hour of time?</description>
     </item>
     
   </channel>
