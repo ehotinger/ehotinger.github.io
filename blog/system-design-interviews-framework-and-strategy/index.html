@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Eric Hotinger">
+<meta name="description" content="System Design Interviews: A Framework and Strategy System design interviews are often the most difficult technical interviews and can be daunting to tackle. They require a candidate to gather requirements, deal with ambiguity, communicate, and optimize their solution using all of their computer science knowledge. To make matters worse, these interviews are open-ended with hundreds of potential variations to achieve the desired end state of a system. How could anyone expect someone to design such a complex system in only an hour of time?">
+
+<meta property="og:title" content="System Design Interviews - Framework and Strategy" />
+<meta property="og:description" content="System Design Interviews: A Framework and Strategy System design interviews are often the most difficult technical interviews and can be daunting to tackle. They require a candidate to gather requirements, deal with ambiguity, communicate, and optimize their solution using all of their computer science knowledge. To make matters worse, these interviews are open-ended with hundreds of potential variations to achieve the desired end state of a system. How could anyone expect someone to design such a complex system in only an hour of time?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ehotinger.com/blog/system-design-interviews-framework-and-strategy/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-01-08T09:22:14-08:00" />
+<meta property="article:modified_time" content="2023-01-08T09:22:14-08:00" />
+
+
+
+    <title>
+        
+        
+         System Design Interviews - Framework and Strategy 
+        
+    </title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3511724161548652"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://ehotinger.com/blog/system-design-interviews-framework-and-strategy/">
+    
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-01-08%2011%3a13%3a30.284435%20-0800%20PST%20m%3d%2b0.041883417">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-01-08%2011%3a13%3a30.284435%20-0800%20PST%20m%3d%2b0.041883417">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-01-08%2011%3a13%3a30.284435%20-0800%20PST%20m%3d%2b0.041883417">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://ehotinger.com/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://ehotinger.com/"><img class="avatar" src="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=50" rcset="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=100 2x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=150 3x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=200 4x"></a>
+            
+            <a href="https://ehotinger.com/"><div class="name">Eric Hotinger</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/eric-hotinger-9b7b2b52" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    System Design Interviews - Framework and Strategy
+
+</div>
+
+                    <div class="initials"><a href="https://ehotinger.com"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Sun Jan 8 2023 09:22:14 PST'>Jan 8, 2023</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>13 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <h1 id="system-design-interviews-a-framework-and-strategy">System Design Interviews: A Framework and Strategy</h1>
+<p>System design interviews are often the most difficult technical interviews and can be daunting to tackle. They require a candidate to gather requirements, deal with ambiguity, communicate, and optimize their solution using all of their computer science knowledge. To make matters worse, these interviews are open-ended with hundreds of potential variations to achieve the desired end state of a system. How could anyone expect someone to design such a complex system in only an hour of time?</p>
+<p>Well, the good news is that nobody will expect you to completely design the entire system in only an hour of time. After all, at our jobs it often takes us weeks or even months of time to design complex distributed systems!</p>
+<p>The goal of this post is to provide you with a reliable strategy and framework for your system design interviews. The content is written and intended for interviewees. However, interviewers will find some aspects equally valuable. I also provide a rough calibration guide to be used in any system design interview so that you can evaluate your performance and others&rsquo; performance with mock practice once you understand the framework and strategies.</p>
+<h2 id="the-framework">The Framework</h2>
+<p>Every system design interview can be broken into four high-level steps:</p>
+<ol>
+<li>Outline use cases and constraints of the system. Define the product specification.</li>
+<li>Create a high-level design and get sign off on the direction.</li>
+<li>Design core components in detail.</li>
+<li>Scale the design, make it fully operational, and wrap up the interview.</li>
+</ol>
+<p><strong>Important:</strong> After the first step and for each subsequent step, kindly ask your interviewer if it okay to move on to the next step or if they feel there is anything else important to discuss first. Between each step, they should tell you whether they want to continue discussion on a particular topic. For example, if you missed any key requirements or particular component in a high-level design, they should tell you that they want to discuss them in some detail first before you proceed. This will help you manage their expectations and ensure that you work on the components that the interviewer feels are important to discuss. It&rsquo;s also easy to talk about a topic for too long or for not long enough, so this will help you spend the right amount of time on each topic.</p>
+<h2 id="1-outline-use-cases-and-constraints-of-the-system-define-the-product-specification">1. Outline use cases and constraints of the system. Define the product specification.</h2>
+<p>In this step, your goal is to ask questions to remove any ambiguity in the problem statement and define the requirements of the system. You should come up with a specification for the user requirements, a data model which represents the data of the system, and perform some basic back-of-the-envelope calculations to understand the scale of the system.</p>
+<h3 id="11---product-specification">1.1 - Product Specification</h3>
+<p>This section will vary drastically depending on the problem, but you should aim to walk away with a very clear product specification by the time you&rsquo;re done. Work top down from the user experience down to the lower-level systems and start forming a high-level design in your head, which we will draw in a later step.</p>
+<ol>
+<li>Do we need to support a website or UI interface? What is the first point that a user interacts with the system?</li>
+<li>Likely we will need some form of authentication or API for our service so that customers can interact with the system. What are the APIs or user-facing functionality do we need to support in the system?</li>
+<li>What are the main functionalities we want to support in the system? For example, if we&rsquo;re building a job scheduler, we certainly need a scheduler component. How should users specify that schedule; should we give them a CRON format, or something friendlier to read and write?</li>
+</ol>
+<h4 id="111---users">1.1.1 - Users</h4>
+<ol>
+<li>What kind of users do we need to support for our system? Are they internal only, or is it an external offering?</li>
+<li>How many users are in our system?</li>
+<li>How many daily active users are there (DAU). By month, or year?</li>
+<li>Is there anything noteworthy about particular users that we should account for, or should we design under the assumption of an average user? I.e., some users may have a way higher demand or usage than others.</li>
+</ol>
+<h4 id="112---service-level-agreements-slas-and-operations">1.1.2 - Service Level Agreements (SLAs) and Operations</h4>
+<ol>
+<li>What is the availability of the system we&rsquo;re targeting for? Assume 99.9% as a baseline. See my <a href="https://ehotinger.com/blog/availability-numbers-every-programmer-should-know/">availability post</a> for number calculations.</li>
+<li>What are the performance/latency SLAs of our APIs (response times in milliseconds), or other critical components of the system?</li>
+<li>What are the key performance indicators (KPIs) of our system? What metrics do our users care the most about (i.e., latency of a particular API may need to be much lower than others).</li>
+</ol>
+<h3 id="12---data-models">1.2 - Data Models</h3>
+<ol>
+<li>What are the various data models we need in the system? Think of how you will represent them in a relational database, NoSQL store, or other storage mechanism, and how users will access those data models from the corresponding storage.</li>
+<li>Is there a maximum time limit we need to store the data for?</li>
+<li>Is it acceptable for older data to be marked as &ldquo;cold,&rdquo; and more recent data as &ldquo;hot?&rdquo; This enables us to move data around for an archival system.</li>
+</ol>
+<h3 id="13---storage-and-consistency">1.3 - Storage and Consistency</h3>
+<ol>
+<li>Is data loss acceptable?</li>
+<li>Is it required to be transactionally consistent, or can we accept some latency and eventual consistency in the system?</li>
+<li>Can we send or process things more than one time, or does it have to be exactly once? I.e., for events do we have to guarantee that an event is only sent once?</li>
+</ol>
+<h3 id="14---back-of-the-envelope-math-and-scale">1.4 - Back-of-the-envelope Math and Scale</h3>
+<ol>
+<li>How many users, jobs, and any other artifact in our data model do we need to support?</li>
+<li>What is the peak load, average load, and minimum load of our service?</li>
+<li>How many requests per second do we need to serve?</li>
+<li>Do we need to consider seasonal elements of the system? I.e., during one period of the year the scale is 100x larger like a holiday?</li>
+<li>How much storage do we need for our system?</li>
+<li>How many nodes in our fleet will need?</li>
+<li>How much storage do we need?</li>
+<li>Do we need to partition our storage or app fleets to account for this scale?</li>
+<li>Do we need to separate write/read paths or other core service paths into different subsystems as a result?</li>
+</ol>
+<h3 id="15---tips">1.5 - Tips</h3>
+<ol>
+<li>For back-of-the-envelope calculations, always round up. For example, if you are told that you take 89 requests per second, just use 100 to make the math easier. Always use powers of tens because it&rsquo;s easy to multiply.</li>
+<li>As you&rsquo;re going along asking these questions, write down the specification and response from the interviewer so that you can come back to if needed later.</li>
+<li>Label your units (i.e., milliseconds, seconds, kilobytes, megabytes, etc.) so that they&rsquo;re clear to the interviewer.</li>
+<li>Write down any assumptions you have about the system as you go along, and make sure your interviewer is on the same page for those assumptions. If they aren&rsquo;t, ask them how you should think about it differently.</li>
+</ol>
+<h2 id="2-create-a-high-level-design-and-get-sign-off-on-the-direction">2. Create a high-level design and get sign off on the direction.</h2>
+<p>At this point, you know all the requirements of the system and have built a rough model in your head for how to represent all the data flowing through the system. Once your interviewer confirms you&rsquo;re not missing any important requirements of the system and you feel there is no more ambiguity, it&rsquo;s time to write down the high-level diagrams of the system.</p>
+<p>I typically recommend to begin drawing the design top-down starting with the user. For example, walk through how the first request and interaction of the system will look like for a customer. They will probably hit some API, the API will store some data, and then some other systems will start to operate off that data. Some of these layers are generic across any system, for example an API or authentication layer. Focus on the core architecture of the system and draw those boxes. As you&rsquo;re going along, draw lines between the various boxes to make it clear how the systems interact with one another.</p>
+<h3 id="21---tips">2.1 - Tips</h3>
+<ol>
+<li>Keep in mind areas of extensibility as you go along, and proactively discuss them. These are what I refer to as commonly &ldquo;bells and whistles.&rdquo; I.e., things that could make the system much easier to use or additional functionality that seems useful. For example, if you were building a scheduler a common one is prioritization of jobs. However, it&rsquo;s easy to get sidetracked on these bells and whistles and not even finish the core problem if you aren&rsquo;t careful! Start small and finish the core of the system and if you have extra time, talk more about those bells and whistles. These thoughts and suggestions will periodically pop up in your head throughout the interview. Speak about them and inquire whether you should expand on them to the interviewer. This is how you raise the bar - but make sure it doesn&rsquo;t eat away from your time. In general, try to avoid bells and whistles until you are at the end of the detailed design.</li>
+<li>Nearly every system has a UI, CLI, API, and some form of user authentication (AuthN) and authorization (AuthZ). Talk about these and note that your system almost certainly needs them, but ask your interviewer if you should draw out the boxes and go into more depth. It&rsquo;s easy to get sidetracked on these components but they are not often the core problem.</li>
+<li>Every system needs to be operationally steady. It likely needs some element of monitoring, alarms, dashboards, and logging. These are generic high-level boxes for any system. After you have designed the high-level core of the system, ask if you should draw all of these boxes, or wait to do them later upfront.</li>
+</ol>
+<p>Before proceeding to design components in detail, make sure that you and the interviewer have agreed on the rough architectural direction of the system.</p>
+<h2 id="3-design-core-components-in-detail">3. Design core components in detail.</h2>
+<p>It&rsquo;s time to go into more detail for each component. This could mean that you should speak about how a particular component would work in more detail, or even design an algorithm for a service. Start by asking your interviewer which components they want to spend more time or focus on in particular. Suggest areas you could speak about and ask which ones you should focus on first.</p>
+<h2 id="4-scale-the-design-make-it-fully-operational-and-wrap-up-the-interview">4. Scale the design, make it fully operational, and wrap up the interview.</h2>
+<p>You are nearly done with your interview! Similar to a coding interview, consider error cases and operational issues that may pop up during this time. Add on bells and whistles to the system. Talk about how you&rsquo;ll keep the system operating healthy, what the support structure would look like, metrics, dashboards, and logs that might be helpful for the team. Think about how to scale the system to the next level. An interview may ask follow-up questions during this time too.</p>
+<p>Here are some example questions and talking points:</p>
+<ol>
+<li>How do you scale the system to a magnitude higher?</li>
+<li>How do you reduce the latency of certain components or features by a magnitude?</li>
+<li>Discuss sharding and partitioning implementations in more detail. Speak about how subsystems will operate on partitions of data sets.</li>
+<li>Add in caching layers.</li>
+<li>If applicable, add in content delivery networks (CDNs)</li>
+<li>Ensure your storage layers are optimized. For example, are you using a proper object store if it makes sense for images or videos?</li>
+</ol>
+<h2 id="5-time-managemnet">5. Time Managemnet</h2>
+<p>Time management is one of the trickiest components of system design interviews. Some questions will be extremely vague and require you to gather a lot of requirements, whereas other systems may have most of the requirements given to you upfront. Some interviewers may want to spend more time designing a particular component whereas others may want to spend more time on the high-level architecture.</p>
+<p>How do you know how to spend your time? The answer is that you don&rsquo;t and that is why is it so important to collaborate closely with the interviewer so that you focus on the things they think are important. After all, they&rsquo;re the ones evaluating you, so you need to make sure you give them as many data points on the things they care about as possible.</p>
+<p>It&rsquo;s important that you spend the majority of the time focusing on the major pieces of the problem. Avoid preemptively designing bells and whistles of the system until you have talked through the major design challenges and components first. If at any time you&rsquo;re unsure whether you should spend more time designing or talking about a component, or you aren&rsquo;t clear on what you think the interviewer wants to focus on next, simply ask the interviewer which component they want you to focus on next and if you&rsquo;ve put in enough detail about an area.</p>
+<p>In general, for a 45-minute system design interview, expect to spend roughly these time allocations on each step:</p>
+<ol>
+<li>[5 - 10 minutes] Outline use cases and constraints of the system. Define the product specification.</li>
+<li>[10 - 15 minutes] Create a high-level design and get sign off on the direction.</li>
+<li>[10 - 20 minutes] Design core components in detail.</li>
+<li>[5 - 10 minutes] Scale the design, make it fully operational, and wrap up the interview.</li>
+</ol>
+<p>If you are ever unsure how long you will get for your system design interview, simply ask your recruiter how long you should expect to spend in the session, and how long you will get to talk about system design. Most interviews are 60 minutes so you will spend anywhere from 45-50 minutes on system design and 10-15 minutes on behavioral questions, team fit, and introductions.</p>
+<h2 id="6-calibration-guide">6. Calibration Guide</h2>
+<p>Below is a calibration guideline which applies to the majority of system design interviews. Ask yourself whether you accomplished all of them:</p>
+<ul>
+<li>Removes ambiguity in the problem statement</li>
+<li>Drives the conversation</li>
+<li>Can articulate shortcomings and tradeoffs with different designs</li>
+<li>Translates requirements into user stories</li>
+<li>APIs cover requirements</li>
+<li>Sufficient HTTP knowledge/front end depth</li>
+<li>Infrastructure knowledge</li>
+<li>Familiarity with load balancers and fleets (no single points of failure)</li>
+<li>Familiarity with data layer</li>
+<li>The system is operational; logging/tracing/monitoring</li>
+<li>The system has proper data models</li>
+<li>The system can scale (i.e., sharding, partitioning, or other mechanisms)</li>
+<li>The system meets latency and availability requirements, or other SLAs</li>
+<li>The system meets all initial requirements for the product specification</li>
+</ul>
+<h2 id="7-closing-thoughts-and-final-tips">7. Closing Thoughts and Final Tips</h2>
+<ol>
+<li>In your interview, pretend you are with another coworker working to design a system together on a whiteboard. System design interviews are meant to be a collaborative process with plenty of back and forth between the interviewee and the interviewer.</li>
+<li>System design interviews are deliberately vague and open-ended to see how you tackle ambiguity. The best way to get rid of this ambiguity is by speaking and collaborating.</li>
+<li>It&rsquo;s impossible to cover everything in a system design interview. Don&rsquo;t feel bad about not covering everything. Be deliberate with what you choose to speak about.</li>
+<li>Research the company, teams, and interviewers that you&rsquo;re interviewing with. Most teams will ask system design questions which are similar to what the team actually works on to see if you&rsquo;d be able to easily adapt to the team. If the company has an engineering blog, read their posts. Understand the product that the team you are interviewing with is building and think about how you would design that product from scratch. Do research.</li>
+<li>For Senior, Staff, and Principal level positions, the main way to stand out is by going in-depth in particular topics. You&rsquo;ll likely want to spend more time here and you should aim to finish all requirement gathering and the high-level design much faster than other individuals.</li>
+</ol>
+
+                <br>
+                
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  
+                    <a href="https://ehotinger.com/tags/interviews">interviews</a>
+                  
+                    <a href="https://ehotinger.com/tags/distributed-systems">distributed systems</a>
+                  
+                  </div>
+                  <br />
+                
+                <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146787275-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

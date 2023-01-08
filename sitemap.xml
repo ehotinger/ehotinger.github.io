@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ehotinger.com/blog/</loc>
+    <lastmod>2023-01-08T09:22:14-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/</loc>
+    <lastmod>2023-01-08T09:22:14-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/distributed-systems/</loc>
+    <lastmod>2023-01-08T09:22:14-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/distributed-systems/</loc>
+    <lastmod>2023-01-08T09:22:14-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/</loc>
+    <lastmod>2023-01-08T09:22:14-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/interviews/</loc>
+    <lastmod>2023-01-08T09:22:14-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/interviews/</loc>
+    <lastmod>2023-01-08T09:22:14-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/system-design-interviews-framework-and-strategy/</loc>
+    <lastmod>2023-01-08T09:22:14-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2023-01-08T09:22:14-08:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/tags/availability/</loc>
     <lastmod>2023-01-08T07:22:14-08:00</lastmod>
   </url><url>
@@ -9,24 +36,6 @@
     <lastmod>2023-01-08T07:22:14-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/availability-numbers-every-programmer-should-know/</loc>
-    <lastmod>2023-01-08T07:22:14-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2023-01-08T07:22:14-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2023-01-08T07:22:14-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/</loc>
-    <lastmod>2023-01-08T07:22:14-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/interviews/</loc>
-    <lastmod>2023-01-08T07:22:14-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/interviews/</loc>
-    <lastmod>2023-01-08T07:22:14-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2023-01-08T07:22:14-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/2023-papers/</loc>
