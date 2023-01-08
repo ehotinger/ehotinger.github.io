@@ -2,31 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</loc>
+    <lastmod>2023-01-08T14:13:36-08:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2023-01-08T12:22:00-08:00</lastmod>
+    <lastmod>2023-01-08T14:13:36-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2023-01-08T12:22:00-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/blog/coding-interviews-framework-and-strategy/</loc>
-    <lastmod>2023-01-08T12:22:00-08:00</lastmod>
+    <lastmod>2023-01-08T14:13:36-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/dev/</loc>
-    <lastmod>2023-01-08T12:22:00-08:00</lastmod>
+    <lastmod>2023-01-08T14:13:36-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/dev/</loc>
-    <lastmod>2023-01-08T12:22:00-08:00</lastmod>
+    <lastmod>2023-01-08T14:13:36-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/</loc>
-    <lastmod>2023-01-08T12:22:00-08:00</lastmod>
+    <lastmod>2023-01-08T14:13:36-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/interviews/</loc>
-    <lastmod>2023-01-08T12:22:00-08:00</lastmod>
+    <lastmod>2023-01-08T14:13:36-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/interviews/</loc>
-    <lastmod>2023-01-08T12:22:00-08:00</lastmod>
+    <lastmod>2023-01-08T14:13:36-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2023-01-08T14:13:36-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/coding-interviews-framework-and-strategy/</loc>
     <lastmod>2023-01-08T12:22:00-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/distributed-systems/</loc>
