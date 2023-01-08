@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>availability on Eric Hotinger</title>
+    <link>https://ehotinger.com/categories/availability/</link>
+    <description>Recent content in availability on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 08 Jan 2023 07:22:14 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/availability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Availability Numbers Every Programmer Should Know</title>
+      <link>https://ehotinger.com/blog/availability-numbers-every-programmer-should-know/</link>
+      <pubDate>Sun, 08 Jan 2023 07:22:14 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/availability-numbers-every-programmer-should-know/</guid>
+      <description>Availability Numbers Every Programmer Should Know Availability refers to the amount of continuous uptime of a service. This is measured in a percentage, where 100% means a service has zero downtime and 0% means the service is never operational.
+A service level agreement (SLA) is a commitment from a provider to a customer. When SLAs are mentioned for availability, providers will be stating their commitment to the uptime of the system, after which you are usually entitled to some form of compensation.</description>
+    </item>
+    
+  </channel>
+</rss>

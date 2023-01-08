@@ -6,7 +6,17 @@
     <description>Recent content in Blog on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 02 Jan 2023 10:24:56 -0800</lastBuildDate><atom:link href="https://ehotinger.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Jan 2023 07:22:14 -0800</lastBuildDate><atom:link href="https://ehotinger.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Availability Numbers Every Programmer Should Know</title>
+      <link>https://ehotinger.com/blog/availability-numbers-every-programmer-should-know/</link>
+      <pubDate>Sun, 08 Jan 2023 07:22:14 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/availability-numbers-every-programmer-should-know/</guid>
+      <description>Availability Numbers Every Programmer Should Know Availability refers to the amount of continuous uptime of a service. This is measured in a percentage, where 100% means a service has zero downtime and 0% means the service is never operational.
+A service level agreement (SLA) is a commitment from a provider to a customer. When SLAs are mentioned for availability, providers will be stating their commitment to the uptime of the system, after which you are usually entitled to some form of compensation.</description>
+    </item>
+    
     <item>
       <title>2023 Papers</title>
       <link>https://ehotinger.com/blog/2023-papers/</link>
@@ -76,7 +86,7 @@ Take all of the negativity and use it to shield others. Pick up the torch and ru
       <pubDate>Tue, 08 Sep 2020 22:20:29 -0700</pubDate>
       
       <guid>https://ehotinger.com/blog/give-up-on-ci-cd/</guid>
-      <description>Give up on your glorious vision of CI/CD. I don&amp;rsquo;t want that and your customers don&amp;rsquo;t either. If you break me one more time this month I will lose my mind and start looking at competitors. I can afford to wait 3 months for your new features. On second thought, I don&amp;rsquo;t care if I get any new features ever again.
+      <description>Give up on your glorious vision of CI/CD. I don&amp;rsquo;t want it and your customers don&amp;rsquo;t either. If you break me one more time this month I will lose my mind and start looking at competitors. I can afford to wait 3 months for your new features. On second thought, I don&amp;rsquo;t care if I get any new features ever again.
 I&amp;rsquo;ve written software whose sole purpose was to make CI/CD better.</description>
     </item>
     
