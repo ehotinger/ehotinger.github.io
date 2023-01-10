@@ -6,7 +6,17 @@
     <description>Recent content in dev on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 08 Jan 2023 14:13:36 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jan 2023 15:14:14 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Ask and Answer Questions Effectively</title>
+      <link>https://ehotinger.com/blog/how-to-ask-and-answer-questions-effectively/</link>
+      <pubDate>Mon, 09 Jan 2023 15:14:14 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/how-to-ask-and-answer-questions-effectively/</guid>
+      <description>A common question from junior engineers is: &amp;ldquo;how long should I wait before I ask for help?&amp;rdquo; The below post will offer guidance for junior engineers on when and how to ask effective questions. We&amp;rsquo;ll also cover guidance to senior engineers on how to answer questions from junior engineers.
+This post offers advice from both sides of the coin to help provide you the perspective of your fellow engineers. Remember: you were once a junior engineer and one day you will be the senior engineer!</description>
+    </item>
+    
     <item>
       <title>Behavioral Interviews: Framework and Strategy</title>
       <link>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</link>
@@ -48,6 +58,16 @@ Enable Hyper-V (Turn Windows features on or off -&amp;gt; Hyper-V) Enable virtua
       <guid>https://ehotinger.com/blog/invisible/</guid>
       <description>I&amp;rsquo;ve created something magical: an invisible compass. The product is not astonishing; it&amp;rsquo;s fragile and young, yet blissful. It hasn&amp;rsquo;t been announced yet, but it will be later this year. I hope you will find it equally mesmerizing.
 For the last six months, I&amp;rsquo;ve worked tirelessly to offer a chance for it to succeed. It&amp;rsquo;s not my own company and I&amp;rsquo;m not getting paid some exuberant amount of money to stay committed to an arbitrary mission.</description>
+    </item>
+    
+    <item>
+      <title>ACR Tasks Image Vulnerability Scanning</title>
+      <link>https://ehotinger.com/blog/acr-tasks-image-scanning/</link>
+      <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/acr-tasks-image-scanning/</guid>
+      <description>In this blog you&amp;rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&amp;rsquo;s microscanner. By the end, you&amp;rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.
+This is generic, so you can bring whatever image scanner you prefer.</description>
     </item>
     
     <item>

@@ -6,7 +6,17 @@
     <description>Recent content in dev on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 08 Jan 2023 14:13:36 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jan 2023 15:14:14 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Ask and Answer Questions Effectively</title>
+      <link>https://ehotinger.com/blog/how-to-ask-and-answer-questions-effectively/</link>
+      <pubDate>Mon, 09 Jan 2023 15:14:14 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/how-to-ask-and-answer-questions-effectively/</guid>
+      <description>A common question from junior engineers is: &amp;ldquo;how long should I wait before I ask for help?&amp;rdquo; The below post will offer guidance for junior engineers on when and how to ask effective questions. We&amp;rsquo;ll also cover guidance to senior engineers on how to answer questions from junior engineers.
+This post offers advice from both sides of the coin to help provide you the perspective of your fellow engineers. Remember: you were once a junior engineer and one day you will be the senior engineer!</description>
+    </item>
+    
     <item>
       <title>Behavioral Interviews: Framework and Strategy</title>
       <link>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</link>
