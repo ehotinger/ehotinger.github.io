@@ -9,26 +9,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="author" content="Eric Hotinger">
-<meta name="description" content="Setting up a Windows environment for Golang (including Make)">
+<meta name="description" content="Below is a list of papers and books I&rsquo;ve read in 2023 with some minor notes around each. Each section represents a general theme/category for software development.
+Patterns No Silver Bullet — Essence and Accident in Software Engineering Written in 1986! Main thought is that it&rsquo;s difficult to find a magnitude improvement in the software development lifecycle. Reasons include the formal complexity around the specification of a program and state transitions.">
 
-<meta property="og:title" content="Installing Go on Windows (including Make)" />
-<meta property="og:description" content="Setting up a Windows environment for Golang (including Make)" />
+<meta property="og:title" content="2023 Papers and Books" />
+<meta property="og:description" content="Below is a list of papers and books I&rsquo;ve read in 2023 with some minor notes around each. Each section represents a general theme/category for software development.
+Patterns No Silver Bullet — Essence and Accident in Software Engineering Written in 1986! Main thought is that it&rsquo;s difficult to find a magnitude improvement in the software development lifecycle. Reasons include the formal complexity around the specification of a program and state transitions." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ehotinger.com/blog/installing-go-windows/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2018-07-07T00:00:00-07:00" />
-<meta property="article:modified_time" content="2018-07-07T00:00:00-07:00" />
+<meta property="og:url" content="https://ehotinger.com/blog/2023-papers-and-books/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-01-02T10:24:56-08:00" />
+<meta property="article:modified_time" content="2023-01-02T10:24:56-08:00" />
 
 
 
     <title>
         
         
-         Installing Go on Windows (including Make) 
+         2023 Papers and Books 
         
     </title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3511724161548652"
         crossorigin="anonymous"></script>
-    <link rel="canonical" href="https://ehotinger.com/blog/installing-go-windows/">
+    <link rel="canonical" href="https://ehotinger.com/blog/2023-papers-and-books/">
     
 
 
@@ -48,9 +50,9 @@
 
 
     
-    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-01-19%2018%3a18%3a03.423501%20-0800%20PST%20m%3d%2b0.042399721">
-    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-01-19%2018%3a18%3a03.423501%20-0800%20PST%20m%3d%2b0.042399721">
-    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-01-19%2018%3a18%3a03.423501%20-0800%20PST%20m%3d%2b0.042399721">
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-01-19%2018%3a18%3a03.424012%20-0800%20PST%20m%3d%2b0.042911213">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-01-19%2018%3a18%3a03.424012%20-0800%20PST%20m%3d%2b0.042911213">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-01-19%2018%3a18%3a03.424012%20-0800%20PST%20m%3d%2b0.042911213">
     
 
 
@@ -149,7 +151,7 @@
                 <div class="title-container">
                     <div class="page-heading">
 
-    Installing Go on Windows (including Make)
+    2023 Papers and Books
 
 </div>
 
@@ -157,7 +159,7 @@
                 </div>
                 <div class="meta">
                     
-                    <div class="date" title='Sat Jul 7 2018 00:00:00 PDT'>Jul 7, 2018</div>
+                    <div class="date" title='Mon Jan 2 2023 10:24:56 PST'>Jan 2, 2023</div>
                     
                     
 		    <div class="reading-time"><div class="middot"></div>One minute read</div>
@@ -165,30 +167,22 @@
                 </div>
             </div>
             <div class="markdown">
-                <p>This is an extremely brief guide to setting up Go on Windows. There are plenty of guides out there for setting up Go, but none that also include how to get your <code>Makefile</code>s working cross-platform easily. The easiest way I&rsquo;ve found to do this is to change shells. This is especially true if you have Makefiles like I do, where <code>$(shell)</code> is everywhere. With the default shell you&rsquo;ll end up with <code>CREATE PROCESS(NULL, ...</code> errors everywhere because functionality is missing.</p>
-<ol>
-<li>
-<p>The <a href="https://golang.org/doc/install">default installer</a> on Windows works great for Go now. It&rsquo;ll set up <code>$GOPATH</code> to be <code>%USERPROFILE\go</code> and <code>$GOROOT</code> to be <code>C:\go</code>. It&rsquo;ll also modify your <code>$PATH</code> to be <code>C:\go\bin</code>.</p>
+                <p>Below is a list of papers and books I&rsquo;ve read in 2023 with some minor notes around each. Each section represents a general theme/category for software development.</p>
+<h2 id="patterns">Patterns</h2>
+<ul>
+<li><a href="http://worrydream.com/refs/Brooks-NoSilverBullet.pdf">No Silver Bullet — Essence and Accident in Software Engineering</a>
+<ul>
+<li>Written in 1986! Main thought is that it&rsquo;s difficult to find a magnitude improvement in the software development lifecycle. Reasons include the formal complexity around the specification of a program and state transitions. It&rsquo;s interesting to look back at the author&rsquo;s viewpoints of high level language design such as object-oriented programming and other technologies like Artificial Intelligence from nearly 40 years ago.</li>
+</ul>
 </li>
-<li>
-<p>Download <a href="http://gnuwin32.sourceforge.net/packages/make.htm">Make for Windows</a>. Add the installation path to your <code>$PATH</code>.</p>
-</li>
-<li>
-<p>Download <a href="https://cygwin.com/install.html">Cygwin</a>.</p>
-</li>
-<li>
-<p>From Cygwin, <code>cd C:/users/blah/go/src/github.com/blah/somerepo</code>, and from there you should be able to run <code>make</code>.</p>
-</li>
-</ol>
+</ul>
 
                 <br>
                 
                   <div class="tags">
                     <strong>Tags:</strong>
                   
-                    <a href="https://ehotinger.com/tags/dev">dev</a>
-                  
-                    <a href="https://ehotinger.com/tags/go">Go</a>
+                    <a href="https://ehotinger.com/tags/books">books</a>
                   
                   </div>
                   <br />

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Eric Hotinger">
+<meta name="description" content="Grey Modes In complex distributed systems, hardware failure is inevitable. The ability to operate in a grey mode (a mode in which a system is partially working) is an important and deliberate architectural choice to consider. Ask yourself the following question: would customers be more upset to have a completely nonfunctional system, or have a subset of the functionality working? For example, if you are working on a storage layer, perhaps it would be better to serve reads even though you can&rsquo;t serve writes at the same time.">
+
+<meta property="og:title" content="Operating in Grey Modes" />
+<meta property="og:description" content="Grey Modes In complex distributed systems, hardware failure is inevitable. The ability to operate in a grey mode (a mode in which a system is partially working) is an important and deliberate architectural choice to consider. Ask yourself the following question: would customers be more upset to have a completely nonfunctional system, or have a subset of the functionality working? For example, if you are working on a storage layer, perhaps it would be better to serve reads even though you can&rsquo;t serve writes at the same time." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ehotinger.com/blog/operating-in-grey-modes/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-01-19T13:26:55-08:00" />
+<meta property="article:modified_time" content="2023-01-19T13:26:55-08:00" />
+
+
+
+    <title>
+        
+        
+         Operating in Grey Modes 
+        
+    </title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3511724161548652"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://ehotinger.com/blog/operating-in-grey-modes/">
+    
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-01-19%2018%3a18%3a03.434194%20-0800%20PST%20m%3d%2b0.053092848">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-01-19%2018%3a18%3a03.434194%20-0800%20PST%20m%3d%2b0.053092848">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-01-19%2018%3a18%3a03.434194%20-0800%20PST%20m%3d%2b0.053092848">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://ehotinger.com/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://ehotinger.com/"><img class="avatar" src="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=50" rcset="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=100 2x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=150 3x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=200 4x"></a>
+            
+            <a href="https://ehotinger.com/"><div class="name">Eric Hotinger</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/eric-hotinger-9b7b2b52" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Operating in Grey Modes
+
+</div>
+
+                    <div class="initials"><a href="https://ehotinger.com"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Thu Jan 19 2023 13:26:55 PST'>Jan 19, 2023</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>3 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <h2 id="grey-modes">Grey Modes</h2>
+<p>In complex distributed systems, hardware failure is inevitable. The ability to operate in a grey mode (a mode in which a system is partially working) is an important and deliberate architectural choice to consider. Ask yourself the following question: would customers be more upset to have a completely nonfunctional system, or have a subset of the functionality working? For example, if you are working on a storage layer, perhaps it would be better to serve reads even though you can&rsquo;t serve writes at the same time.</p>
+<p>A common way services operate in a grey mode is by allowing themselves to run despite metrics and logs failing. For example, say your logs or metrics are published to an external service and that external service is unavailable. The service will naturally start building backpressure from the generation of the metrics and logs, and you have to make a deliberate choice for the system&rsquo;s health. Otherwise, you could risk the system running out of memory or disk space. Most systems would rather lose metrics or logs than prevent customers from using the service in this case.</p>
+<p>Do not let your system go down if you can prevent it by accepting loss of functionality like logs and metrics.</p>
+<h2 id="circular-buffers-logging-and-docker">Circular Buffers, Logging, and Docker</h2>
+<p>Circular buffers (also known as ring buffers) are fixed size buffers (typically in-memory) that operate as a contiguous set of memory. When data is added, a head pointer advances and when data is removed, a tail pointer advances. When you reach the end of the buffer, the pointers wrap around and overwrite old data, ensuring that new data always has a place to be inserted. You can read more about this particular data structure <a href="https://en.wikipedia.org/wiki/Circular_buffer">here on Wikipedia</a> which includes a visualization of the head &amp; tail pointers. Circular buffers can be thought of as a fixed-sized FIFO queue with the added benefit of</p>
+<p>Circular buffers can be particularly useful for logging. When a logging event happens, it can be stored in the circular buffer and periodically flushed to disk or an external storage service. If the buffer fails to be flushed, then you can overwrite old logs in the buffer to keep the latest logs. This prevents instances of backpressure from overwhelming the system. Combined with an error counting mechanism, you can alarm if you notice the production of logs outpacing the flushing of logs.</p>
+<p>Docker has a logging daemon implementation which will read STDOUT and STDERR of a container and convert logs into an in-memory ring buffer (see <a href="https://github.com/moby/moby/blob/master/daemon/logger/ring.go">code here</a>). Those messages get sent to a log driver, such as the <a href="https://github.com/moby/moby/blob/master/daemon/logger/awslogs/cloudwatchlogs.go">AWS log driver</a>, which can then upload them to a service such as CloudWatch.</p>
+<p>The default logging mode for Docker is blocking, which means that if the log driver cannot process logs to a service correctly, it does not allow for lossiness and can start blocking during logging events. You can take precautions against this by configuring the maximum size of the ring buffer and enable logs to drop in a lossy manner (i.e., the first record in the ring) in cases of significant backpressure.</p>
+<p>More specifically, check out these parameters for Docker&rsquo;s log driver:</p>
+<pre tabindex="0"><code>&#39;mode&#39;: &#39;non-blocking&#39;
+&#39;max-buffer-size&#39;: &#39;16m&#39;
+</code></pre><h2 id="cons">Cons</h2>
+<p>Operating in a grey mode can make your service more resilient and keep your customers happy. Some situations like logging and metrics may be no brainers for you to consider.</p>
+<p>However, it can create additional complexity for your service depending on the functionality you&rsquo;re talking about. In certain scenarios, complete failure can be better than operating with mixed state. Moreover, sometimes it can be difficult to recover from that mixed state to a fully operational state. As with any pattern, make sure to weigh the pros/cons and make sure it makes sense for your architecture.</p>
+<p>Happy building!</p>
+
+                <br>
+                
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  
+                    <a href="https://ehotinger.com/tags/dev">dev</a>
+                  
+                  </div>
+                  <br />
+                
+                <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146787275-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

@@ -6,7 +6,16 @@
     <description>Recent content in dev on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 17 Jan 2023 07:45:40 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Jan 2023 13:26:55 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Operating in Grey Modes</title>
+      <link>https://ehotinger.com/blog/operating-in-grey-modes/</link>
+      <pubDate>Thu, 19 Jan 2023 13:26:55 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/operating-in-grey-modes/</guid>
+      <description>Grey Modes In complex distributed systems, hardware failure is inevitable. The ability to operate in a grey mode (a mode in which a system is partially working) is an important and deliberate architectural choice to consider. Ask yourself the following question: would customers be more upset to have a completely nonfunctional system, or have a subset of the functionality working? For example, if you are working on a storage layer, perhaps it would be better to serve reads even though you can&amp;rsquo;t serve writes at the same time.</description>
+    </item>
+    
     <item>
       <title>The Most Important Software Documentation</title>
       <link>https://ehotinger.com/blog/the-most-important-software-documentation/</link>
