@@ -6,7 +6,17 @@
     <description>Recent content in dev on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 19 Jan 2023 13:26:55 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Jan 2023 15:01:03 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Gala Node V3 on Ubuntu Linux</title>
+      <link>https://ehotinger.com/blog/install-gala-node-v3-on-ubuntu-linux/</link>
+      <pubDate>Sun, 29 Jan 2023 15:01:03 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/install-gala-node-v3-on-ubuntu-linux/</guid>
+      <description>These are the all scripts required to install Gala Games v3 nodes. It&amp;rsquo;s a trimmed down version of the main blog post.
+Install Docker sudo apt install docker.io -y sudo systemctl status docker sudo systemctl enable --now docker Install the Gala Image sudo wget --trust-server-names https://links.gala.com/DownloadLinuxNode It downloads a file name called gala-node-vX.X.X.tar.gz. sudo tar xzvf gala-node-v3[version number].tar.gz sudo ./gala-node/install.sh sudo gala-node config api-key your API key here Run sudo gala-node licenses Based on your licenses use sudo gala-node config workloads &amp;lt;workload&amp;gt; For example sudo gala-node config workloads founders sudo gala-node start Verify it&amp;rsquo;s up: sudo gala-node status Optional step:</description>
+    </item>
+    
     <item>
       <title>Operating in Grey Modes</title>
       <link>https://ehotinger.com/blog/operating-in-grey-modes/</link>
