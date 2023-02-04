@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Eric Hotinger">
+<meta name="description" content="Practical Developer Productivity Developer productivity has been studied extensively across the last few decades because developers are typically the most expensive piece of software development. Despite decades of research, nobody has cracked the case. Moreover, most teams struggle to come up with a metric or goal to even define what it means to capture &ldquo;developer productivity.&rdquo;
+Over the last few months, I&rsquo;ve spent a significant amount of energy in the space of developer productivity for an organization of ~500 developers.">
+
+<meta property="og:title" content="Practical Developer Productivity" />
+<meta property="og:description" content="Practical Developer Productivity Developer productivity has been studied extensively across the last few decades because developers are typically the most expensive piece of software development. Despite decades of research, nobody has cracked the case. Moreover, most teams struggle to come up with a metric or goal to even define what it means to capture &ldquo;developer productivity.&rdquo;
+Over the last few months, I&rsquo;ve spent a significant amount of energy in the space of developer productivity for an organization of ~500 developers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ehotinger.com/blog/practical-developer-productivity/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-02-04T10:49:13-08:00" />
+<meta property="article:modified_time" content="2023-02-04T10:49:13-08:00" />
+
+
+
+    <title>
+        
+        
+         Practical Developer Productivity 
+        
+    </title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3511724161548652"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://ehotinger.com/blog/practical-developer-productivity/">
+    
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-02-04%2012%3a25%3a30.473392%20-0800%20PST%20m%3d%2b0.065482756">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-02-04%2012%3a25%3a30.473392%20-0800%20PST%20m%3d%2b0.065482756">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-02-04%2012%3a25%3a30.473392%20-0800%20PST%20m%3d%2b0.065482756">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://ehotinger.com/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://ehotinger.com/"><img class="avatar" src="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=50" rcset="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=100 2x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=150 3x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=200 4x"></a>
+            
+            <a href="https://ehotinger.com/"><div class="name">Eric Hotinger</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/eric-hotinger-9b7b2b52" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Practical Developer Productivity
+
+</div>
+
+                    <div class="initials"><a href="https://ehotinger.com"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Sat Feb 4 2023 10:49:13 PST'>Feb 4, 2023</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>6 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <h1 id="practical-developer-productivity">Practical Developer Productivity</h1>
+<p>Developer productivity has been studied extensively across the last few decades because developers are typically the most expensive piece of software development. Despite decades of research, nobody has cracked the case. Moreover, most teams struggle to come up with a metric or goal to even define what it means to capture &ldquo;developer productivity.&rdquo;</p>
+<p>Over the last few months, I&rsquo;ve spent a significant amount of energy in the space of developer productivity for an organization of ~500 developers. I decided to spend some time today to reflect on the journey and also to compare some of the latest literature in the space to see if there are any correlations across the industry. I also wanted to capture some practical development experience for others.</p>
+<h2 id="perspectives">Perspectives</h2>
+<p>The definition of developer productivity wildly varies depending on perspective. Productivity is not just about individual performance, but about an overall team and product performance. Metrics like number of pull requests, code reviews, commits, and so forth can never be used in isolation to gauge the effectiveness or performance of an engineer. By extension, there is no <em>one metric</em> that can tell us how to measure developer productivity (<a href="#citations">[1]</a> and <a href="#citations">[3]</a>).</p>
+<p>At Google, studies from <a href="#citations">[4]</a> contradict many other past studies. For example, they observed that lack of documentation does not significantly affect perceived productivity whereas others have claimed this to be a bottleneck. This makes sense; each product, organization, and company will have different challenges, and thus each developer&rsquo;s perspective will change depending on the environment they are in.</p>
+<p>It is also impossible to gauge developer productivity through system-level metrics. There are innate aspects of the job: culture, working hours, morale, burnout, and other mental health factors that affect productivity, job satisfaction, and well-being. In <a href="#citations">[3]</a>, authors argue that &ldquo;performance is often best evaluated as outcomes instead
+of output.&rdquo; This is intuitive, because you can have tremendous output in an organization and still have undesirable outcomes. They also recommend a framework for some metrics, called the &ldquo;SPACE&rdquo; framework:</p>
+<ol>
+<li><strong>S</strong>atisfaction and well-being: how fulfilled, happy, and healthy one is</li>
+<li><strong>P</strong>erformance: an outcome of a process</li>
+<li><strong>A</strong>ctivity: the count of actions or throughput</li>
+<li><strong>C</strong>ommunication and collaboration</li>
+<li><strong>E</strong>fficiency and flow: doing work with minimal delays or interruptions</li>
+</ol>
+<p>You can apply the SPACE framework, or any other frameworks from the cited authors below and arrange all kinds of different perspectives and metrics for each, such as:</p>
+<h3 id="organizational">Organizational</h3>
+<ol>
+<li>Retention rate of employees</li>
+<li>Developer satisfaction</li>
+<li>Perception of outcomes</li>
+</ol>
+<h3 id="product">Product</h3>
+<ol>
+<li>Reduced defects</li>
+<li>Functionally and theoretically stable systems</li>
+<li>Secure</li>
+<li>Robust</li>
+<li>Reliable</li>
+<li>Maintainable</li>
+<li>Extensible</li>
+<li>Frequency of deployments</li>
+</ol>
+<h3 id="project">Project</h3>
+<ol>
+<li>Accurate requirements or specifications</li>
+<li>Friendly user interfaces/tooling</li>
+<li>Clear repeatable processes and mechanisms</li>
+<li>Low uncertainties</li>
+<li>Responsive to changes/demand</li>
+<li>Traceable events</li>
+<li>Reusable components for past and future components</li>
+</ol>
+<h3 id="developer">Developer</h3>
+<ol>
+<li>Ability to learn</li>
+<li>Communication and collaboration</li>
+<li>Adapatability to changes</li>
+<li>Interesting domains or cross-functional skills</li>
+<li>Efficiency and flow (i.e., ability to quickly make changes without breaking things)</li>
+<li>Low ramp-up time</li>
+<li>Satisfaction of tools</li>
+<li>Randomization/task shuffling</li>
+<li>Documentation</li>
+<li>Meeting time</li>
+</ol>
+<h2 id="unit-tests-and-technical-debt">Unit Tests and Technical Debt</h2>
+<p>In <a href="#citations">[2]</a> authors observe that there is a linear relationship between testing and productivity, but not on the external quality of the system. End-to-end integration testing or system-level tests are cited as the most valuable tests in a system.</p>
+<p>Technical debt is always interesting to discuss. In <a href="#citations">[7]</a>, authors cited that 23% of their working time is due to technical debt. This was mostly taken up by refactoring time and having to read additional source code or gather context for the task. If a system is sufficiently complex and has enough history, there is no doubt that a huge amount of time will be taken up in the development lifecycle gathering context. It&rsquo;s why I wrote <a href="https://ehotinger.com/blog/the-most-important-software-documentation/">this article</a> claiming:</p>
+<blockquote>
+<p>The most important documentation in software engineering is the rationale behind architectural decisions and critical components.</p>
+</blockquote>
+<p>On the other hand, I would say these results are completely dependent on the organization, product, and project you are measuring against and it should not be used as a strong observation in the general case.</p>
+<h2 id="reflecting--practical-advice">Reflecting &amp; Practical Advice</h2>
+<p>So, how do I feel about developer productivity after working on it the last few months? Well, solving developer productivity in a generic sense is impossible and a myth. Much of it depends on your expectations and perspective which varies inexplicably depending on the environment. It&rsquo;s a much better use of our time to be practical, using some of the aforementioned frameworks to guide our investment and decision making. Here are a few examples of practical things that almost every company or organization can consider for example:</p>
+<ol>
+<li>Identify high ROI or tedious tasks that are perceived as painful and automate them. Use ChatGPT, Support Bots, Documentation Bots, Code Review Bots, Operational Bots, Testing Bots, etc. See <a href="#citations">[6]</a> for more examples of practical bots.</li>
+<li>Set a high unit test coverage bar for all new projects from the beginning, and constantly increase coverage over time. This won&rsquo;t necessarily help with product quality, but it will improve developer productivity.</li>
+<li>Create simple documentation that provides insight into critical decisions and components that is easy for developers to discover.</li>
+<li>Keep an open and agile mind. Be willing to constantly reprioritize tasks when new high ROI projects are discovered or introduced.</li>
+<li>Reduce build times, test times, and deployment times.</li>
+<li>Keep all your dependencies up to date by merging constantly (avoid security vulnerabilities or year-long conflicts by doing this incrementally). It will force your testing and infrastructure to stay up to date.</li>
+<li>Empower sub-teams to develop and deploy their own software in an isolated environment. This can be done through macroservices or microservices.</li>
+<li>Create best practices across the organization and evangelize them. This could vary from code quality, standards, etc. Keep on the lookout for common optimization tricks that can be applied to multiple projects.</li>
+<li>Profile everything all the time. Catch trivial low-hanging bugs and regressions.</li>
+<li>Treat preproduction environments like production environments. Put alarms, dashboards, and metrics on them. Create SLAs for them and do not let them break.</li>
+<li>If tests don&rsquo;t have value, deprecate them and</li>
+<li>Aim to have one path of code. Anytime you introduce cyclical complexity,</li>
+<li>Improve quality by introducing more end-to-end testing, canaries, and game day processes.</li>
+<li>Invest in oncall and operator tooling.</li>
+</ol>
+<h2 id="citations">Citations</h2>
+<ul>
+<li>[1] <a href="https://dl.acm.org/doi/10.1145/1185448.1185493">Fleming W, Romas M, Dean B, and Rob L, &ldquo;A Framework for the Effective Adoption of
+Software Development Methodologies&rdquo;</a></li>
+<li>[2] <a href="https://dl.acm.org/doi/10.1145/2745802.2745826">Davide F, Burak T, and Markku O, &ldquo;On the Effects of Programming and Testing Skills on
+External Quality and Productivity in a Test-Driven
+Development Context&rdquo;</a></li>
+<li>[3] <a href="https://dl.acm.org/doi/10.1145/3453928">Nicole F, Margaret-Anne S, Chandra M, Thomas Z, Brian H, and Jenna B, &ldquo;The SPACE of developer productivity&rdquo;</a></li>
+<li>[4] <a href="https://dl.acm.org/doi/10.1145/3540250.3558940">Authors: Lan C, Emerson M, Mark C, Ciera J, Collin G, Andrea K, Nan Z, and Elizabeth K, &ldquo;What improves developer productivity at google? code quality&rdquo;</a></li>
+<li>[5] <a href="https://dl.acm.org/doi/10.1145/3511430.3511914">Thomas Z, &ldquo;Measuring Developer Productivity and the New Future of Work&rdquo;</a></li>
+<li>[6] <a href="https://dl.acm.org/doi/10.1145/2950290.2983989">Margaret-Anne S and Alexey Z, &ldquo;Disrupting developer productivity one bot at a time&rdquo;</a></li>
+<li>[7] <a href="https://dl.acm.org/doi/10.1145/3194164.3194178">Terese B, Antonio M, and Jan B, &ldquo;Technical debt cripples software developer productivity: a longitudinal study on developers&rsquo; daily software development work&rdquo;</a></li>
+<li>[8] <a href="http://paper.getdx.com/">Michaela G, Margaret-Anne S, and Abi N, &ldquo;An Actionable Framework for Understanding and Improving Developer Experience&rdquo;</a></li>
+</ul>
+
+                <br>
+                
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  
+                    <a href="https://ehotinger.com/tags/dev">dev</a>
+                  
+                    <a href="https://ehotinger.com/tags/productivity">productivity</a>
+                  
+                  </div>
+                  <br />
+                
+                <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146787275-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
