@@ -8,10 +8,10 @@
     <loc>https://ehotinger.com/categories/</loc>
     <lastmod>2023-02-04T10:49:13-08:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/tags/dev/</loc>
+    <loc>https://ehotinger.com/tags/development/</loc>
     <lastmod>2023-02-04T10:49:13-08:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/categories/dev/</loc>
+    <loc>https://ehotinger.com/categories/development/</loc>
     <lastmod>2023-02-04T10:49:13-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/</loc>
@@ -24,6 +24,12 @@
     <lastmod>2023-02-04T10:49:13-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/productivity/</loc>
+    <lastmod>2023-02-04T10:49:13-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/software/</loc>
+    <lastmod>2023-02-04T10:49:13-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/software/</loc>
     <lastmod>2023-02-04T10:49:13-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/</loc>
@@ -110,6 +116,12 @@
     <loc>https://ehotinger.com/blog/give-up-on-ci-cd/</loc>
     <lastmod>2020-09-08T22:20:29-07:00</lastmod>
   </url><url>
+    <loc>https://ehotinger.com/tags/integration/</loc>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/integration/</loc>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/tags/meta/</loc>
     <lastmod>2020-09-08T22:20:29-07:00</lastmod>
   </url><url>
@@ -159,6 +171,9 @@
     <lastmod>2019-02-25T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/go/</loc>
+    <lastmod>2019-02-25T00:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/go/</loc>
     <lastmod>2019-02-25T00:00:00-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/installing-go-windows/</loc>

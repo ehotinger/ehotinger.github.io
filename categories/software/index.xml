@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Eric Hotinger</title>
+    <link>https://ehotinger.com/categories/software/</link>
+    <description>Recent content in software on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 04 Feb 2023 10:49:13 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practical Developer Productivity</title>
+      <link>https://ehotinger.com/blog/practical-developer-productivity/</link>
+      <pubDate>Sat, 04 Feb 2023 10:49:13 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/practical-developer-productivity/</guid>
+      <description>Practical Developer Productivity Developer productivity has been studied extensively across the last few decades because developers are typically the most expensive piece of software development. Despite decades of research, nobody has cracked the case. Moreover, most teams struggle to come up with a metric or goal to even define what it means to capture &amp;ldquo;developer productivity.&amp;rdquo;
+Over the last few months, I&amp;rsquo;ve spent a significant amount of energy in the space of developer productivity for an organization of ~500 developers.</description>
+    </item>
+    
+    <item>
+      <title>Install Gala Node V3 on Ubuntu Linux</title>
+      <link>https://ehotinger.com/blog/install-gala-node-v3-on-ubuntu-linux/</link>
+      <pubDate>Sun, 29 Jan 2023 15:01:03 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/install-gala-node-v3-on-ubuntu-linux/</guid>
+      <description>These are the all scripts required to install Gala Games v3 nodes. It&amp;rsquo;s a trimmed down version of the main blog post.
+Install Docker sudo apt install docker.io -y sudo systemctl status docker sudo systemctl enable --now docker Install the Gala Image sudo wget --trust-server-names https://links.gala.com/DownloadLinuxNode It downloads a file name called gala-node-vX.X.X.tar.gz. sudo tar xzvf gala-node-v3[version number].tar.gz sudo ./gala-node/install.sh sudo gala-node config api-key your API key here Run sudo gala-node licenses Based on your licenses use sudo gala-node config workloads &amp;lt;workload&amp;gt; For example sudo gala-node config workloads founders sudo gala-node start Verify it&amp;rsquo;s up: sudo gala-node status Optional step:</description>
+    </item>
+    
+    <item>
+      <title>Operating in Grey Modes</title>
+      <link>https://ehotinger.com/blog/operating-in-grey-modes/</link>
+      <pubDate>Thu, 19 Jan 2023 13:26:55 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/operating-in-grey-modes/</guid>
+      <description>Grey Modes In complex distributed systems, hardware failure is inevitable. The ability to operate in a grey mode (a mode in which a system is partially working) is an important and deliberate architectural choice to consider. Ask yourself the following question: would customers be more upset to have a completely nonfunctional system, or have a subset of the functionality working? For example, if you are working on a storage layer, perhaps it would be better to serve reads even though you can&amp;rsquo;t serve writes at the same time.</description>
+    </item>
+    
+    <item>
+      <title>The Most Important Software Documentation</title>
+      <link>https://ehotinger.com/blog/the-most-important-software-documentation/</link>
+      <pubDate>Tue, 17 Jan 2023 07:45:40 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/the-most-important-software-documentation/</guid>
+      <description>The most important documentation in software engineering is the rationale behind architectural decisions and critical components. This rationale is should be discussed and recorded in a document via design meetings. The design document should contain architectural options which list off pros/cons. The document should have an opinion on the preferred approach and tell the reader why it is the preferred approach.
+Ideally, the design discussions are also recorded and any feedback is persisted into the architectural design document.</description>
+    </item>
+    
+    <item>
+      <title>Behavioral Interviews: Framework and Strategy</title>
+      <link>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</link>
+      <pubDate>Sun, 08 Jan 2023 14:13:36 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</guid>
+      <description>Behavioral Interviews: Framework and Strategy This post is the final framework and strategy for technical interviews. If you haven&amp;rsquo;t already, be sure to check out my similar posts on System Design Interviews and Coding Interviews too.
+1. The Framework Use the Situation, Task, Action, Result framework. Also known as STAR.
+Situation: The interviewer wants you to present a recent challenging situation in which you found yourself. Task: What were you required to achieve?</description>
+    </item>
+    
+    <item>
+      <title>Coding Interviews: Framework and Strategy</title>
+      <link>https://ehotinger.com/blog/coding-interviews-framework-and-strategy/</link>
+      <pubDate>Sun, 08 Jan 2023 12:22:00 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/coding-interviews-framework-and-strategy/</guid>
+      <description>Coding Interviews: Framework and Strategy The goal of this post is to provide you with a reliable strategy and framework for general coding and technical interviews. At the end, I provide a rough calibration guide to be used in any coding interview so that you can evaluate your performance and others&amp;rsquo; performance with mock practice once you understand the framework and strategies.
+The Framework Every coding interview can be broken into four high-level steps:</description>
+    </item>
+    
+    <item>
+      <title>Windows Subsystem for Linux Installation</title>
+      <link>https://ehotinger.com/blog/windows-subsystem-for-linux-installation/</link>
+      <pubDate>Sat, 14 Aug 2021 12:14:50 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/windows-subsystem-for-linux-installation/</guid>
+      <description>A few common problems that I hit when installing WSL. This is my personal mini guide to get it up and running in a few minutes.
+First, you can visit https://docs.microsoft.com/en-us/windows/wsl/install-win10#simplified-installation-for-windows-insiders to get a beta build and run the commands to install WSL.
+WSL can fail on a new machine even after this because it relies on virtualization:
+Enable Hyper-V (Turn Windows features on or off -&amp;gt; Hyper-V) Enable virtualization in the BIOS (go to your CPU Config and you&amp;rsquo;ll find it) Bonus oddities:</description>
+    </item>
+    
+    <item>
+      <title>Invisible</title>
+      <link>https://ehotinger.com/blog/invisible/</link>
+      <pubDate>Tue, 06 Jul 2021 23:58:35 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/invisible/</guid>
+      <description>I&amp;rsquo;ve created something magical: an invisible compass. The product is not astonishing; it&amp;rsquo;s fragile and young, yet blissful. It hasn&amp;rsquo;t been announced yet, but it will be later this year. I hope you will find it equally mesmerizing.
+For the last six months, I&amp;rsquo;ve worked tirelessly to offer a chance for it to succeed. It&amp;rsquo;s not my own company and I&amp;rsquo;m not getting paid some exuberant amount of money to stay committed to an arbitrary mission.</description>
+    </item>
+    
+    <item>
+      <title>Give up on CI/CD</title>
+      <link>https://ehotinger.com/blog/give-up-on-ci-cd/</link>
+      <pubDate>Tue, 08 Sep 2020 22:20:29 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/give-up-on-ci-cd/</guid>
+      <description>Give up on your glorious vision of CI/CD. I don&amp;rsquo;t want it and your customers don&amp;rsquo;t either. If you break me one more time this month I will lose my mind and start looking at competitors. I can afford to wait 3 months for your new features. On second thought, I don&amp;rsquo;t care if I get any new features ever again.
+I&amp;rsquo;ve written software whose sole purpose was to make CI/CD better.</description>
+    </item>
+    
+    <item>
+      <title>The Best Developer I Have Ever Met Was the Worst</title>
+      <link>https://ehotinger.com/blog/the-best-dev-i-met-was-the-worst/</link>
+      <pubDate>Tue, 25 Aug 2020 21:33:08 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/the-best-dev-i-met-was-the-worst/</guid>
+      <description>Many moons ago I met the best developer I have ever encountered. I was enamored by their ability to recall any piece of information that they have ever seen. They had dozens of patents, scientific papers, and a work history nothing short of genius. They built tools and languages I used on a daily basis. They were a true prodigy and I could not believe I had the privilege of working under them.</description>
+    </item>
+    
+    <item>
+      <title>The Developer&#39;s Outlook Rules</title>
+      <link>https://ehotinger.com/blog/the-developers-outlook-rules/</link>
+      <pubDate>Sat, 31 Aug 2019 14:30:43 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/the-developers-outlook-rules/</guid>
+      <description>Every developer should have a To, CC, and Other folder in Outlook.
+You should have 3 main rules in order from most to least important:
+Anything sent to me as a To goes to the To folder Anything sent to me as a CC goes to the CC folder Anything else gets sent to the Other folder. You should never look at your original Inbox folder from this point on.</description>
+    </item>
+    
+    <item>
+      <title>ACR Tasks Image Vulnerability Scanning</title>
+      <link>https://ehotinger.com/blog/acr-tasks-image-scanning/</link>
+      <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/acr-tasks-image-scanning/</guid>
+      <description>In this blog you&amp;rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&amp;rsquo;s microscanner. By the end, you&amp;rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.
+This is generic, so you can bring whatever image scanner you prefer.</description>
+    </item>
+    
+    <item>
+      <title>Azure Container Registry Tasks Daily Autopurge</title>
+      <link>https://ehotinger.com/blog/acr-tasks-daily-autopurge/</link>
+      <pubDate>Tue, 16 Jul 2019 14:15:54 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/acr-tasks-daily-autopurge/</guid>
+      <description>Azure Container Registry Tasks came out with a lot of new features in the last year. Many people don&amp;rsquo;t realize the insane potential of this service, so I wanted to share a few things that you probably didn&amp;rsquo;t know and some of the things the team has been working on.
+In particular, I wanted to use one of the most common feature requests of the Azure Container Registry - automatic garbage collection of old or unused tags/manifests/images - as an example of how you can make the world your oyster using ACR Tasks.</description>
+    </item>
+    
+    <item>
+      <title>Bypassing the character limit displayed when debugging with Delve and VSCode</title>
+      <link>https://ehotinger.com/blog/vscode-delve-debugging/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/vscode-delve-debugging/</guid>
+      <description>Debugging Go applications with Visual Studio Code and Delve is extremely powerful. However, there are some default settings which you may want to tweak to improve this experience and they&amp;rsquo;re not straightforward to find out.
+Sometimes when you&amp;rsquo;re debugging if a variable&amp;rsquo;s value is really long, i.e. more than 64 characters, you&amp;rsquo;ll see the value&amp;rsquo;s content end as &amp;ldquo;&amp;hellip;+7 more&amp;rdquo; or however many characters were truncated. To get around this, you need to customize your workspace or user settings in Visual Studio Code.</description>
+    </item>
+    
+    <item>
+      <title>Installing Go on Windows (including Make)</title>
+      <link>https://ehotinger.com/blog/installing-go-windows/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/installing-go-windows/</guid>
+      <description>This is an extremely brief guide to setting up Go on Windows. There are plenty of guides out there for setting up Go, but none that also include how to get your Makefiles working cross-platform easily. The easiest way I&amp;rsquo;ve found to do this is to change shells. This is especially true if you have Makefiles like I do, where $(shell) is everywhere. With the default shell you&amp;rsquo;ll end up with CREATE PROCESS(NULL, .</description>
+    </item>
+    
+    <item>
+      <title>Installing Hugo</title>
+      <link>https://ehotinger.com/blog/installing-hugo/</link>
+      <pubDate>Thu, 31 May 2018 12:02:45 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/installing-hugo/</guid>
+      <description>This is a quick-start guide to setting up Hugo with GitHub pages, since it took too much effort to find the full instructions anywhere else. It should hopefully take you ~15 minutes to complete the entire thing.
+Make two GitHub repositories, i.e., https://github.com/ehotinger/blog and https://github.com/ehotinger/ehotinger.github.io - the first repository is for the unrendered Hugo content, and the second is for the rendered content. Note: you could just have one repository as your GitHub page, but this approach allows you to easily switch off GitHub pages if you want to.</description>
+    </item>
+    
+  </channel>
+</rss>

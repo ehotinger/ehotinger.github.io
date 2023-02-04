@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Eric Hotinger</title>
+    <link>https://ehotinger.com/categories/go/</link>
+    <description>Recent content in Go on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 25 Feb 2019 00:00:00 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bypassing the character limit displayed when debugging with Delve and VSCode</title>
+      <link>https://ehotinger.com/blog/vscode-delve-debugging/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/vscode-delve-debugging/</guid>
+      <description>Debugging Go applications with Visual Studio Code and Delve is extremely powerful. However, there are some default settings which you may want to tweak to improve this experience and they&amp;rsquo;re not straightforward to find out.
+Sometimes when you&amp;rsquo;re debugging if a variable&amp;rsquo;s value is really long, i.e. more than 64 characters, you&amp;rsquo;ll see the value&amp;rsquo;s content end as &amp;ldquo;&amp;hellip;+7 more&amp;rdquo; or however many characters were truncated. To get around this, you need to customize your workspace or user settings in Visual Studio Code.</description>
+    </item>
+    
+  </channel>
+</rss>
