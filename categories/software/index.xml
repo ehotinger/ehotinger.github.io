@@ -6,7 +6,17 @@
     <description>Recent content in software on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 04 Feb 2023 10:49:13 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Feb 2023 20:24:21 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Do Experienced Developers Learn New Programming Languages</title>
+      <link>https://ehotinger.com/blog/how-do-experienced-developers-learn-new-programming-languages/</link>
+      <pubDate>Sat, 04 Feb 2023 20:24:21 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/how-do-experienced-developers-learn-new-programming-languages/</guid>
+      <description>How do experienced programmers learn a new programming language? I recently read through [1] - Here we go again: why is it difficult for developers to learn another programming language?. In this paper, they interviewed a large sample size of experienced developers and asked them various questions about how they learn a new programming language. Some of the takeaways and trends were pretty interesting (in bold below).
+Programmers learned languages on their own Yeah, once you graduate university, chances are you won&amp;rsquo;t ever take a class to learn a new programming language again.</description>
+    </item>
+    
     <item>
       <title>Practical Developer Productivity</title>
       <link>https://ehotinger.com/blog/practical-developer-productivity/</link>
