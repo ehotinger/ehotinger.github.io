@@ -2,20 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ehotinger.com/blog/automating-newsletters-with-hugo-tinyletter-and-zapier/</loc>
+    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2023-02-04T20:24:21-08:00</lastmod>
+    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2023-02-04T20:24:21-08:00</lastmod>
+    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/development/</loc>
-    <lastmod>2023-02-04T20:24:21-08:00</lastmod>
+    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/development/</loc>
-    <lastmod>2023-02-04T20:24:21-08:00</lastmod>
+    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/</loc>
-    <lastmod>2023-02-04T20:24:21-08:00</lastmod>
+    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/software/</loc>
+    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/software/</loc>
+    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/how-do-experienced-developers-learn-new-programming-languages/</loc>
     <lastmod>2023-02-04T20:24:21-08:00</lastmod>
@@ -24,15 +36,6 @@
     <lastmod>2023-02-04T20:24:21-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/productivity/</loc>
-    <lastmod>2023-02-04T20:24:21-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/software/</loc>
-    <lastmod>2023-02-04T20:24:21-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/software/</loc>
-    <lastmod>2023-02-04T20:24:21-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2023-02-04T20:24:21-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/practical-developer-productivity/</loc>

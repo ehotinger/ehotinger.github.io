@@ -6,7 +6,18 @@
     <description>Recent content in Blog on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 04 Feb 2023 20:24:21 -0800</lastBuildDate><atom:link href="https://ehotinger.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 13:01:11 -0800</lastBuildDate><atom:link href="https://ehotinger.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating Newsletters With Hugo, TinyLetter, and Zapier</title>
+      <link>https://ehotinger.com/blog/automating-newsletters-with-hugo-tinyletter-and-zapier/</link>
+      <pubDate>Sun, 05 Feb 2023 13:01:11 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/automating-newsletters-with-hugo-tinyletter-and-zapier/</guid>
+      <description>Automating Newsletters With Hugo, TinyLetter, and Zapier This short post will teach you how to automatically send emails using Zapier to an email subscription list on TinyLetter for a personal blog created using Hugo.
+The setup takes about 10 minnutes and is completely free until you have over 5000 subscribers. If you reach that point, your blog is so successful it&amp;rsquo;d be worth it to spend a few bucks!
+Create your TinyLetter account on https://www.</description>
+    </item>
+    
     <item>
       <title>How Do Experienced Developers Learn New Programming Languages</title>
       <link>https://ehotinger.com/blog/how-do-experienced-developers-learn-new-programming-languages/</link>
