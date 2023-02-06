@@ -261,11 +261,11 @@ Sometimes when you&amp;rsquo;re debugging if a variable&amp;rsquo;s value is rea
     </item>
     
     <item>
-      <title>Installing Hugo</title>
-      <link>https://ehotinger.com/blog/installing-hugo/</link>
+      <title>Making a Github Pages Hugo Blog</title>
+      <link>https://ehotinger.com/blog/making-a-github-pages-hugo-blog/</link>
       <pubDate>Thu, 31 May 2018 12:02:45 -0700</pubDate>
       
-      <guid>https://ehotinger.com/blog/installing-hugo/</guid>
+      <guid>https://ehotinger.com/blog/making-a-github-pages-hugo-blog/</guid>
       <description>This is a quick-start guide to setting up Hugo with GitHub pages, since it took too much effort to find the full instructions anywhere else. It should hopefully take you ~15 minutes to complete the entire thing.
 Make two GitHub repositories, i.e., https://github.com/ehotinger/blog and https://github.com/ehotinger/ehotinger.github.io - the first repository is for the unrendered Hugo content, and the second is for the rendered content. Note: you could just have one repository as your GitHub page, but this approach allows you to easily switch off GitHub pages if you want to.</description>
     </item>
