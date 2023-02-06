@@ -9,12 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="author" content="Eric Hotinger">
-<meta name="description" content="In this blog you&rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&rsquo;s microscanner. By the end, you&rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.
-This is generic, so you can bring whatever image scanner you prefer.">
+<meta name="description" content="Learn how to secure your container images using Azure Container Registry Tasks and Aqua&#39;s Microscanner in this informative blog. The article provides step-by-step instructions on how to set up a workflow that prevents the distribution of vulnerable images by scanning them during build time. Follow the code example and the instructions on how to register Aqua&#39;s Microscanner, set up Azure Key Vault, and assign identities for Azure Container Registry. By the end of the blog, you&#39;ll know how to create a complex security workflow to ensure the safety of your container images.">
 
 <meta property="og:title" content="ACR Tasks Image Vulnerability Scanning" />
-<meta property="og:description" content="In this blog you&rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&rsquo;s microscanner. By the end, you&rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.
-This is generic, so you can bring whatever image scanner you prefer." />
+<meta property="og:description" content="Learn how to secure your container images using Azure Container Registry Tasks and Aqua&#39;s Microscanner in this informative blog. The article provides step-by-step instructions on how to set up a workflow that prevents the distribution of vulnerable images by scanning them during build time. Follow the code example and the instructions on how to register Aqua&#39;s Microscanner, set up Azure Key Vault, and assign identities for Azure Container Registry. By the end of the blog, you&#39;ll know how to create a complex security workflow to ensure the safety of your container images." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ehotinger.com/blog/acr-tasks-image-scanning/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2019-07-19T18:23:31-07:00" />
@@ -50,9 +48,9 @@ This is generic, so you can bring whatever image scanner you prefer." />
 
 
     
-    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-02-05%2019%3a41%3a21.776761%20-0800%20PST%20m%3d%2b0.055218165">
-    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-02-05%2019%3a41%3a21.776761%20-0800%20PST%20m%3d%2b0.055218165">
-    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-02-05%2019%3a41%3a21.776761%20-0800%20PST%20m%3d%2b0.055218165">
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-02-05%2019%3a53%3a48.945059%20-0800%20PST%20m%3d%2b0.040814944">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-02-05%2019%3a53%3a48.945059%20-0800%20PST%20m%3d%2b0.040814944">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-02-05%2019%3a53%3a48.945059%20-0800%20PST%20m%3d%2b0.040814944">
     
 
 
