@@ -2,13 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ehotinger.com/blog/automating-newsletters-with-hugo-tinyletter-and-zapier/</loc>
-    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
+    <loc>https://ehotinger.com/tags/ai/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/artificial-intelligence/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/chatgpt/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/chatgpt/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/optimization/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/search-engine-optimization/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/seo/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/seo-best-practices/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/unlocking-the-power-of-ai-seo-optimization-with-chatgpt/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/website-optimization-tips/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/website-ranking/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/automating-newsletters-with-hugo-tinyletter-and-zapier/</loc>
     <lastmod>2023-02-05T13:01:11-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/development/</loc>
@@ -17,16 +56,10 @@
     <loc>https://ehotinger.com/categories/development/</loc>
     <lastmod>2023-02-05T13:01:11-08:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/</loc>
-    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/tags/software/</loc>
     <lastmod>2023-02-05T13:01:11-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/software/</loc>
-    <lastmod>2023-02-05T13:01:11-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2023-02-05T13:01:11-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/how-do-experienced-developers-learn-new-programming-languages/</loc>
