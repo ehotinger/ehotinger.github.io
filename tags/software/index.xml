@@ -58,16 +58,6 @@ Install Docker sudo apt install docker.io -y sudo systemctl status docker sudo s
     </item>
     
     <item>
-      <title>The Most Important Software Documentation</title>
-      <link>https://ehotinger.com/blog/the-most-important-software-documentation/</link>
-      <pubDate>Tue, 17 Jan 2023 07:45:40 -0800</pubDate>
-      
-      <guid>https://ehotinger.com/blog/the-most-important-software-documentation/</guid>
-      <description>The most important documentation in software engineering is the rationale behind architectural decisions and critical components. This rationale is should be discussed and recorded in a document via design meetings. The design document should contain architectural options which list off pros/cons. The document should have an opinion on the preferred approach and tell the reader why it is the preferred approach.
-Ideally, the design discussions are also recorded and any feedback is persisted into the architectural design document.</description>
-    </item>
-    
-    <item>
       <title>Behavioral Interviews: Framework and Strategy</title>
       <link>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</link>
       <pubDate>Sun, 08 Jan 2023 14:13:36 -0800</pubDate>
@@ -94,7 +84,7 @@ The Framework Every coding interview can be broken into four high-level steps:</
       <pubDate>Sat, 14 Aug 2021 12:14:50 -0700</pubDate>
       
       <guid>https://ehotinger.com/blog/windows-subsystem-for-linux-installation/</guid>
-      <description>A few common problems that I hit when installing WSL. This is my personal mini guide to get it up and running in a few minutes.
+      <description>Here are a few common problems that I hit when installing WSL. This is my personal mini guide to get it up and running in a few minutes.
 First, you can visit https://docs.microsoft.com/en-us/windows/wsl/install-win10#simplified-installation-for-windows-insiders to get a beta build and run the commands to install WSL.
 WSL can fail on a new machine even after this because it relies on virtualization:
 Enable Hyper-V (Turn Windows features on or off -&amp;gt; Hyper-V) Enable virtualization in the BIOS (go to your CPU Config and you&amp;rsquo;ll find it) Bonus oddities:</description>

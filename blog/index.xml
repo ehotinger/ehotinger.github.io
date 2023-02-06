@@ -153,7 +153,7 @@ The truth is, the books and experiences that I feel like helped me the most, hav
       <pubDate>Sat, 14 Aug 2021 12:14:50 -0700</pubDate>
       
       <guid>https://ehotinger.com/blog/windows-subsystem-for-linux-installation/</guid>
-      <description>A few common problems that I hit when installing WSL. This is my personal mini guide to get it up and running in a few minutes.
+      <description>Here are a few common problems that I hit when installing WSL. This is my personal mini guide to get it up and running in a few minutes.
 First, you can visit https://docs.microsoft.com/en-us/windows/wsl/install-win10#simplified-installation-for-windows-insiders to get a beta build and run the commands to install WSL.
 WSL can fail on a new machine even after this because it relies on virtualization:
 Enable Hyper-V (Turn Windows features on or off -&amp;gt; Hyper-V) Enable virtualization in the BIOS (go to your CPU Config and you&amp;rsquo;ll find it) Bonus oddities:</description>

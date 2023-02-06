@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software engineering on Eric Hotinger</title>
+    <link>https://ehotinger.com/tags/software-engineering/</link>
+    <description>Recent content in software engineering on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 17 Jan 2023 07:45:40 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Most Important Software Documentation</title>
+      <link>https://ehotinger.com/blog/the-most-important-software-documentation/</link>
+      <pubDate>Tue, 17 Jan 2023 07:45:40 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/the-most-important-software-documentation/</guid>
+      <description>The most important documentation in software engineering is the rationale behind architectural decisions and critical components. This rationale is should be discussed and recorded in a document via design meetings. The design document should contain architectural options which list off pros/cons. The document should have an opinion on the preferred approach and tell the reader why it is the preferred approach.
+Ideally, the design discussions are also recorded and any feedback is persisted into the architectural design document.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -9,10 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="author" content="Eric Hotinger">
-<meta name="description" content="Grey Modes In complex distributed systems, hardware failure is inevitable. The ability to operate in a grey mode (a mode in which a system is partially working) is an important and deliberate architectural choice to consider. Ask yourself the following question: would customers be more upset to have a completely nonfunctional system, or have a subset of the functionality working? For example, if you are working on a storage layer, perhaps it would be better to serve reads even though you can&rsquo;t serve writes at the same time.">
+<meta name="description" content="Learn about the concept of grey modes in complex distributed systems and the importance of operating partially in case of hardware failures. Discover how circular buffers and logging can help prevent system crashes in Docker. Explore the pros and cons of operating in a grey mode and how to make informed architectural decisions. Get tips and insights on how to optimize your system&#39;s health and keep your customers happy.">
 
 <meta property="og:title" content="Operating in Grey Modes" />
-<meta property="og:description" content="Grey Modes In complex distributed systems, hardware failure is inevitable. The ability to operate in a grey mode (a mode in which a system is partially working) is an important and deliberate architectural choice to consider. Ask yourself the following question: would customers be more upset to have a completely nonfunctional system, or have a subset of the functionality working? For example, if you are working on a storage layer, perhaps it would be better to serve reads even though you can&rsquo;t serve writes at the same time." />
+<meta property="og:description" content="Learn about the concept of grey modes in complex distributed systems and the importance of operating partially in case of hardware failures. Discover how circular buffers and logging can help prevent system crashes in Docker. Explore the pros and cons of operating in a grey mode and how to make informed architectural decisions. Get tips and insights on how to optimize your system&#39;s health and keep your customers happy." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ehotinger.com/blog/operating-in-grey-modes/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2023-01-19T13:26:55-08:00" />
@@ -48,9 +48,9 @@
 
 
     
-    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-02-05%2019%3a26%3a35.417491%20-0800%20PST%20m%3d%2b0.055279939">
-    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-02-05%2019%3a26%3a35.417491%20-0800%20PST%20m%3d%2b0.055279939">
-    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-02-05%2019%3a26%3a35.417491%20-0800%20PST%20m%3d%2b0.055279939">
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-02-05%2019%3a41%3a21.766425%20-0800%20PST%20m%3d%2b0.044882039">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-02-05%2019%3a41%3a21.766425%20-0800%20PST%20m%3d%2b0.044882039">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-02-05%2019%3a41%3a21.766425%20-0800%20PST%20m%3d%2b0.044882039">
     
 
 
