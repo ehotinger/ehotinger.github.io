@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redshift on Eric Hotinger</title>
+    <link>https://ehotinger.com/categories/redshift/</link>
+    <description>Recent content in redshift on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 28 Mar 2023 06:12:11 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/redshift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create DataShare EricShare</title>
+      <link>https://ehotinger.com/blog/create-datashare-ericshare/</link>
+      <pubDate>Tue, 28 Mar 2023 06:12:11 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/create-datashare-ericshare/</guid>
+      <description>CREATE DATASHARE ericshare; Several years ago, I was helping build Amazon Redshift&amp;rsquo;s Data Sharing feature. I had the fortune of being one of the first people in the world to ever call CREATE DATASHARE and run queries across producers and consumers.
+Any time I work on a new feature, I always create a developer guide for setting up the complete environment. I use developer guides as my personal notes while I work on a project.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,25 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ehotinger.com/tags/amazon/</loc>
+    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/amazon/</loc>
+    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/</loc>
+    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/</loc>
+    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/create-datashare-ericshare/</loc>
+    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/</loc>
+    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/redshift/</loc>
+    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/redshift/</loc>
+    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/tags/ai/</loc>
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/artificial-intelligence/</loc>
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/tags/chatgpt/</loc>
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/chatgpt/</loc>
-    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/</loc>
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/optimization/</loc>
@@ -33,9 +51,6 @@
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/seo-best-practices/</loc>
-    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/unlocking-the-power-of-ai-seo-optimization-with-chatgpt/</loc>

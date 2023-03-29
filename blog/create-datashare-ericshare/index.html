@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Eric Hotinger">
+<meta name="description" content="Learn how to create data shares with Amazon Redshift using the step-by-step developer guide. Follow along to set up a data share for producers and consumers using a simple table, and discover the power of Redshift&#39;s data sharing capabilities. See how small gestures can affect more people than you ever imagine!">
+
+<meta property="og:title" content="Create DataShare EricShare" />
+<meta property="og:description" content="Learn how to create data shares with Amazon Redshift using the step-by-step developer guide. Follow along to set up a data share for producers and consumers using a simple table, and discover the power of Redshift&#39;s data sharing capabilities. See how small gestures can affect more people than you ever imagine!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ehotinger.com/blog/create-datashare-ericshare/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-03-28T06:12:11-07:00" />
+<meta property="article:modified_time" content="2023-03-28T06:12:11-07:00" />
+
+
+
+    <title>
+        
+        
+         Create DataShare EricShare 
+        
+    </title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3511724161548652"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://ehotinger.com/blog/create-datashare-ericshare/">
+    
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-03-28%2020%3a53%3a22.978371%20-0700%20PDT%20m%3d%2b0.049238938">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-03-28%2020%3a53%3a22.978371%20-0700%20PDT%20m%3d%2b0.049238938">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-03-28%2020%3a53%3a22.978371%20-0700%20PDT%20m%3d%2b0.049238938">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://ehotinger.com/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://ehotinger.com/"><img class="avatar" src="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=50" rcset="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=100 2x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=150 3x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=200 4x"></a>
+            
+            <a href="https://ehotinger.com/"><div class="name">Eric Hotinger</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/eric-hotinger-9b7b2b52" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Create DataShare EricShare
+
+</div>
+
+                    <div class="initials"><a href="https://ehotinger.com"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Tue Mar 28 2023 06:12:11 PDT'>Mar 28, 2023</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>3 minutes read</div>
+                    
+                </div>
+            </div>
+
+            <div class="markdown">
+                <h1 id="create-datashare-ericshare">CREATE DATASHARE ericshare;</h1>
+<p>Several years ago, I was helping build Amazon Redshift&rsquo;s <a href="https://docs.aws.amazon.com/redshift/latest/dg/datashare-overview.html">Data Sharing</a> feature. I had the fortune of being one of the first people in the world to ever call <a href="https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_DATASHARE.html">CREATE DATASHARE</a> and run queries across producers and consumers.</p>
+<p>Any time I work on a new feature, I always create a developer guide for setting up the complete environment. I use developer guides as my personal notes while I work on a project. It makes it easy for me to remember where I left off and sometimes they are useful for other people onboarding to the project.</p>
+<p>Late in 2020, I wrote a developer guide on how to set up data shares for a Producer and a Consumer using a trivial table. It was something like this:</p>
+<ol>
+<li>On the producer, run the following commands:</li>
+</ol>
+<pre tabindex="0"><code># Create the data share
+create datashare ericshare;
+
+# Share it to a namespace
+grant usage on datashare ericshare to namespace &#39;example-namespace&#39;;
+
+# Create a simple table and insert some data for the data share
+create table t1 (a int);
+insert into t1 (a) values (1),(2),(3);
+alter datashare ericshare add schema public;
+alter datashare ericshare add table public.t1;
+</code></pre><ol start="2">
+<li>On the consumer, run the following commands to create a queryable database from the share:</li>
+</ol>
+<pre tabindex="0"><code># Create a database
+create database ericdb from datashare ericshare of namespace &#39;example-namespace&#39;;
+
+# Run queries!
+select * from ericdb.public.t1;
+</code></pre><p>Within the same year, we launched <a href="https://aws.amazon.com/blogs/aws/cross-account-data-sharing-for-amazon-redshift/">Data Sharing across accounts</a>, <a href="https://docs.aws.amazon.com/redshift/latest/dg/across-region.html">across regions</a>, <a href="https://docs.aws.amazon.com/redshift/latest/dg/adx-datashare.html">AWS Data Exchange for Amazon Redshift</a>, and several other features. It&rsquo;s a tremendously powerful architecture for Redshift, so I do recommend you check them out. :)</p>
+<p>Several years later, I was watching a developer do a demo for a new feature in this area and to my surprise, they were using a datashare named <code>ericshare</code> in the demo. At the end, I was joking around and asked why they are using a datashare named that?!</p>
+<p>They responded back to me with, &ldquo;oh, ericshares is very popular as a name, because it is in the developer guide.&rdquo; I was floored, and queried to see whether this was true. To my surprise, there were hundreds of <code>ericshare</code>s that were created by many people over several years of time because of this small little guide!</p>
+<p>This experience was hilarious and humbling. It made me remember that sometimes, the little things we do can affect more people than we ever imagine. And sometimes, it&rsquo;s easy to think that small gestures like this go unnoticed. However, you can just as easily spur a chain reaction that affects hundreds, thousands, and even millions of people with subtle actions and words.</p>
+
+                <hr>
+                <div class="next-post">
+                    
+                </div>
+                
+                <div class="previous-post">
+                    
+                    <strong>Previous Post:</strong> <a class="link-reverse" href="https://ehotinger.com/blog/unlocking-the-power-of-ai-seo-optimization-with-chatgpt/?ref=footer">Unlocking the Power of AI SEO Optimization with ChatGPT</a>
+                    
+                </div>
+
+                <hr>
+                
+                <div class="subscribe"><strong><a href="https://tinyletter.com/ehotinger">Click here to subscribe to new posts via my newsletter!</a></strong></div>
+                <br>
+
+                
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  
+                    <a href="https://ehotinger.com/tags/amazon">amazon</a>
+                  
+                    <a href="https://ehotinger.com/tags/redshift">redshift</a>
+                  
+                  </div>
+                  <br />
+                
+                
+                <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146787275-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
