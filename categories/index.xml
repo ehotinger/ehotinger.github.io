@@ -6,7 +6,52 @@
     <description>Recent content in Categories on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 28 Mar 2023 06:12:11 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Apr 2023 19:32:20 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>engineering practices</title>
+      <link>https://ehotinger.com/categories/engineering-practices/</link>
+      <pubDate>Sat, 08 Apr 2023 19:32:20 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/categories/engineering-practices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>project management</title>
+      <link>https://ehotinger.com/categories/project-management/</link>
+      <pubDate>Sat, 08 Apr 2023 19:32:20 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/categories/project-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quality management</title>
+      <link>https://ehotinger.com/categories/quality-management/</link>
+      <pubDate>Sat, 08 Apr 2023 19:32:20 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/categories/quality-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software architecture</title>
+      <link>https://ehotinger.com/categories/software-architecture/</link>
+      <pubDate>Sat, 08 Apr 2023 19:32:20 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/categories/software-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software development</title>
+      <link>https://ehotinger.com/categories/software-development/</link>
+      <pubDate>Sat, 08 Apr 2023 19:32:20 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/categories/software-development/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>amazon</title>
       <link>https://ehotinger.com/categories/amazon/</link>
@@ -103,24 +148,6 @@
       <pubDate>Tue, 17 Jan 2023 07:45:40 -0800</pubDate>
       
       <guid>https://ehotinger.com/categories/agile-methodologies/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software Architecture</title>
-      <link>https://ehotinger.com/categories/software-architecture/</link>
-      <pubDate>Tue, 17 Jan 2023 07:45:40 -0800</pubDate>
-      
-      <guid>https://ehotinger.com/categories/software-architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software Development</title>
-      <link>https://ehotinger.com/categories/software-development/</link>
-      <pubDate>Tue, 17 Jan 2023 07:45:40 -0800</pubDate>
-      
-      <guid>https://ehotinger.com/categories/software-development/</guid>
       <description></description>
     </item>
     

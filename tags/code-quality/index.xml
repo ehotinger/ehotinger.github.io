@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code quality on Eric Hotinger</title>
+    <link>https://ehotinger.com/tags/code-quality/</link>
+    <description>Recent content in code quality on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 08 Apr 2023 19:32:20 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/code-quality/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Engineers Must Own Quality</title>
+      <link>https://ehotinger.com/blog/engineers-must-own-quality/</link>
+      <pubDate>Sat, 08 Apr 2023 19:32:20 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/engineers-must-own-quality/</guid>
+      <description>Why Quality &amp;amp; Assurance Teams are Not Enough: Engineers Must Take Responsibility Engineers must own the quality of the code that they write. Typical quality &amp;amp; assurance teams do not reinforce correct ownership.
+As engineers, our job is to push for quality. We&amp;rsquo;re the only ones that are close enough to the code to understand the shortcuts we&amp;rsquo;re taking, what problems we&amp;rsquo;re creating for the future, and what issues may happen down the road as a result of our actions.</description>
+    </item>
+    
+  </channel>
+</rss>
