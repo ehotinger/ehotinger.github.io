@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Eric Hotinger">
+<meta name="description" content="Learn about AWS Lambda&#39;s new response streaming feature for faster web application responsiveness. Previously, Lambda-based apps had to fully generate and buffer responses before returning anything to clients. Response Streaming, supported on Node.js 14.x, 16.x, and 18.x, solves this problem by using reactive event streams, HTTP/1.1 Chunked Transfer Encoding, which significantly improves Time to First Byte and enables streaming of large payloads. Response Streaming is useful for real-time video and audio streams, larger payload applications, and serverless scenarios. Billing is based on function duration and streamed data amount. Check out the tutorial and example code.">
+
+<meta property="og:title" content="A Tour of AWS Lambda Response Streaming" />
+<meta property="og:description" content="Learn about AWS Lambda&#39;s new response streaming feature for faster web application responsiveness. Previously, Lambda-based apps had to fully generate and buffer responses before returning anything to clients. Response Streaming, supported on Node.js 14.x, 16.x, and 18.x, solves this problem by using reactive event streams, HTTP/1.1 Chunked Transfer Encoding, which significantly improves Time to First Byte and enables streaming of large payloads. Response Streaming is useful for real-time video and audio streams, larger payload applications, and serverless scenarios. Billing is based on function duration and streamed data amount. Check out the tutorial and example code." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-04-11T21:27:56-07:00" />
+<meta property="article:modified_time" content="2023-04-11T21:27:56-07:00" />
+
+
+
+    <title>
+        
+        
+         A Tour of AWS Lambda Response Streaming 
+        
+    </title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3511724161548652"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/">
+    
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2023-04-11%2022%3a10%3a04.074621%20-0700%20PDT%20m%3d%2b0.046527094">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2023-04-11%2022%3a10%3a04.074621%20-0700%20PDT%20m%3d%2b0.046527094">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2023-04-11%2022%3a10%3a04.074621%20-0700%20PDT%20m%3d%2b0.046527094">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://ehotinger.com/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://ehotinger.com/"><img class="avatar" src="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=50" rcset="https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=100 2x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=150 3x, https://gravatar.com/avatar/e3131f3ca9334610f612fc3627c80e73?s=200 4x"></a>
+            
+            <a href="https://ehotinger.com/"><div class="name">Eric Hotinger</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-blog"><a href="https://ehotinger.com/blog/"><span>Blog</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/ehotinger" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="//linkedin.com/in/eric-hotinger-9b7b2b52" target="_blank" rel="noopener"><img class="icon" src="https://ehotinger.com/img/linkedin.svg" alt="linkedin" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:ehotinger@gmail.com"><img class="icon" src="https://ehotinger.com/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    A Tour of AWS Lambda Response Streaming
+
+</div>
+
+                    <div class="initials"><a href="https://ehotinger.com"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Tue Apr 11 2023 21:27:56 PDT'>Apr 11, 2023</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>3 minutes read</div>
+                    
+                </div>
+            </div>
+
+            <div class="markdown">
+                <h1 id="aws-lambda-response-streaming">AWS Lambda Response Streaming</h1>
+<h2 id="overview">Overview</h2>
+<p>In April 2023, AWS Lambda made an exciting announcement and released <a href="https://aws.amazon.com/about-aws/whats-new/2023/04/aws-lambda-response-payload-streaming/">response streaming</a> which makes it one of the first function providers to offer streaming support in the world. Before, Lambda-based applications had to use a traditional request-response model which meant applications had to fully generate and buffer responses before returning anything to a client.</p>
+<p>Response Streaming is a new invocation pattern:</p>
+<ol>
+<li>There is an <code>InvokeWithResponseStream</code> API and a new handler signature for applications.</li>
+<li>You can also use a function URL with the <code>ResponeStream</code> invocation mode.</li>
+</ol>
+<p>Under the hood, Lambda Response Streaming uses <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Transfer-Encoding">HTTP/1.1 Chunked Transfer Encoding</a> and reactive event streams. This significantly improves the responsiveness of applications and makes it possible to support much larger payloads.</p>
+<h2 id="problems-solved">Problems Solved</h2>
+<p>Prior to Response Streaming, Lambda functions had to fully process a response before returning it to the client. This leads to a few problems:</p>
+<ol>
+<li>Buffering and returning responses is a single operation, which can lead to a slow Time to First Byte for large payloads.</li>
+<li>A lower payload limit of 6MiB, largely because you have to keep those responses in memory.</li>
+</ol>
+<p>Time to First Byte is a measurement of responsiveness. It refers to the amount of time it takes for a client to receive the first byte of data from a server after making a request. In the context of Lambda, it determines how quickly the client receives the first byte of data back from the server. Because data can now be streamed, you can immediately send back data to the client as soon as it as available and create reactive applications.</p>
+<h2 id="sample-use-cases">Sample Use Cases</h2>
+<ol>
+<li>Real-time video and audio streams.</li>
+<li>Larger payload applications, i.e. APIs that serve PDFs, ZIPs, images, etc. Anything that can be chunked.</li>
+<li>Serverless scenarios like partial rendering or websites.</li>
+</ol>
+<h2 id="billing--pricing">Billing &amp; Pricing</h2>
+<p>Response Streaming is billed based on the duration of the Lambda function and the amount of data streamed back to the client.</p>
+<p>There&rsquo;s a new billing dimension for <code>BytesProcessed</code> which covers Data Transfer Out (DTO) prices based on EC2 rates. See the full pricing page at: <a href="https://aws.amazon.com/lambda/pricing/">https://aws.amazon.com/lambda/pricing/</a></p>
+<h2 id="runtimes-supported">Runtimes Supported</h2>
+<p>In the initial release, Lambda supports response streaming only on Node.js 14.x, Node.js 16.x, and Node.js 18.x. Refer to <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-response-streaming.html">https://docs.aws.amazon.com/lambda/latest/dg/configuration-response-streaming.html</a> for the latest runtime support.</p>
+<h2 id="example-stream-code--tutorial">Example Stream Code &amp; Tutorial</h2>
+<ul>
+<li><a href="https://docs.aws.amazon.com/lambda/latest/dg/response-streaming-tutorial.html">https://docs.aws.amazon.com/lambda/latest/dg/response-streaming-tutorial.html</a></li>
+</ul>
+<h2 id="failure-modes-for-streams">Failure Modes For Streams</h2>
+<p>When data starts streaming to the client, the HTTP status code will report as a 200. If the function encounters an error or times out before the stream is gracefully closed, then Lambda will close the stream and send an error event to the response event stream. You can add logic in your application to listen to those error events to handle failures gracefully or add retry logic.</p>
+
+                <hr>
+                <div class="next-post">
+                    
+                </div>
+                
+                <div class="previous-post">
+                    
+                    <strong>Previous Post:</strong> <a class="link-reverse" href="https://ehotinger.com/blog/engineers-must-own-quality/?ref=footer">Engineers Must Own Quality</a>
+                    
+                </div>
+
+                <hr>
+                
+                <div class="subscribe"><strong><a href="https://tinyletter.com/ehotinger">Click here to subscribe to new posts via my newsletter!</a></strong></div>
+                <br>
+
+                
+                  <div class="tags">
+                    <strong>Tags:</strong>
+                  
+                    <a href="https://ehotinger.com/tags/lambda">lambda</a>
+                  
+                    <a href="https://ehotinger.com/tags/response-streaming">response streaming</a>
+                  
+                    <a href="https://ehotinger.com/tags/reactive-event-streams">reactive event streams</a>
+                  
+                    <a href="https://ehotinger.com/tags/aws">aws</a>
+                  
+                    <a href="https://ehotinger.com/tags/serverless-computing">serverless computing</a>
+                  
+                  </div>
+                  <br />
+                
+                
+                <p class="back-to-posts"><a href="https://ehotinger.com/blog">Back to posts</a></p>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146787275-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

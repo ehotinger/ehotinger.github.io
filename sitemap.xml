@@ -2,11 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/aws/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/aws/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2023-04-08T19:32:20-07:00</lastmod>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2023-04-08T19:32:20-07:00</lastmod>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/lambda/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/lambda/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/reactive-event-streams/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/reactive-event-streams/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/response-streaming/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/response-streaming/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/serverless-computing/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/serverless-computing/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/code-quality/</loc>
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
@@ -15,9 +54,6 @@
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/engineers-must-own-quality/</loc>
-    <lastmod>2023-04-08T19:32:20-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/</loc>
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/project-management/</loc>
@@ -42,9 +78,6 @@
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/sustainable-development/</loc>
-    <lastmod>2023-04-08T19:32:20-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/amazon/</loc>
@@ -247,12 +280,6 @@
   </url><url>
     <loc>https://ehotinger.com/blog/the-developers-outlook-rules/</loc>
     <lastmod>2019-08-31T14:30:43-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/aws/</loc>
-    <lastmod>2019-08-31T00:05:35-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/aws/</loc>
-    <lastmod>2019-08-31T00:05:35-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/github-pages-aws-ssl/</loc>
     <lastmod>2019-08-31T00:05:35-07:00</lastmod>

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AWS on Eric Hotinger</title>
+    <title>aws on Eric Hotinger</title>
     <link>https://ehotinger.com/tags/aws/</link>
-    <description>Recent content in AWS on Eric Hotinger</description>
+    <description>Recent content in aws on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 31 Aug 2019 00:05:35 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Apr 2023 21:27:56 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Tour of AWS Lambda Response Streaming</title>
+      <link>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</link>
+      <pubDate>Tue, 11 Apr 2023 21:27:56 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</guid>
+      <description>AWS Lambda Response Streaming Overview In April 2023, AWS Lambda made an exciting announcement and released response streaming which makes it one of the first function providers to offer streaming support in the world. Before, Lambda-based applications had to use a traditional request-response model which meant applications had to fully generate and buffer responses before returning anything to a client.
+Response Streaming is a new invocation pattern:
+There is an InvokeWithResponseStream API and a new handler signature for applications.</description>
+    </item>
+    
     <item>
       <title>GitHub Pages, Route 53, Cloud Front, and SSL</title>
       <link>https://ehotinger.com/blog/github-pages-aws-ssl/</link>
