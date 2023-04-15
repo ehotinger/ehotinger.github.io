@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>generative ai on Eric Hotinger</title>
+    <link>https://ehotinger.com/tags/generative-ai/</link>
+    <description>Recent content in generative ai on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 14 Apr 2023 22:41:30 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Tour of Amazon CodeWhisperer</title>
+      <link>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</link>
+      <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</guid>
+      <description>A Tour of Amazon CodeWhisperer Overview On April 12th, Amazon CodeWhisperer was announced as Globally Available. CodeWhisperer is a developer tool that can write entire functions, documentation, or complex logical blocks of code for you. The best part of this tool is how fluid and responsive it is. Unlike many other developer tools and large language models (LLMs), there is a constant stream of suggestions at your fingertips as you&amp;rsquo;re writing.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,13 +6,67 @@
     <description>Recent content in Tags on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 11 Apr 2023 21:27:56 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Apr 2023 22:41:30 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>amazon</title>
+      <link>https://ehotinger.com/tags/amazon/</link>
+      <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/amazon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>artificial intelligence</title>
+      <link>https://ehotinger.com/tags/artificial-intelligence/</link>
+      <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>aws</title>
       <link>https://ehotinger.com/tags/aws/</link>
-      <pubDate>Tue, 11 Apr 2023 21:27:56 -0700</pubDate>
+      <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code generation</title>
+      <link>https://ehotinger.com/tags/code-generation/</link>
+      <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/code-generation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>generative ai</title>
+      <link>https://ehotinger.com/tags/generative-ai/</link>
+      <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/generative-ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reactive event streams</title>
+      <link>https://ehotinger.com/tags/reactive-event-streams/</link>
+      <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/reactive-event-streams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>serverless computing</title>
+      <link>https://ehotinger.com/tags/serverless-computing/</link>
+      <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/serverless-computing/</guid>
       <description></description>
     </item>
     
@@ -26,29 +80,11 @@
     </item>
     
     <item>
-      <title>reactive event streams</title>
-      <link>https://ehotinger.com/tags/reactive-event-streams/</link>
-      <pubDate>Tue, 11 Apr 2023 21:27:56 -0700</pubDate>
-      
-      <guid>https://ehotinger.com/tags/reactive-event-streams/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>response streaming</title>
       <link>https://ehotinger.com/tags/response-streaming/</link>
       <pubDate>Tue, 11 Apr 2023 21:27:56 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/response-streaming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>serverless computing</title>
-      <link>https://ehotinger.com/tags/serverless-computing/</link>
-      <pubDate>Tue, 11 Apr 2023 21:27:56 -0700</pubDate>
-      
-      <guid>https://ehotinger.com/tags/serverless-computing/</guid>
       <description></description>
     </item>
     
@@ -94,15 +130,6 @@
       <pubDate>Sat, 08 Apr 2023 19:32:20 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/sustainable-development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>amazon</title>
-      <link>https://ehotinger.com/tags/amazon/</link>
-      <pubDate>Tue, 28 Mar 2023 06:12:11 -0700</pubDate>
-      
-      <guid>https://ehotinger.com/tags/amazon/</guid>
       <description></description>
     </item>
     

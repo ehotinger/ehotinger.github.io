@@ -2,31 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</loc>
-    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+    <loc>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/amazon/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/amazon/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/artificial-intelligence/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/artificial-intelligence/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/aws/</loc>
-    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/aws/</loc>
-    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/code-generation/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/code-generation/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/generative-ai/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/generative-ai/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/reactive-event-streams/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/serverless-computing/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/serverless-computing/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</loc>
     <lastmod>2023-04-11T21:27:56-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/lambda/</loc>
     <lastmod>2023-04-11T21:27:56-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/lambda/</loc>
-    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/reactive-event-streams/</loc>
     <lastmod>2023-04-11T21:27:56-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/reactive-event-streams/</loc>
@@ -36,15 +72,6 @@
     <lastmod>2023-04-11T21:27:56-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/response-streaming/</loc>
-    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/serverless-computing/</loc>
-    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/serverless-computing/</loc>
-    <lastmod>2023-04-11T21:27:56-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2023-04-11T21:27:56-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/code-quality/</loc>
@@ -80,12 +107,6 @@
     <loc>https://ehotinger.com/tags/sustainable-development/</loc>
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/tags/amazon/</loc>
-    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/amazon/</loc>
-    <lastmod>2023-03-28T06:12:11-07:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/blog/create-datashare-ericshare/</loc>
     <lastmod>2023-03-28T06:12:11-07:00</lastmod>
   </url><url>
@@ -96,9 +117,6 @@
     <lastmod>2023-03-28T06:12:11-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/ai/</loc>
-    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/artificial-intelligence/</loc>
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/chatgpt/</loc>
