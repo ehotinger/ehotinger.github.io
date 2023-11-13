@@ -2,6 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ehotinger.com/blog/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/career-growth/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/engineering-roles/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/leadership/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/optimizing-impact-and-the-realities-of-principal-engineering/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/principal-engineering/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/professional-development/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/senior-sde/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/software-engineering/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/staff-engineering/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/tags/technical-leadership/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/technology-careers/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/self-discovery-and-career-growth-to-principal-engineering/</loc>
+    <lastmod>2023-11-12T17:09:37-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/blog/the-path-to-principal-and-staff-engineering/</loc>
+    <lastmod>2023-11-12T12:50:06-08:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</loc>
     <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
@@ -23,19 +74,10 @@
     <loc>https://ehotinger.com/categories/aws/</loc>
     <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/blog/</loc>
-    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/</loc>
-    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/tags/code-generation/</loc>
     <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/code-generation/</loc>
-    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/</loc>
     <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/generative-ai/</loc>
@@ -51,9 +93,6 @@
     <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/serverless-computing/</loc>
-    <lastmod>2023-04-14T22:41:30-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2023-04-14T22:41:30-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</loc>
@@ -204,9 +243,6 @@
     <lastmod>2023-01-09T15:14:14-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/leadership/</loc>
-    <lastmod>2023-01-09T15:14:14-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/leadership/</loc>
     <lastmod>2023-01-09T15:14:14-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</loc>
