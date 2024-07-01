@@ -6,7 +6,17 @@
     <description>Recent content on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 26 May 2024 10:24:56 -0800</lastBuildDate><atom:link href="https://ehotinger.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jul 2024 08:55:46 -0700</lastBuildDate><atom:link href="https://ehotinger.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical Program Manager (TPM) Example Interview Questions</title>
+      <link>https://ehotinger.com/blog/technical-program-manager-example-interview-questions/</link>
+      <pubDate>Mon, 01 Jul 2024 08:55:46 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/technical-program-manager-example-interview-questions/</guid>
+      <description>Technical Program Manager (TPM) Example Interview Questions Below is a collection of various interview questions I&amp;rsquo;ve asked to TPMs in the past along with an example calibration guideline you can use.
+Technical Problem Solving Can you give me an example where you had to dive deep into a problem and be hands on with the engineering team to figure out a solution to a problem? How would you run a project to upgrade users to a new version of an API?</description>
+    </item>
+    
     <item>
       <title>Exploring the Latest Papers, Books, and Blogs for Software Developers</title>
       <link>https://ehotinger.com/blog/software-developer-papers-books-blogs/</link>
@@ -170,9 +180,8 @@ This post offers advice from both sides of the coin to help provide you the pers
       <pubDate>Sun, 08 Jan 2023 14:13:36 -0800</pubDate>
       
       <guid>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</guid>
-      <description>Behavioral Interviews: Framework and Strategy This post is the final framework and strategy for technical interviews. If you haven&amp;rsquo;t already, be sure to check out my similar posts on System Design Interviews and Coding Interviews too.
-1. The Framework Use the Situation, Task, Action, Result framework. Also known as STAR.
-Situation: The interviewer wants you to present a recent challenging situation in which you found yourself. Task: What were you required to achieve?</description>
+      <description>Behavioral Interviews: Framework and Strategy 1. The Framework Use the Situation, Task, Action, Result framework. Also known as STAR.
+Situation: The interviewer wants you to present a recent challenging situation in which you found yourself. Task: What were you required to achieve? The interviewer will be looking to see what you were trying to achieve from the situation. Action: What did you do? The interviewer will be looking for information on what you did, why you did it and what the alternatives were.</description>
     </item>
     
     <item>

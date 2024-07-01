@@ -6,7 +6,17 @@
     <description>Recent content in software engineering on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 12 Nov 2023 17:12:26 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jul 2024 08:55:46 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical Program Manager (TPM) Example Interview Questions</title>
+      <link>https://ehotinger.com/blog/technical-program-manager-example-interview-questions/</link>
+      <pubDate>Mon, 01 Jul 2024 08:55:46 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/technical-program-manager-example-interview-questions/</guid>
+      <description>Technical Program Manager (TPM) Example Interview Questions Below is a collection of various interview questions I&amp;rsquo;ve asked to TPMs in the past along with an example calibration guideline you can use.
+Technical Problem Solving Can you give me an example where you had to dive deep into a problem and be hands on with the engineering team to figure out a solution to a problem? How would you run a project to upgrade users to a new version of an API?</description>
+    </item>
+    
     <item>
       <title>Optimizing Impact and the Realities of Principal Engineering</title>
       <link>https://ehotinger.com/blog/optimizing-impact-and-the-realities-of-principal-engineering/</link>
