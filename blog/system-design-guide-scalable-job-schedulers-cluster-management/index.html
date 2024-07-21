@@ -48,9 +48,9 @@
 
 
     
-    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2024-07-21%2010%3a54%3a33.497459%20-0700%20PDT%20m%3d%2b0.073459833">
-    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2024-07-21%2010%3a54%3a33.497459%20-0700%20PDT%20m%3d%2b0.073459833">
-    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2024-07-21%2010%3a54%3a33.497459%20-0700%20PDT%20m%3d%2b0.073459833">
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2024-07-21%2010%3a56%3a38.162153%20-0700%20PDT%20m%3d%2b0.066368756">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2024-07-21%2010%3a56%3a38.162153%20-0700%20PDT%20m%3d%2b0.066368756">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2024-07-21%2010%3a56%3a38.162153%20-0700%20PDT%20m%3d%2b0.066368756">
     
 
 
@@ -160,7 +160,7 @@
                     <div class="date" title='Sun Jul 21 2024 09:28:22 PDT'>Jul 21, 2024</div>
                     
                     
-		    <div class="reading-time"><div class="middot"></div>11 minutes read</div>
+		    <div class="reading-time"><div class="middot"></div>12 minutes read</div>
                     
                 </div>
             </div>
@@ -229,7 +229,8 @@
 </ul>
 <p>This is just a sample of what you could come up with. For example, we could also put the cron expression directly on the job object if we don&rsquo;t want to have schedules to be managed on their own and/or have multiple schedules associated to a particular job.</p>
 <h2 id="high-level-design">High Level Design</h2>
-<p><img src="https://ehotinger.com/img/system-design/job-scheduler/job-scheduler-hld.png" alt="High Level Job Scheduler Design"></p>
+<p><img src="https://ehotinger.com/img/system-design/job-scheduler/job-scheduler-hld.png" alt="High-level diagram of a scalable job scheduler and cluster management system">
+Figure 1: High-level architecture of a scalable job scheduler and cluster management system. This diagram illustrates the flow from user interaction through job execution and status reporting.</p>
 <ul>
 <li>Users create/manage their jobs and schedules via a CLI or console.</li>
 <li>Programs are uploaded into a Blob Storage like Amazon S3 or Azure Blob. We store the schedule/job metadata in a database.</li>
@@ -238,7 +239,8 @@
 <li>Job workers are constantly polling the queue when they do not have a job / work to complete. Once they pick up a job, they run it, and upload results/job status into the database.</li>
 </ul>
 <h2 id="low-level-design--deep-dive">Low Level Design &amp; Deep Dive</h2>
-<p><img src="https://ehotinger.com/img/system-design/job-scheduler/job-scheduler-lld.png" alt="Low Level Job Scheduler Design"></p>
+<p><img src="https://ehotinger.com/img/system-design/job-scheduler/job-scheduler-lld.png" alt="Detailed architecture diagram of a job scheduler system with queue and worker components">
+Figure 2: Detailed low-level architecture of the job scheduler system, showcasing key components such as the scheduler partitioner, job queue, and worker fleet. This diagram demonstrates how the system handles job distribution and execution at scale.</p>
 <ul>
 <li>Why not have the API directly send jobs to the Job Workers or have the scheduler directly send jobs to the Job Workers?
 <ul>
