@@ -6,22 +6,148 @@
     <description>Recent content in Tags on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 01 Jul 2024 08:55:46 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Jul 2024 09:28:22 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cloud architecture</title>
+      <link>https://ehotinger.com/tags/cloud-architecture/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/cloud-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud computing</title>
+      <link>https://ehotinger.com/tags/cloud-computing/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cluster management</title>
+      <link>https://ehotinger.com/tags/cluster-management/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/cluster-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computer science</title>
+      <link>https://ehotinger.com/tags/computer-science/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/computer-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database design</title>
+      <link>https://ehotinger.com/tags/database-design/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/database-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>distributed systems</title>
+      <link>https://ehotinger.com/tags/distributed-systems/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/distributed-systems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>high availability</title>
+      <link>https://ehotinger.com/tags/high-availability/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/high-availability/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>interviews</title>
       <link>https://ehotinger.com/tags/interviews/</link>
-      <pubDate>Mon, 01 Jul 2024 08:55:46 -0700</pubDate>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/interviews/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>job scheduler</title>
+      <link>https://ehotinger.com/tags/job-scheduler/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/job-scheduler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microservices</title>
+      <link>https://ehotinger.com/tags/microservices/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scalability</title>
+      <link>https://ehotinger.com/tags/scalability/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/scalability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software architecture</title>
+      <link>https://ehotinger.com/tags/software-architecture/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/software-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>software engineering</title>
       <link>https://ehotinger.com/tags/software-engineering/</link>
-      <pubDate>Mon, 01 Jul 2024 08:55:46 -0700</pubDate>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
       
       <guid>https://ehotinger.com/tags/software-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>system design</title>
+      <link>https://ehotinger.com/tags/system-design/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/system-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>system optimization</title>
+      <link>https://ehotinger.com/tags/system-optimization/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/system-optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech interviews</title>
+      <link>https://ehotinger.com/tags/tech-interviews/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/tags/tech-interviews/</guid>
       <description></description>
     </item>
     
@@ -355,15 +481,6 @@
       <pubDate>Mon, 09 Jan 2023 15:14:14 -0800</pubDate>
       
       <guid>https://ehotinger.com/tags/leadership/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>distributed systems</title>
-      <link>https://ehotinger.com/tags/distributed-systems/</link>
-      <pubDate>Sun, 08 Jan 2023 09:22:14 -0800</pubDate>
-      
-      <guid>https://ehotinger.com/tags/distributed-systems/</guid>
       <description></description>
     </item>
     

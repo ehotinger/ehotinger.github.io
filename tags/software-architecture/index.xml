@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software architecture on Eric Hotinger</title>
+    <link>https://ehotinger.com/tags/software-architecture/</link>
+    <description>Recent content in software architecture on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 21 Jul 2024 09:28:22 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/software-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>System Design Job Scheduler Cluster Management</title>
+      <link>https://ehotinger.com/blog/system-design-job-scheduler-cluster-management/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/system-design-job-scheduler-cluster-management/</guid>
+      <description>System Design - Job Scheduler / Cluster Scheduling Design a cloud service where users can execute arbitrary jobs on a recurring schedule or manually.
+Functional Requirements Users should be able to create/read/update/delete jobs and schedules A job is any arbitrary program/computation that a user writes. For example, I could write a program in Python that does print(&amp;quot;Hello World!&amp;quot;), or you could write one that downloads a file and uploads it into a blob storage service.</description>
+    </item>
+    
+  </channel>
+</rss>
