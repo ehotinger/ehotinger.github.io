@@ -48,9 +48,9 @@
 
 
     
-    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2024-07-21%2010%3a56%3a38.162727%20-0700%20PDT%20m%3d%2b0.066942846">
-    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2024-07-21%2010%3a56%3a38.162727%20-0700%20PDT%20m%3d%2b0.066942846">
-    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2024-07-21%2010%3a56%3a38.162727%20-0700%20PDT%20m%3d%2b0.066942846">
+    <link rel="stylesheet" href="https://ehotinger.com/css/reset.css?t=2024-07-21%2012%3a40%3a24.957933%20-0700%20PDT%20m%3d%2b0.183892756">
+    <link rel="stylesheet" href="https://ehotinger.com/css/pygments.css?t=2024-07-21%2012%3a40%3a24.957933%20-0700%20PDT%20m%3d%2b0.183892756">
+    <link rel="stylesheet" href="https://ehotinger.com/css/main.css?t=2024-07-21%2012%3a40%3a24.957933%20-0700%20PDT%20m%3d%2b0.183892756">
     
 
 
@@ -160,7 +160,7 @@
                     <div class="date" title='Sun Jan 8 2023 09:22:14 PST'>Jan 8, 2023</div>
                     
                     
-		    <div class="reading-time"><div class="middot"></div>13 minutes read</div>
+		    <div class="reading-time"><div class="middot"></div>14 minutes read</div>
                     
                 </div>
             </div>
@@ -233,6 +233,16 @@
 <li>Label your units (i.e., milliseconds, seconds, kilobytes, megabytes, etc.) so that they&rsquo;re clear to the interviewer.</li>
 <li>Write down any assumptions you have about the system as you go along, and make sure your interviewer is on the same page for those assumptions. If they aren&rsquo;t, ask them how you should think about it differently.</li>
 </ol>
+<h3 id="16---sample-questions-to-ask">1.6 - Sample Questions to Ask</h3>
+<ul>
+<li>Identify all the nouns and verbs in the system. For each noun, you can ask &ldquo;how many are there?&rdquo; For example, how many users are there in the system? How many regions do we have? Is there anything noteworthy about each noun?
+<ul>
+<li>There are a set of nouns that are common in all system designs, such as &ldquo;users,&rdquo; and &ldquo;regions&rdquo; and you can create a list of pre-formed questions for these. For example, how many users are internal vs external?</li>
+</ul>
+</li>
+<li>Verbs can focus around Service-Level Agreements/SLAs. E.g., what is availability of this API required, what is the latency requirement? How frequently does each API get called in relation to each other?</li>
+<li>Resources are always the same in each system. For example, CPU/Memory/Disk. Do you need to ask any questions about them?</li>
+</ul>
 <h2 id="2-create-a-high-level-design-and-get-sign-off-on-the-direction">2. Create a high-level design and get sign off on the direction.</h2>
 <p>At this point, you know all the requirements of the system and have built a rough model in your head for how to represent all the data flowing through the system. Once your interviewer confirms you&rsquo;re not missing any important requirements of the system and you feel there is no more ambiguity, it&rsquo;s time to write down the high-level diagrams of the system.</p>
 <p>I typically recommend to begin drawing the design top-down starting with the user. For example, walk through how the first request and interaction of the system will look like for a customer. They will probably hit some API, the API will store some data, and then some other systems will start to operate off that data. Some of these layers are generic across any system, for example an API or authentication layer. Focus on the core architecture of the system and draw those boxes. As you&rsquo;re going along, draw lines between the various boxes to make it clear how the systems interact with one another.</p>
