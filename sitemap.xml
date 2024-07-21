@@ -20,24 +20,6 @@
     <loc>https://ehotinger.com/categories/cloud-computing/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/tags/cluster-management/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/cluster-management/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/computer-science/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/computer-science/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/database-design/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/database-design/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/tags/distributed-systems/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
@@ -47,46 +29,16 @@
     <loc>https://ehotinger.com/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/tags/high-availability/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/high-availability/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/tags/interviews/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/interviews/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/tags/job-scheduler/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/job-scheduler/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/microservices/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/microservices/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/tags/scalability/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/scalability/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/software-architecture/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/software-architecture/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/software-engineering/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/software-engineering/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/system-design/</loc>
@@ -98,20 +50,14 @@
     <loc>https://ehotinger.com/blog/system-design-job-scheduler-cluster-management/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/tags/system-optimization/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/system-optimization/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/tags/tech-interviews/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
+    <loc>https://ehotinger.com/tags/software-engineering/</loc>
+    <lastmod>2024-07-01T08:55:46-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/categories/tech-interviews/</loc>
-    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
+    <loc>https://ehotinger.com/categories/software-engineering/</loc>
+    <lastmod>2024-07-01T08:55:46-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/technical-program-manager-example-interview-questions/</loc>
     <lastmod>2024-07-01T08:55:46-07:00</lastmod>
@@ -258,6 +204,9 @@
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/quality-management/</loc>
+    <lastmod>2023-04-08T19:32:20-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/software-architecture/</loc>
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/software-development/</loc>
