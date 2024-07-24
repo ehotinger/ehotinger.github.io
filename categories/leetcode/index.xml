@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>leetcode on Eric Hotinger</title>
+    <link>https://ehotinger.com/categories/leetcode/</link>
+    <description>Recent content in leetcode on Eric Hotinger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 21 Jul 2024 09:28:22 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>System Design Guide: Scalable Job Schedulers &amp; Cluster Management</title>
+      <link>https://ehotinger.com/blog/system-design-guide-scalable-job-schedulers-cluster-management/</link>
+      <pubDate>Sun, 21 Jul 2024 09:28:22 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/system-design-guide-scalable-job-schedulers-cluster-management/</guid>
+      <description>System Design Guide: Scalable Job Schedulers &amp;amp; Cluster Management Design a cloud service where users can execute arbitrary jobs on a recurring schedule or manually.
+Functional Requirements Users should be able to create/read/update/delete jobs and schedules A job is any arbitrary program/computation that a user writes. For example, I could write a program in Python that does print(&amp;quot;Hello World!&amp;quot;), or you could write one that downloads a file and uploads it into a blob storage service.</description>
+    </item>
+    
+    <item>
+      <title>Technical Program Manager (TPM) Example Interview Questions</title>
+      <link>https://ehotinger.com/blog/technical-program-manager-example-interview-questions/</link>
+      <pubDate>Mon, 01 Jul 2024 08:55:46 -0700</pubDate>
+      
+      <guid>https://ehotinger.com/blog/technical-program-manager-example-interview-questions/</guid>
+      <description>Technical Program Manager (TPM) Example Interview Questions Below is a collection of various interview questions I&amp;rsquo;ve asked to TPMs in the past along with an example calibration guideline you can use.
+Technical Problem Solving Can you give me an example where you had to dive deep into a problem and be hands on with the engineering team to figure out a solution to a problem? How would you run a project to upgrade users to a new version of an API?</description>
+    </item>
+    
+    <item>
+      <title>Behavioral Interviews: Framework and Strategy</title>
+      <link>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</link>
+      <pubDate>Sun, 08 Jan 2023 14:13:36 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/behavioral-interviews-framework-and-strategy/</guid>
+      <description>Behavioral Interviews: Framework and Strategy 1. The Framework Use the Situation, Task, Action, Result framework. Also known as STAR.
+Situation: The interviewer wants you to present a recent challenging situation in which you found yourself. Task: What were you required to achieve? The interviewer will be looking to see what you were trying to achieve from the situation. Action: What did you do? The interviewer will be looking for information on what you did, why you did it and what the alternatives were.</description>
+    </item>
+    
+    <item>
+      <title>Coding Interviews: Framework and Strategy</title>
+      <link>https://ehotinger.com/blog/coding-interviews-framework-and-strategy/</link>
+      <pubDate>Sun, 08 Jan 2023 12:22:00 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/coding-interviews-framework-and-strategy/</guid>
+      <description>Coding Interviews: Framework and Strategy The goal of this post is to provide you with a reliable strategy and framework for general coding and technical interviews. At the end, I provide a rough calibration guide to be used in any coding interview so that you can evaluate your performance and others&amp;rsquo; performance with mock practice once you understand the framework and strategies.
+The Framework Every coding interview can be broken into four high-level steps:</description>
+    </item>
+    
+    <item>
+      <title>System Design Interviews: Framework and Strategy</title>
+      <link>https://ehotinger.com/blog/system-design-interviews-framework-and-strategy/</link>
+      <pubDate>Sun, 08 Jan 2023 09:22:14 -0800</pubDate>
+      
+      <guid>https://ehotinger.com/blog/system-design-interviews-framework-and-strategy/</guid>
+      <description>System Design Interviews: Framework and Strategy System design interviews are often the most difficult technical interviews and can be daunting to tackle. They require a candidate to gather requirements, deal with ambiguity, communicate, and optimize their solution using all of their computer science knowledge. To make matters worse, these interviews are open-ended with hundreds of potential variations to achieve the desired end state of a system. How could anyone expect someone to design such a complex system in only an hour of time?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -35,6 +35,12 @@
     <loc>https://ehotinger.com/categories/interviews/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
+    <loc>https://ehotinger.com/tags/leetcode/</loc>
+    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/leetcode/</loc>
+    <lastmod>2024-07-21T09:28:22-07:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/tags/scalability/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
@@ -53,19 +59,7 @@
     <loc>https://ehotinger.com/tags/</loc>
     <lastmod>2024-07-21T09:28:22-07:00</lastmod>
   </url><url>
-    <loc>https://ehotinger.com/tags/software-engineering/</loc>
-    <lastmod>2024-07-01T08:55:46-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/software-engineering/</loc>
-    <lastmod>2024-07-01T08:55:46-07:00</lastmod>
-  </url><url>
     <loc>https://ehotinger.com/blog/technical-program-manager-example-interview-questions/</loc>
-    <lastmod>2024-07-01T08:55:46-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/tags/technology-careers/</loc>
-    <lastmod>2024-07-01T08:55:46-07:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/categories/technology-careers/</loc>
     <lastmod>2024-07-01T08:55:46-07:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/academia/</loc>
@@ -116,10 +110,16 @@
     <loc>https://ehotinger.com/tags/senior-sde/</loc>
     <lastmod>2023-11-12T17:12:26-08:00</lastmod>
   </url><url>
+    <loc>https://ehotinger.com/categories/software-engineering/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/tags/staff-engineering/</loc>
     <lastmod>2023-11-12T17:12:26-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/tags/technical-leadership/</loc>
+    <lastmod>2023-11-12T17:12:26-08:00</lastmod>
+  </url><url>
+    <loc>https://ehotinger.com/categories/technology-careers/</loc>
     <lastmod>2023-11-12T17:12:26-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/blog/self-discovery-and-career-growth-to-principal-engineering/</loc>
@@ -212,6 +212,9 @@
     <loc>https://ehotinger.com/categories/software-development/</loc>
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
   </url><url>
+    <loc>https://ehotinger.com/tags/software-engineering/</loc>
+    <lastmod>2023-04-08T19:32:20-07:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/tags/software-lifecycle/</loc>
     <lastmod>2023-04-08T19:32:20-07:00</lastmod>
   </url><url>
@@ -239,6 +242,9 @@
     <loc>https://ehotinger.com/tags/optimization/</loc>
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
+    <loc>https://ehotinger.com/blog/prompt-seo-optimization/</loc>
+    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
+  </url><url>
     <loc>https://ehotinger.com/categories/search-engine-optimization/</loc>
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
@@ -246,9 +252,6 @@
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/seo-best-practices/</loc>
-    <lastmod>2023-02-05T20:48:16-08:00</lastmod>
-  </url><url>
-    <loc>https://ehotinger.com/blog/unlocking-the-power-of-ai-seo-optimization-with-chatgpt/</loc>
     <lastmod>2023-02-05T20:48:16-08:00</lastmod>
   </url><url>
     <loc>https://ehotinger.com/categories/website-optimization-tips/</loc>
