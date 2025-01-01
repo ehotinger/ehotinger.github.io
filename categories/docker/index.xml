@@ -6,16 +6,14 @@
     <description>Recent content in docker on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 16 Jul 2019 14:15:54 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jul 2019 14:15:54 -0700</lastBuildDate>
+    <atom:link href="https://ehotinger.com/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Container Registry Tasks Daily Autopurge</title>
       <link>https://ehotinger.com/blog/acr-tasks-daily-autopurge/</link>
       <pubDate>Tue, 16 Jul 2019 14:15:54 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/acr-tasks-daily-autopurge/</guid>
-      <description>Azure Container Registry Tasks came out with a lot of new features in the last year. Many people don&amp;rsquo;t realize the insane potential of this service, so I wanted to share a few things that you probably didn&amp;rsquo;t know and some of the things the team has been working on.
-In particular, I wanted to use one of the most common feature requests of the Azure Container Registry - automatic garbage collection of old or unused tags/manifests/images - as an example of how you can make the world your oyster using ACR Tasks.</description>
+      <description>Azure Container Registry Tasks came out with a lot of new features in the last year. Many people don&amp;rsquo;t realize the insane potential of this service, so I wanted to share a few things that you probably didn&amp;rsquo;t know and some of the things the team has been working on.&#xA;In particular, I wanted to use one of the most common feature requests of the Azure Container Registry - automatic garbage collection of old or unused tags/manifests/images - as an example of how you can make the world your oyster using ACR Tasks.</description>
     </item>
-    
   </channel>
 </rss>

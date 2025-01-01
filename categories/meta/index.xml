@@ -6,16 +6,14 @@
     <description>Recent content in meta on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 08 Sep 2020 22:20:29 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/meta/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Sep 2020 22:20:29 -0700</lastBuildDate>
+    <atom:link href="https://ehotinger.com/categories/meta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Give up on CI/CD</title>
       <link>https://ehotinger.com/blog/give-up-on-ci-cd/</link>
       <pubDate>Tue, 08 Sep 2020 22:20:29 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/give-up-on-ci-cd/</guid>
-      <description>Give up on your glorious vision of CI/CD. I don&amp;rsquo;t want it and your customers don&amp;rsquo;t either. If you break me one more time this month I will lose my mind and start looking at competitors. I can afford to wait 3 months for your new features. On second thought, I don&amp;rsquo;t care if I get any new features ever again.
-I&amp;rsquo;ve written software whose sole purpose was to make CI/CD better.</description>
+      <description>Give up on your glorious vision of CI/CD. I don&amp;rsquo;t want it and your customers don&amp;rsquo;t either. If you break me one more time this month I will lose my mind and start looking at competitors. I can afford to wait 3 months for your new features. On second thought, I don&amp;rsquo;t care if I get any new features ever again.&#xA;I&amp;rsquo;ve written software whose sole purpose was to make CI/CD better.</description>
     </item>
-    
   </channel>
 </rss>

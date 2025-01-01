@@ -6,16 +6,14 @@
     <description>Recent content in seo best practices on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 05 Feb 2023 20:48:16 -0800</lastBuildDate><atom:link href="https://ehotinger.com/categories/seo-best-practices/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 20:48:16 -0800</lastBuildDate>
+    <atom:link href="https://ehotinger.com/categories/seo-best-practices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prompt SEO Optimizations with ChatGPT, Claude, etc.</title>
       <link>https://ehotinger.com/blog/prompt-seo-optimization/</link>
       <pubDate>Sun, 05 Feb 2023 20:48:16 -0800</pubDate>
-      
       <guid>https://ehotinger.com/blog/prompt-seo-optimization/</guid>
-      <description>Example Prompts Here are some example prompts to improve your SEO using ChatGPT, Claude, etc.
-Brainstorming Rewrite the following blog post to be longer with more detail and introduce some new ideas. Write me an overview summary for the following blog post. Give me 3 SEO optimized titles for the following blog post. Polishing Content Find grammar issues for the following content. Provide a list of statistics or references with similar content to this post.</description>
+      <description>Example Prompts Here are some example prompts to improve your SEO using ChatGPT, Claude, etc.&#xA;Brainstorming Rewrite the following blog post to be longer with more detail and introduce some new ideas. Write me an overview summary for the following blog post. Give me 3 SEO optimized titles for the following blog post. Polishing Content Find grammar issues for the following content. Provide a list of statistics or references with similar content to this post.</description>
     </item>
-    
   </channel>
 </rss>

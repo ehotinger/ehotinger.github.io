@@ -6,25 +6,21 @@
     <description>Recent content in artificial intelligence on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 14 Apr 2023 22:41:30 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Apr 2023 22:41:30 -0700</lastBuildDate>
+    <atom:link href="https://ehotinger.com/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Tour of Amazon CodeWhisperer</title>
       <link>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</link>
       <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</guid>
       <description>A Tour of Amazon CodeWhisperer Overview On April 12th, Amazon CodeWhisperer was announced as Globally Available. CodeWhisperer is a developer tool that can write entire functions, documentation, or complex logical blocks of code for you. The best part of this tool is how fluid and responsive it is. Unlike many other developer tools and large language models (LLMs), there is a constant stream of suggestions at your fingertips as you&amp;rsquo;re writing.</description>
     </item>
-    
     <item>
       <title>Prompt SEO Optimizations with ChatGPT, Claude, etc.</title>
       <link>https://ehotinger.com/blog/prompt-seo-optimization/</link>
       <pubDate>Sun, 05 Feb 2023 20:48:16 -0800</pubDate>
-      
       <guid>https://ehotinger.com/blog/prompt-seo-optimization/</guid>
-      <description>Example Prompts Here are some example prompts to improve your SEO using ChatGPT, Claude, etc.
-Brainstorming Rewrite the following blog post to be longer with more detail and introduce some new ideas. Write me an overview summary for the following blog post. Give me 3 SEO optimized titles for the following blog post. Polishing Content Find grammar issues for the following content. Provide a list of statistics or references with similar content to this post.</description>
+      <description>Example Prompts Here are some example prompts to improve your SEO using ChatGPT, Claude, etc.&#xA;Brainstorming Rewrite the following blog post to be longer with more detail and introduce some new ideas. Write me an overview summary for the following blog post. Give me 3 SEO optimized titles for the following blog post. Polishing Content Find grammar issues for the following content. Provide a list of statistics or references with similar content to this post.</description>
     </item>
-    
   </channel>
 </rss>

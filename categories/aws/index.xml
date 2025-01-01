@@ -6,37 +6,28 @@
     <description>Recent content in aws on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 14 Apr 2023 22:41:30 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Apr 2023 22:41:30 -0700</lastBuildDate>
+    <atom:link href="https://ehotinger.com/categories/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Tour of Amazon CodeWhisperer</title>
       <link>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</link>
       <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</guid>
       <description>A Tour of Amazon CodeWhisperer Overview On April 12th, Amazon CodeWhisperer was announced as Globally Available. CodeWhisperer is a developer tool that can write entire functions, documentation, or complex logical blocks of code for you. The best part of this tool is how fluid and responsive it is. Unlike many other developer tools and large language models (LLMs), there is a constant stream of suggestions at your fingertips as you&amp;rsquo;re writing.</description>
     </item>
-    
     <item>
       <title>A Tour of AWS Lambda Response Streaming</title>
       <link>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</link>
       <pubDate>Tue, 11 Apr 2023 21:27:56 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</guid>
-      <description>AWS Lambda Response Streaming Overview In April 2023, AWS Lambda made an exciting announcement and released response streaming which makes it one of the first function providers to offer streaming support in the world. Before, Lambda-based applications had to use a traditional request-response model which meant applications had to fully generate and buffer responses before returning anything to a client.
-Response Streaming is a new invocation pattern:
-There is an InvokeWithResponseStream API and a new handler signature for applications.</description>
+      <description>AWS Lambda Response Streaming Overview In April 2023, AWS Lambda made an exciting announcement and released response streaming which makes it one of the first function providers to offer streaming support in the world. Before, Lambda-based applications had to use a traditional request-response model which meant applications had to fully generate and buffer responses before returning anything to a client.&#xA;Response Streaming is a new invocation pattern:&#xA;There is an InvokeWithResponseStream API and a new handler signature for applications.</description>
     </item>
-    
     <item>
       <title>GitHub Pages, Route 53, Cloud Front, and SSL</title>
       <link>https://ehotinger.com/blog/github-pages-aws-ssl/</link>
       <pubDate>Sat, 31 Aug 2019 00:05:35 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/github-pages-aws-ssl/</guid>
-      <description>This is how I set up my blog which uses GitHub pages to have a custom domain and SSL all on AWS for $12/year &amp;ndash; just the cost of the .com. The other services are all in the free-tier.
-Register your domain Use Route 53: https://aws.amazon.com/route53/
-All you have to do here is go through the Register Domain workflow that Amazon has created. It&amp;rsquo;ll allow you to buy a domain name of your choice for about $12 (for a .</description>
+      <description>This is how I set up my blog which uses GitHub pages to have a custom domain and SSL all on AWS for $12/year &amp;ndash; just the cost of the .com. The other services are all in the free-tier.&#xA;Register your domain Use Route 53: https://aws.amazon.com/route53/&#xA;All you have to do here is go through the Register Domain workflow that Amazon has created. It&amp;rsquo;ll allow you to buy a domain name of your choice for about $12 (for a .</description>
     </item>
-    
   </channel>
 </rss>

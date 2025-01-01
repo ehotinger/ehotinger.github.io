@@ -6,26 +6,21 @@
     <description>Recent content in serverless computing on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 14 Apr 2023 22:41:30 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/serverless-computing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Apr 2023 22:41:30 -0700</lastBuildDate>
+    <atom:link href="https://ehotinger.com/categories/serverless-computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Tour of Amazon CodeWhisperer</title>
       <link>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</link>
       <pubDate>Fri, 14 Apr 2023 22:41:30 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/a-tour-of-amazon-codewhisperer/</guid>
       <description>A Tour of Amazon CodeWhisperer Overview On April 12th, Amazon CodeWhisperer was announced as Globally Available. CodeWhisperer is a developer tool that can write entire functions, documentation, or complex logical blocks of code for you. The best part of this tool is how fluid and responsive it is. Unlike many other developer tools and large language models (LLMs), there is a constant stream of suggestions at your fingertips as you&amp;rsquo;re writing.</description>
     </item>
-    
     <item>
       <title>A Tour of AWS Lambda Response Streaming</title>
       <link>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</link>
       <pubDate>Tue, 11 Apr 2023 21:27:56 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</guid>
-      <description>AWS Lambda Response Streaming Overview In April 2023, AWS Lambda made an exciting announcement and released response streaming which makes it one of the first function providers to offer streaming support in the world. Before, Lambda-based applications had to use a traditional request-response model which meant applications had to fully generate and buffer responses before returning anything to a client.
-Response Streaming is a new invocation pattern:
-There is an InvokeWithResponseStream API and a new handler signature for applications.</description>
+      <description>AWS Lambda Response Streaming Overview In April 2023, AWS Lambda made an exciting announcement and released response streaming which makes it one of the first function providers to offer streaming support in the world. Before, Lambda-based applications had to use a traditional request-response model which meant applications had to fully generate and buffer responses before returning anything to a client.&#xA;Response Streaming is a new invocation pattern:&#xA;There is an InvokeWithResponseStream API and a new handler signature for applications.</description>
     </item>
-    
   </channel>
 </rss>

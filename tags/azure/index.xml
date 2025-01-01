@@ -6,26 +6,21 @@
     <description>Recent content in Azure on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 19 Jul 2019 18:23:31 -0700</lastBuildDate><atom:link href="https://ehotinger.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Jul 2019 18:23:31 -0700</lastBuildDate>
+    <atom:link href="https://ehotinger.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ACR Tasks Image Vulnerability Scanning</title>
       <link>https://ehotinger.com/blog/acr-tasks-image-scanning/</link>
       <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/acr-tasks-image-scanning/</guid>
-      <description>In this blog you&amp;rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&amp;rsquo;s microscanner. By the end, you&amp;rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.
-This is generic, so you can bring whatever image scanner you prefer.</description>
+      <description>In this blog you&amp;rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&amp;rsquo;s microscanner. By the end, you&amp;rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.&#xA;This is generic, so you can bring whatever image scanner you prefer.</description>
     </item>
-    
     <item>
       <title>Azure Container Registry Tasks Daily Autopurge</title>
       <link>https://ehotinger.com/blog/acr-tasks-daily-autopurge/</link>
       <pubDate>Tue, 16 Jul 2019 14:15:54 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/acr-tasks-daily-autopurge/</guid>
-      <description>Azure Container Registry Tasks came out with a lot of new features in the last year. Many people don&amp;rsquo;t realize the insane potential of this service, so I wanted to share a few things that you probably didn&amp;rsquo;t know and some of the things the team has been working on.
-In particular, I wanted to use one of the most common feature requests of the Azure Container Registry - automatic garbage collection of old or unused tags/manifests/images - as an example of how you can make the world your oyster using ACR Tasks.</description>
+      <description>Azure Container Registry Tasks came out with a lot of new features in the last year. Many people don&amp;rsquo;t realize the insane potential of this service, so I wanted to share a few things that you probably didn&amp;rsquo;t know and some of the things the team has been working on.&#xA;In particular, I wanted to use one of the most common feature requests of the Azure Container Registry - automatic garbage collection of old or unused tags/manifests/images - as an example of how you can make the world your oyster using ACR Tasks.</description>
     </item>
-    
   </channel>
 </rss>

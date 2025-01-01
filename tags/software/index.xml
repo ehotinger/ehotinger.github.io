@@ -6,157 +6,112 @@
     <description>Recent content in software on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 05 Feb 2023 13:01:11 -0800</lastBuildDate><atom:link href="https://ehotinger.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 13:01:11 -0800</lastBuildDate>
+    <atom:link href="https://ehotinger.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automating Newsletters With Hugo, TinyLetter, and Zapier</title>
       <link>https://ehotinger.com/blog/automating-newsletters-with-hugo-tinyletter-and-zapier/</link>
       <pubDate>Sun, 05 Feb 2023 13:01:11 -0800</pubDate>
-      
       <guid>https://ehotinger.com/blog/automating-newsletters-with-hugo-tinyletter-and-zapier/</guid>
-      <description>Automating Newsletters With Hugo, TinyLetter, and Zapier This short post will teach you how to automatically send emails using Zapier to an email subscription list on TinyLetter for a personal blog created using Hugo.
-The setup takes about 10 minnutes and is completely free until you have over 5000 subscribers. If you reach that point, your blog is so successful it&amp;rsquo;d be worth it to spend a few bucks!
-Create your TinyLetter account on https://www.</description>
+      <description>Automating Newsletters With Hugo, TinyLetter, and Zapier This short post will teach you how to automatically send emails using Zapier to an email subscription list on TinyLetter for a personal blog created using Hugo.&#xA;The setup takes about 10 minnutes and is completely free until you have over 5000 subscribers. If you reach that point, your blog is so successful it&amp;rsquo;d be worth it to spend a few bucks!&#xA;Create your TinyLetter account on https://www.</description>
     </item>
-    
     <item>
       <title>How Do Experienced Developers Learn New Programming Languages</title>
       <link>https://ehotinger.com/blog/how-do-experienced-developers-learn-new-programming-languages/</link>
       <pubDate>Sat, 04 Feb 2023 20:24:21 -0800</pubDate>
-      
       <guid>https://ehotinger.com/blog/how-do-experienced-developers-learn-new-programming-languages/</guid>
-      <description>How do experienced programmers learn a new programming language? I recently read through [1] - Here we go again: why is it difficult for developers to learn another programming language?. In this paper, they interviewed a large sample size of experienced developers and asked them various questions about how they learn a new programming language. Some of the takeaways and trends were pretty interesting (in bold below).
-Programmers learned languages on their own Yeah, once you graduate university, chances are you won&amp;rsquo;t ever take a class to learn a new programming language again.</description>
+      <description>How do experienced programmers learn a new programming language? I recently read through [1] - Here we go again: why is it difficult for developers to learn another programming language?. In this paper, they interviewed a large sample size of experienced developers and asked them various questions about how they learn a new programming language. Some of the takeaways and trends were pretty interesting (in bold below).&#xA;Programmers learned languages on their own Yeah, once you graduate university, chances are you won&amp;rsquo;t ever take a class to learn a new programming language again.</description>
     </item>
-    
     <item>
       <title>Practical Developer Productivity</title>
       <link>https://ehotinger.com/blog/practical-developer-productivity/</link>
       <pubDate>Sat, 04 Feb 2023 10:49:13 -0800</pubDate>
-      
       <guid>https://ehotinger.com/blog/practical-developer-productivity/</guid>
-      <description>Practical Developer Productivity Developer productivity has been studied extensively across the last few decades because developers are typically the most expensive piece of software development. Despite decades of research, nobody has cracked the case. Moreover, most teams struggle to come up with a metric or goal to even define what it means to capture &amp;ldquo;developer productivity.&amp;rdquo;
-Over the last few months, I&amp;rsquo;ve spent a significant amount of energy in the space of developer productivity for an organization of ~500 developers.</description>
+      <description>Practical Developer Productivity Developer productivity has been studied extensively across the last few decades because developers are typically the most expensive piece of software development. Despite decades of research, nobody has cracked the case. Moreover, most teams struggle to come up with a metric or goal to even define what it means to capture &amp;ldquo;developer productivity.&amp;rdquo;&#xA;Over the last few months, I&amp;rsquo;ve spent a significant amount of energy in the space of developer productivity for an organization of ~500 developers.</description>
     </item>
-    
     <item>
       <title>Install Gala Node V3 on Ubuntu Linux</title>
       <link>https://ehotinger.com/blog/install-gala-node-v3-on-ubuntu-linux/</link>
       <pubDate>Sun, 29 Jan 2023 15:01:03 -0800</pubDate>
-      
       <guid>https://ehotinger.com/blog/install-gala-node-v3-on-ubuntu-linux/</guid>
-      <description>These are the all scripts required to install Gala Games v3 nodes. It&amp;rsquo;s a trimmed down version of the main blog post.
-Install Docker sudo apt install docker.io -y sudo systemctl status docker sudo systemctl enable --now docker Install the Gala Image sudo wget --trust-server-names https://links.gala.com/DownloadLinuxNode It downloads a file name called gala-node-vX.X.X.tar.gz. sudo tar xzvf gala-node-v3[version number].tar.gz sudo ./gala-node/install.sh sudo gala-node config api-key your API key here Run sudo gala-node licenses Based on your licenses use sudo gala-node config workloads &amp;lt;workload&amp;gt; For example sudo gala-node config workloads founders sudo gala-node start Verify it&amp;rsquo;s up: sudo gala-node status Optional step:</description>
+      <description>These are the all scripts required to install Gala Games v3 nodes. It&amp;rsquo;s a trimmed down version of the main blog post.&#xA;Install Docker sudo apt install docker.io -y sudo systemctl status docker sudo systemctl enable --now docker Install the Gala Image sudo wget --trust-server-names https://links.gala.com/DownloadLinuxNode It downloads a file name called gala-node-vX.X.X.tar.gz. sudo tar xzvf gala-node-v3[version number].tar.gz sudo ./gala-node/install.sh sudo gala-node config api-key your API key here Run sudo gala-node licenses Based on your licenses use sudo gala-node config workloads &amp;lt;workload&amp;gt; For example sudo gala-node config workloads founders sudo gala-node start Verify it&amp;rsquo;s up: sudo gala-node status Optional step:</description>
     </item>
-    
     <item>
       <title>Operating in Grey Modes</title>
       <link>https://ehotinger.com/blog/operating-in-grey-modes/</link>
       <pubDate>Thu, 19 Jan 2023 13:26:55 -0800</pubDate>
-      
       <guid>https://ehotinger.com/blog/operating-in-grey-modes/</guid>
       <description>Grey Modes In complex distributed systems, hardware failure is inevitable. The ability to operate in a grey mode (a mode in which a system is partially working) is an important and deliberate architectural choice to consider. Ask yourself the following question: would customers be more upset to have a completely nonfunctional system, or have a subset of the functionality working? For example, if you are working on a storage layer, perhaps it would be better to serve reads even though you can&amp;rsquo;t serve writes at the same time.</description>
     </item>
-    
     <item>
       <title>Windows Subsystem for Linux Installation</title>
       <link>https://ehotinger.com/blog/windows-subsystem-for-linux-installation/</link>
       <pubDate>Sat, 14 Aug 2021 12:14:50 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/windows-subsystem-for-linux-installation/</guid>
-      <description>Here are a few common problems that I hit when installing WSL. This is my personal mini guide to get it up and running in a few minutes.
-First, you can visit https://docs.microsoft.com/en-us/windows/wsl/install-win10#simplified-installation-for-windows-insiders to get a beta build and run the commands to install WSL.
-WSL can fail on a new machine even after this because it relies on virtualization:
-Enable Hyper-V (Turn Windows features on or off -&amp;gt; Hyper-V) Enable virtualization in the BIOS (go to your CPU Config and you&amp;rsquo;ll find it) Bonus oddities:</description>
+      <description>Here are a few common problems that I hit when installing WSL. This is my personal mini guide to get it up and running in a few minutes.&#xA;First, you can visit https://docs.microsoft.com/en-us/windows/wsl/install-win10#simplified-installation-for-windows-insiders to get a beta build and run the commands to install WSL.&#xA;WSL can fail on a new machine even after this because it relies on virtualization:&#xA;Enable Hyper-V (Turn Windows features on or off -&amp;gt; Hyper-V) Enable virtualization in the BIOS (go to your CPU Config and you&amp;rsquo;ll find it) Bonus oddities:</description>
     </item>
-    
     <item>
       <title>Invisible</title>
       <link>https://ehotinger.com/blog/invisible/</link>
       <pubDate>Tue, 06 Jul 2021 23:58:35 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/invisible/</guid>
-      <description>I&amp;rsquo;ve created something magical: an invisible compass. The product is not astonishing; it&amp;rsquo;s fragile and young, yet blissful. It hasn&amp;rsquo;t been announced yet, but it will be later this year. I hope you will find it equally mesmerizing.
-For the last six months, I&amp;rsquo;ve worked tirelessly to offer a chance for it to succeed. It&amp;rsquo;s not my own company and I&amp;rsquo;m not getting paid some exuberant amount of money to stay committed to an arbitrary mission.</description>
+      <description>I&amp;rsquo;ve created something magical: an invisible compass. The product is not astonishing; it&amp;rsquo;s fragile and young, yet blissful. It hasn&amp;rsquo;t been announced yet, but it will be later this year. I hope you will find it equally mesmerizing.&#xA;For the last six months, I&amp;rsquo;ve worked tirelessly to offer a chance for it to succeed. It&amp;rsquo;s not my own company and I&amp;rsquo;m not getting paid some exuberant amount of money to stay committed to an arbitrary mission.</description>
     </item>
-    
     <item>
       <title>Give up on CI/CD</title>
       <link>https://ehotinger.com/blog/give-up-on-ci-cd/</link>
       <pubDate>Tue, 08 Sep 2020 22:20:29 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/give-up-on-ci-cd/</guid>
-      <description>Give up on your glorious vision of CI/CD. I don&amp;rsquo;t want it and your customers don&amp;rsquo;t either. If you break me one more time this month I will lose my mind and start looking at competitors. I can afford to wait 3 months for your new features. On second thought, I don&amp;rsquo;t care if I get any new features ever again.
-I&amp;rsquo;ve written software whose sole purpose was to make CI/CD better.</description>
+      <description>Give up on your glorious vision of CI/CD. I don&amp;rsquo;t want it and your customers don&amp;rsquo;t either. If you break me one more time this month I will lose my mind and start looking at competitors. I can afford to wait 3 months for your new features. On second thought, I don&amp;rsquo;t care if I get any new features ever again.&#xA;I&amp;rsquo;ve written software whose sole purpose was to make CI/CD better.</description>
     </item>
-    
     <item>
       <title>The Best Developer I Have Ever Met Was the Worst</title>
       <link>https://ehotinger.com/blog/the-best-dev-i-met-was-the-worst/</link>
       <pubDate>Tue, 25 Aug 2020 21:33:08 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/the-best-dev-i-met-was-the-worst/</guid>
       <description>Many moons ago I met the best developer I have ever encountered. I was enamored by their ability to recall any piece of information that they have ever seen. They had dozens of patents, scientific papers, and a work history nothing short of genius. They built tools and languages I used on a daily basis. They were a true prodigy and I could not believe I had the privilege of working under them.</description>
     </item>
-    
     <item>
       <title>The Developer&#39;s Outlook Rules</title>
       <link>https://ehotinger.com/blog/the-developers-outlook-rules/</link>
       <pubDate>Sat, 31 Aug 2019 14:30:43 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/the-developers-outlook-rules/</guid>
-      <description>Every developer should have a To, CC, and Other folder in Outlook.
-You should have 3 main rules in order from most to least important:
-Anything sent to me as a To goes to the To folder Anything sent to me as a CC goes to the CC folder Anything else gets sent to the Other folder. You should never look at your original Inbox folder from this point on.</description>
+      <description>Every developer should have a To, CC, and Other folder in Outlook.&#xA;You should have 3 main rules in order from most to least important:&#xA;Anything sent to me as a To goes to the To folder Anything sent to me as a CC goes to the CC folder Anything else gets sent to the Other folder. You should never look at your original Inbox folder from this point on.</description>
     </item>
-    
     <item>
       <title>ACR Tasks Image Vulnerability Scanning</title>
       <link>https://ehotinger.com/blog/acr-tasks-image-scanning/</link>
       <pubDate>Fri, 19 Jul 2019 18:23:31 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/acr-tasks-image-scanning/</guid>
-      <description>In this blog you&amp;rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&amp;rsquo;s microscanner. By the end, you&amp;rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.
-This is generic, so you can bring whatever image scanner you prefer.</description>
+      <description>In this blog you&amp;rsquo;ll learn how to set up vulnerability scanning for all of your container images using Azure Container Registry Tasks and Aqua&amp;rsquo;s microscanner. By the end, you&amp;rsquo;ll know how to create a relatively complex workflow which prevents your images getting pushed to a container registry if they have vulnerabilities found during build time, preventing the distribution of them entirely.&#xA;This is generic, so you can bring whatever image scanner you prefer.</description>
     </item>
-    
     <item>
       <title>Azure Container Registry Tasks Daily Autopurge</title>
       <link>https://ehotinger.com/blog/acr-tasks-daily-autopurge/</link>
       <pubDate>Tue, 16 Jul 2019 14:15:54 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/acr-tasks-daily-autopurge/</guid>
-      <description>Azure Container Registry Tasks came out with a lot of new features in the last year. Many people don&amp;rsquo;t realize the insane potential of this service, so I wanted to share a few things that you probably didn&amp;rsquo;t know and some of the things the team has been working on.
-In particular, I wanted to use one of the most common feature requests of the Azure Container Registry - automatic garbage collection of old or unused tags/manifests/images - as an example of how you can make the world your oyster using ACR Tasks.</description>
+      <description>Azure Container Registry Tasks came out with a lot of new features in the last year. Many people don&amp;rsquo;t realize the insane potential of this service, so I wanted to share a few things that you probably didn&amp;rsquo;t know and some of the things the team has been working on.&#xA;In particular, I wanted to use one of the most common feature requests of the Azure Container Registry - automatic garbage collection of old or unused tags/manifests/images - as an example of how you can make the world your oyster using ACR Tasks.</description>
     </item>
-    
     <item>
       <title>Bypassing the character limit displayed when debugging with Delve and VSCode</title>
       <link>https://ehotinger.com/blog/vscode-delve-debugging/</link>
       <pubDate>Mon, 25 Feb 2019 00:00:00 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/vscode-delve-debugging/</guid>
-      <description>Debugging Go applications with Visual Studio Code and Delve is extremely powerful. However, there are some default settings which you may want to tweak to improve this experience and they&amp;rsquo;re not straightforward to find out.
-Sometimes when you&amp;rsquo;re debugging if a variable&amp;rsquo;s value is really long, i.e. more than 64 characters, you&amp;rsquo;ll see the value&amp;rsquo;s content end as &amp;ldquo;&amp;hellip;+7 more&amp;rdquo; or however many characters were truncated. To get around this, you need to customize your workspace or user settings in Visual Studio Code.</description>
+      <description>Debugging Go applications with Visual Studio Code and Delve is extremely powerful. However, there are some default settings which you may want to tweak to improve this experience and they&amp;rsquo;re not straightforward to find out.&#xA;Sometimes when you&amp;rsquo;re debugging if a variable&amp;rsquo;s value is really long, i.e. more than 64 characters, you&amp;rsquo;ll see the value&amp;rsquo;s content end as &amp;ldquo;&amp;hellip;+7 more&amp;rdquo; or however many characters were truncated. To get around this, you need to customize your workspace or user settings in Visual Studio Code.</description>
     </item>
-    
     <item>
       <title>Installing Go on Windows (including Make)</title>
       <link>https://ehotinger.com/blog/installing-go-windows/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/installing-go-windows/</guid>
       <description>This is an extremely brief guide to setting up Go on Windows. There are plenty of guides out there for setting up Go, but none that also include how to get your Makefiles working cross-platform easily. The easiest way I&amp;rsquo;ve found to do this is to change shells. This is especially true if you have Makefiles like I do, where $(shell) is everywhere. With the default shell you&amp;rsquo;ll end up with CREATE PROCESS(NULL, .</description>
     </item>
-    
     <item>
       <title>Making a Github Pages Hugo Blog</title>
       <link>https://ehotinger.com/blog/making-a-github-pages-hugo-blog/</link>
       <pubDate>Thu, 31 May 2018 12:02:45 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/making-a-github-pages-hugo-blog/</guid>
-      <description>This is a quick-start guide to setting up Hugo with GitHub pages, since it took too much effort to find the full instructions anywhere else. It should hopefully take you ~15 minutes to complete the entire thing.
-Make two GitHub repositories, i.e., https://github.com/ehotinger/blog and https://github.com/ehotinger/ehotinger.github.io - the first repository is for the unrendered Hugo content, and the second is for the rendered content. Note: you could just have one repository as your GitHub page, but this approach allows you to easily switch off GitHub pages if you want to.</description>
+      <description>This is a quick-start guide to setting up Hugo with GitHub pages, since it took too much effort to find the full instructions anywhere else. It should hopefully take you ~15 minutes to complete the entire thing.&#xA;Make two GitHub repositories, i.e., https://github.com/ehotinger/blog and https://github.com/ehotinger/ehotinger.github.io - the first repository is for the unrendered Hugo content, and the second is for the rendered content. Note: you could just have one repository as your GitHub page, but this approach allows you to easily switch off GitHub pages if you want to.</description>
     </item>
-    
   </channel>
 </rss>

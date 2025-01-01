@@ -6,17 +6,14 @@
     <description>Recent content in lambda on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 11 Apr 2023 21:27:56 -0700</lastBuildDate><atom:link href="https://ehotinger.com/categories/lambda/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Apr 2023 21:27:56 -0700</lastBuildDate>
+    <atom:link href="https://ehotinger.com/categories/lambda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Tour of AWS Lambda Response Streaming</title>
       <link>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</link>
       <pubDate>Tue, 11 Apr 2023 21:27:56 -0700</pubDate>
-      
       <guid>https://ehotinger.com/blog/a-tour-of-aws-lambda-response-streaming/</guid>
-      <description>AWS Lambda Response Streaming Overview In April 2023, AWS Lambda made an exciting announcement and released response streaming which makes it one of the first function providers to offer streaming support in the world. Before, Lambda-based applications had to use a traditional request-response model which meant applications had to fully generate and buffer responses before returning anything to a client.
-Response Streaming is a new invocation pattern:
-There is an InvokeWithResponseStream API and a new handler signature for applications.</description>
+      <description>AWS Lambda Response Streaming Overview In April 2023, AWS Lambda made an exciting announcement and released response streaming which makes it one of the first function providers to offer streaming support in the world. Before, Lambda-based applications had to use a traditional request-response model which meant applications had to fully generate and buffer responses before returning anything to a client.&#xA;Response Streaming is a new invocation pattern:&#xA;There is an InvokeWithResponseStream API and a new handler signature for applications.</description>
     </item>
-    
   </channel>
 </rss>
