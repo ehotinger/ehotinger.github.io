@@ -6,8 +6,15 @@
     <description>Recent content in development on Eric Hotinger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 05 Feb 2023 13:01:11 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 10:06:17 -0700</lastBuildDate>
     <atom:link href="https://ehotinger.com/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon ECS Set Default Log Driver Blocking Mode</title>
+      <link>https://ehotinger.com/blog/amazon-ecs-set-default-log-driver-blocking-mode/</link>
+      <pubDate>Fri, 18 Apr 2025 10:06:17 -0700</pubDate>
+      <guid>https://ehotinger.com/blog/amazon-ecs-set-default-log-driver-blocking-mode/</guid>
+      <description>Amazon ECS Set Default Log Driver Blocking Mode As of April 17th, 2025 in Amazon Elastic Container Service (ECS), you can set the defaultLogDriverMode for your tasks at an account level using the PutAccountSettingDefault API.&#xA;What is the problem with logs? Docker has a logging daemon implementation which will read STDOUT and STDERR of a container and convert logs into an in-memory ring buffer (see code here). Those messages get sent to a log driver, such as the AWS log driver, which can then upload them to a service such as CloudWatch.</description>
+    </item>
     <item>
       <title>Automating Newsletters With Hugo, TinyLetter, and Zapier</title>
       <link>https://ehotinger.com/blog/automating-newsletters-with-hugo-tinyletter-and-zapier/</link>
