@@ -9,26 +9,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="author" content="Eric Hotinger">
-<meta name="description" content="Learn how Amazon ECS&#39;s new defaultLogDriverMode feature enhances container reliability by setting non-blocking log drivers at the account level, preventing application failures during logging backpressure events.">
+<meta name="description" content="A collection of the papers, books, blogs, and other interesting tidbits I&#39;ve read in 2025.">
 
-<meta property="og:title" content="Amazon ECS Set Default Log Driver Blocking Mode" />
-<meta property="og:description" content="Learn how Amazon ECS&#39;s new defaultLogDriverMode feature enhances container reliability by setting non-blocking log drivers at the account level, preventing application failures during logging backpressure events." />
+<meta property="og:title" content="2025 Papers and Books" />
+<meta property="og:description" content="A collection of the papers, books, blogs, and other interesting tidbits I&#39;ve read in 2025." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ehotinger.com/blog/amazon-ecs-set-default-log-driver-blocking-mode/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2025-04-18T10:06:17-07:00" />
-<meta property="article:modified_time" content="2025-04-18T10:06:17-07:00" />
+<meta property="og:url" content="https://ehotinger.com/blog/2025-papers-and-books/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-01-02T10:24:56-08:00" />
+<meta property="article:modified_time" content="2025-01-02T10:24:56-08:00" />
 
 
 
     <title>
         
         
-         Amazon ECS Set Default Log Driver Blocking Mode 
+         2025 Papers and Books 
         
     </title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3511724161548652"
         crossorigin="anonymous"></script>
-    <link rel="canonical" href="https://ehotinger.com/blog/amazon-ecs-set-default-log-driver-blocking-mode/">
+    <link rel="canonical" href="https://ehotinger.com/blog/2025-papers-and-books/">
     
 
 
@@ -149,7 +149,7 @@
                 <div class="title-container">
                     <div class="page-heading">
 
-    Amazon ECS Set Default Log Driver Blocking Mode
+    2025 Papers and Books
 
 </div>
 
@@ -157,40 +157,60 @@
                 </div>
                 <div class="meta">
                     
-                    <div class="date" title='Fri Apr 18 2025 10:06:17 -0700'>Apr 18, 2025</div>
+                    <div class="date" title='Thu Jan 2 2025 10:24:56 -0800'>Jan 2, 2025</div>
                     
                     
-		    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
+		    <div class="reading-time"><div class="middot"></div>One minute read</div>
                     
                 </div>
             </div>
 
             <div class="markdown">
-                <h1 id="amazon-ecs-set-default-log-driver-blocking-mode">Amazon ECS Set Default Log Driver Blocking Mode</h1>
-<p>As of April 17th, 2025 in Amazon Elastic Container Service (ECS), you can set the <code>defaultLogDriverMode</code> for your tasks at an account level using the <a href="https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutAccountSettingDefault.html">PutAccountSettingDefault API</a>.</p>
-<h2 id="what-is-the-problem-with-logs">What is the problem with logs?</h2>
-<p>Docker has a logging daemon implementation which will read STDOUT and STDERR of a container and convert logs into an in-memory ring buffer (see <a href="https://github.com/moby/moby/blob/master/daemon/logger/ring.go">code here</a>). Those messages get sent to a log driver, such as the <a href="https://github.com/moby/moby/blob/master/daemon/logger/awslogs/cloudwatchlogs.go">AWS log driver</a>, which can then upload them to a service such as CloudWatch.</p>
-<p>The default logging mode for Docker is blocking, which means that if the log driver cannot process logs to a service correctly, it does not allow for lossiness and can start blocking during logging events. You can take precautions against this by configuring the maximum size of the ring buffer and enable logs to drop in a lossy manner (i.e., the first record in the ring) in cases of significant backpressure.</p>
-<p>More specifically, check out these parameters for Docker&rsquo;s log driver:</p>
-<pre tabindex="0"><code>&#39;mode&#39;: &#39;non-blocking&#39;
-&#39;max-buffer-size&#39;: &#39;16m&#39;
-</code></pre><p>Backpressure will occur if you can&rsquo;t write logs and the buffer starts to overflow. For example, maybe the service that you&rsquo;re trying to write to goes down and the buffer can&rsquo;t flush. This means if your application has the driver set to be blocking, then your application itself will break during any logs. In many services, it is better to accept lossiness for logs and allow your application to continue processing.</p>
-<h2 id="why-is-this-important">Why is this important?</h2>
-<p>Previously, you had to specify the default logging driver across all your tasks individually to ensure they were configured correctly. This could be extremely error-prone in a large organization. Now, since AWS allows you to define this setting across your entire account, you can ensure that all your tasks have safe defaults based on your service requirements.</p>
-<h2 id="related-posts">Related Posts</h2>
+                <h1 id="2025">2025</h1>
+<h2 id="books">Books</h2>
 <ul>
-<li>Check out my related post about <a href="https://ehotinger.com/blog/operating-in-grey-modes/">Operating your Service in Grey Modes</a>.</li>
-<li>AWS What&rsquo;s New: <a href="https://aws.amazon.com/about-aws/whats-new/2025/04/amazon-ecs-set-default-log-driver-blocking-mode/">https://aws.amazon.com/about-aws/whats-new/2025/04/amazon-ecs-set-default-log-driver-blocking-mode/</a></li>
+<li><a href="https://www.amazon.com/Fourth-Wing-Empyrean-Rebecca-Yarros/dp/1649374046">Fourth Wing (The Empyrean, 1) by Rebecca Yarros</a></li>
+<li><a href="https://www.amazon.com/Sage-Huntress-Lover-Queen-Creativity/dp/1644117932">Sage, Huntress, Lover, Queen by Mara Branscombe</a></li>
+<li><a href="https://www.amazon.com/Dopamine-Detox-Remove-Distractions-Productivity/dp/B098GV11M8">Dopamine Detox: A Short Guide to Remove Distractions and Get Your Brain to Do Hard Things by Thibaut Meurisse</a></li>
+<li><a href="https://www.amazon.com/Autistic-Brain-Temple-Grandin/dp/0544227735">The Autistic Brain: Helping Different Kinds of Minds Succeed by Temple Grandin</a></li>
+<li><a href="https://www.amazon.com/Anxious-Generation-Rewiring-Childhood-Epidemic/dp/0593655036">The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness by Jonathan Haidt</a></li>
+<li><a href="https://www.amazon.com/Educated-Memoir-Tara-Westover/dp/0399590528">Educated: A Memoir by Tara Westover</a></li>
+<li><a href="https://www.amazon.com/Lessons-21st-Century-Yuval-Harari/dp/0525512195">21 Lessons for the 21st Century by Yuval Noah Harari</a></li>
+<li><a href="https://www.amazon.com/Beyond-Wand-Mayhem-Growing-Wizard/dp/1538741377">Beyond the Wand: The Magic and Mayhem of Growing Up a Wizard Paperback by Tom Felton</a></li>
+<li><a href="https://www.amazon.com/Nightingale-Novel-Kristin-Hannah/dp/1250080401">The Nightingale by Kristin Hannah</a></li>
+<li><a href="https://www.amazon.com/Daily-Stoic-Meditations-Wisdom-Perseverance/dp/0735211736">The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living by Ryan Holiday, Stephen Hanselman</a></li>
+<li><a href="https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101970316">Life 3.0: Being Human in the Age of Artificial Intelligence by Max Tegmark</a></li>
+</ul>
+<h2 id="blogs">Blogs</h2>
+<ul>
+<li><a href="https://www.cs.cmu.edu/~pavlo/blog/2025/01/2024-databases-retrospective.html">Databases in 2024: A Year in Review by Andy Pavlo</a></li>
+<li><a href="https://www.databricks.com/blog/booting-databricks-vms-7x-faster-serverless-compute">Booting Databricks VMs 7x Faster for Serverless Compute</a></li>
+<li><a href="https://www.snowflake.com/en/blog/improving-developer-productivity-snowflake/">Continuously Improving Developer Productivity at Snowflake</a></li>
+<li><a href="https://royondata.substack.com/p/there-are-no-more-hard-problems-in">There are no more hard problems in data</a></li>
+<li><a href="https://antirez.com/news/151">Redis is open source again</a></li>
+<li><a href="https://sockpuppet.org/blog/2015/03/06/the-hiring-post/">The Hiring Post</a></li>
+<li><a href="https://boydkane.com/essays/experts">Experts Have It Easy</a></li>
+</ul>
+<h2 id="papers">Papers</h2>
+<ul>
+<li><a href="https://dl.acm.org/doi/pdf/10.1145/3477132.3483578">RAS: Continuously Optimized Region-Wide Datacenter Resource Allocation</a></li>
+<li><a href="https://www.usenix.org/system/files/osdi20-tang.pdf">Twine: A Unified Cluster Management System for Shared Infrastructure</a></li>
+</ul>
+<h1 id="goodreads">Goodreads</h1>
+<ul>
+<li>My profile: <a href="https://www.goodreads.com/user/show/133308963-eric-hotinger">https://www.goodreads.com/user/show/133308963-eric-hotinger</a> (feel free to send recommendations!)</li>
 </ul>
 
                 <hr>
                 <div class="next-post">
                     
+                    <strong>Next Post:</strong> <a class="link-reverse" href="https://ehotinger.com/blog/amazon-ecs-set-default-log-driver-blocking-mode/?ref=footer">Amazon ECS Set Default Log Driver Blocking Mode</a>
+                    
                 </div>
                 
                 <div class="previous-post">
                     
-                    <strong>Previous Post:</strong> <a class="link-reverse" href="https://ehotinger.com/blog/2025-papers-and-books/?ref=footer">2025 Papers and Books</a>
+                    <strong>Previous Post:</strong> <a class="link-reverse" href="https://ehotinger.com/blog/system-design-guide-scalable-job-schedulers-cluster-management/?ref=footer">System Design Guide: Scalable Job Schedulers &amp; Cluster Management</a>
                     
                 </div>
 
@@ -202,11 +222,13 @@
                   <div class="tags">
                     <strong>Tags:</strong>
                   
-                    <a href="https://ehotinger.com/tags/development">development</a>
+                    <a href="https://ehotinger.com/tags/books">books</a>
                   
-                    <a href="https://ehotinger.com/tags/software">software</a>
+                    <a href="https://ehotinger.com/tags/blogs">blogs</a>
                   
-                    <a href="https://ehotinger.com/tags/availability">availability</a>
+                    <a href="https://ehotinger.com/tags/papers">papers</a>
+                  
+                    <a href="https://ehotinger.com/tags/academia">academia</a>
                   
                   </div>
                   <br />
